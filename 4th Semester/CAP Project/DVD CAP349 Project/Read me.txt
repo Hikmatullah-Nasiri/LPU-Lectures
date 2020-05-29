@@ -1,0 +1,5 @@
+E-Agriculture Resources Sharing was designed in Asp.net with Microsoft SQL Server database. 
+WE have used Microsoft Visual Studio 2015 as Developtment Tools and Microsoft SQL Server Managment Studio 2017 for database connection.
+Database folder contains the database of the project.
+E-Agriculture Resources Sharing folder contains the website and related pages.
+Report Folder Contains all the three report which were submitted throug UMS. 

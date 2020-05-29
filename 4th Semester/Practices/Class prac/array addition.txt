@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[4]={10,20,30,40};
+    int b[5]={90,80,70,60,50};
+    int  i;
+    int c[8];
+
+    for(i=0;i<4;i++)
+    {
+     c[i]=a[i]+b[i];
+    }
+        for(i=0;i<5;i++) {
+    cout << "Array Elements: " <<c[i]<< endl;    }
+    return 0;
+}

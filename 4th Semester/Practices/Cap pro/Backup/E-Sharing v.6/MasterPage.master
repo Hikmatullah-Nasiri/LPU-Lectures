@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+       <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>E-Resource Sharing</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <div class="row  backgroundimage"> 
+        <div class=" container"> 
+         <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-success " href="#"><h2><i>E-Agriculture Resources</i></h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-success " href="Default.aspx"><h4>Home</h4>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success " href="About.aspx"><h4>About</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success " href="contact.aspx"><h4>Contact</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success " href="UserManage/userLogin.aspx"><h4>Login</h4></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+      
+      
+      
+       
+
+    </div>
+         
+            </div>
+                <footer class="py-3 bg-dark">
+      <div class=" container-fluid">
+          <div class="row m-0 ">
+              <div class="col-md-4"></div>
+        <div class=" text-white text-center  col-md-4"><p>Copyright &copy; E-Agriculture 2019</p>
+           
+        </div>
+           <div class="x`col-md-4 " >
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;
+          <a href="https://www.facebook.com/" target="blank"><img style="height:40px;" src="assets/icons/facebook-logo-button.png" /></a>
+          <a href="https://www.instagram.com/" target="blank"><img style="height:40px;" src="assets/icons/instagram-logo.png" /></a>
+          <a href="https://twitter.com/login" target="blank"><img style="height:40px;" src="assets/icons/twitter-logo-button.png" /></a>
+           <a href="https://aboutme.google.com/u/0/?referer=gplus" target="blank"><img style="height:40px;" src="assets/icons/iconmonstr-google-plus-1-240.png" /></a> 
+           </div>
+      </div>
+      </div>
+      <!-- /.container -->
+       </footer>
+         </div>
+    </form>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
