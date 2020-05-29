@@ -1,0 +1,13 @@
+1. Create a virtual machine and install guest operating system?
+2. Configure the virtual machine settings.
+3. Upgrade the virtual machine hardware.
+4. Configure the virtual memory.
+5. change the virtual machine name.
+6. REstrict the number of users accessing the virtual machines.
+7.Creating Template and Saving at content library.
+8. Cloning a virtual machine to a content library.
+9. Deploy a Virtual Machine from a preconfigured Content Library Template.
+10. Creating a Snapshots of Virtual Machine.
+11. Revert to a Snapshot of VM.
+12. Deleting a Snapshot of VM.
+13. Migration of Virtual Machine and Data.

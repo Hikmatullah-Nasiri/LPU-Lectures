@@ -1,0 +1,67 @@
+<html>
+<head>
+     
+    
+    </head>
+<body>
+
+    
+   
+    
+    <canvas id=c1 width="500" height="500" style="border:4px dotted green;" >
+    
+    
+    </canvas>
+    
+    <script>
+        var x=document.getElementById("c1");
+        var y=x.getContext("2d");
+        y.beginPath();
+        y.arc(250,250,150,0,2*Math.PI);        
+        y.stroke();    
+        y.closePath();
+        
+        
+        var c = document.getElementById("c1");
+        var d = c.getContext("2d");
+        d.lineWidth=5;
+        d.beginPath();
+        d.moveTo(200,0);
+        d.lineTo(100,200);
+        d.lineTo(300,200);
+        d.lineTo(400,0);
+        d.stroke();
+        d.closePath();
+        
+        
+        var c = document.getElementById("c1");
+        var d = c.getContext("2d");
+        d.lineWidth=5;
+        d.beginPath();
+        d.moveTo(150,200);
+        d.lineTo(100,300);
+        d.lineTo(200,300);
+        d.lineTo(150,200);
+        d.stroke();
+        d.closePath();
+        
+        
+        
+    </script>
+    
+   
+    <script> 
+         
+    </script>
+        
+    
+    
+    
+    
+    
+    <input type="button" value="Draw" onclick="shape()" >
+    
+   
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Master_page_with_validation.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        a:active{
+            text-decoration:none;
+        }
+        a:visited{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header style="border:solid 1px black; width:auto;height:10%;text-align:center;background-color:cornflowerblue;">
+            <h1>Welcome to the SSDI Bank</h1>
+        </header>
+        <nav style="border:solid 1px black;background-color:lightskyblue">
+            <ul style="list-style-type:none;">
+                <li><a href="WebForm1.aspx" style="float:left;margin-left:40px;text-decoration:none;">Home</a></li>
+                <li><a href="about.aspx" style="float:left;margin-left:40px;text-decoration:none;">About Us</a></li>
+                <li><a href="contact.aspx" style="margin-left:40px;text-decoration:none;">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer style="border:solid 1px black;text-align:center;background-color:cornflowerblue;">
+
+            <p>Copy Right @C</p>
+        </footer>
+    </div>
+    </form>
+</body>
+</html>

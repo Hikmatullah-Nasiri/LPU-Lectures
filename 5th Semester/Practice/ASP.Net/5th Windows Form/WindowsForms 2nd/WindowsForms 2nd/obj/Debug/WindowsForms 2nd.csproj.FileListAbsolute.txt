@@ -1,0 +1,10 @@
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\bin\Debug\WindowsForms 2nd.exe.config
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\bin\Debug\WindowsForms 2nd.exe
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\bin\Debug\WindowsForms 2nd.pdb
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms 2nd.csprojResolveAssemblyReference.cache
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms_2nd.Form1.resources
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms_2nd.Form2.resources
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms_2nd.Properties.Resources.resources
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms 2nd.csproj.GenerateResource.Cache
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms 2nd.exe
+D:\LPU\5th Semester\Practice\ASP.Net\5th Windows Form\WindowsForms 2nd\WindowsForms 2nd\obj\Debug\WindowsForms 2nd.pdb

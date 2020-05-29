@@ -1,0 +1,32 @@
+Creating new virtual machine:
+HOL Lab
+
+Hypervisor: 
+
+Hosted hypervisor: when we install the virtualization on the hardware and in hardware there is OS and we install on the top of os is hosted hypervisor. Also known as typtwo hypervisor.
+
+BareMetal Hpybervisor: when we install directly virtual layer on hardware. we need a remote machine to access this hypervisor. and we will install management software on remote machine. ESxi is bearmetal hypervisor. this managent software is webclient or vshpere webclient. Also known as typeone hypervisor.
+
+HOL lab 1910 and 2010. 
+User nadm and Passwrod of vsphere:
+
+VMware1!
+
+How to upgrade hardware version?
+
+template clone and snapshot?
+tempalate pre-configured master image of virtual machine.
+clone exact copy of the virtual machine. 
+snapshot is restore point we can revert back to that time we create the snapshot.
+
+Migeration: Try to move the virtual machine from one host to an other host.
+there are two types of migeration:
+1. system migration
+2. data migration.
+we can do in both state in 2 states whether the vm is power on or off.
+when the power is off we can simply migrate the virtual machine simply.
+when the power is on we have to save the state of vm using Vmotion software for migeration of vm in power on state.
+
+
+
+

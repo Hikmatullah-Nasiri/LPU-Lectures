@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+</head>
+    
+<body>
+<button id="btn1">Date</button>
+<h1 id="btn2">Hello world</h1>
+<script>
+    function show(){
+        alert("Date is "+Date());
+    }
+    function msg(){
+        alert("Event 2 is running");
+    }
+    document.getElementById("btn1").addEventListener("mouseout",show);
+    document.getElementById("btn1").addEventListener("click",msg);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>    
+       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+        
+        <div data-role="page" id="ab">
+    <div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>		
+		<p>View internal page called <a href="#ac"  data-rel="dialog" data-transition="pop" >AC</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+    
+            
+
+    </div>
+    <!--Page 2-->
+        <div data-role="page" id="ac">
+            <div data-role="header">
+		<h1>2nd</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm second in the source order so I'm shown as the page.</p>		
+		<p>View internal page called <a href="#ab"  data-rel="dialog" data-transition="flip">AD</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer --></div>
+    
+    
+           
+        
+    
+    
+    
+</body>
+</html>

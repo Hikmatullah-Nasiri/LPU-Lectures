@@ -1,0 +1,4 @@
+1. write an app code to generate customized alerts in jquery mobile?
+2. write an app code to customize multiple swatches in JqueryMobile and apply it on multiple pages?
+3. write an app code on touch start it must load a map?
+On touch move it must show  at latititude and long titude?

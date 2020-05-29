@@ -1,0 +1,100 @@
+<html>
+<head>
+     
+    
+    </head>
+<body>
+
+    
+   
+    
+    <canvas id=c1 width="500" height="500" style="border:4px dotted green;" >
+    
+    
+    </canvas>
+    
+    <script>
+        var x=document.getElementById("c1");
+        var y=x.getContext("2d");
+        y.beginPath();
+        y.arc(250,250,150,0,2*Math.PI);        
+        y.stroke();    
+        y.closePath();
+        
+        y.beginPath();
+        var a=document.getElementById("c1");
+        var m=a.getContext("2d");
+        m.arc(160,220,30,0,2*Math.PI);
+        m.stroke(); 
+        m.closePath();
+        
+        y.beginPath();
+        var a=document.getElementById("c1");
+        var m=a.getContext("2d");
+        m.arc(330,220,30,0,2*Math.PI);
+        m.stroke(); 
+        m.closePath();
+        
+           
+        //Nose
+        var x =document.getElementById("c1");
+        var p=x.getContext("2d");
+        p.beginPath()
+        p.rect(225, 220, 40, 80);
+        p.stroke();
+        p.closePath();
+    
+        
+        //Mouth
+        var a=document.getElementById("c1");
+        var m=a.getContext("2d");
+        y.beginPath();
+        m.arc(245,330,60,0,3.2);
+        m.stroke(); 
+        m.closePath();
+        //Line
+        var c = document.getElementById("c1");
+        var d = c.getContext("2d");
+        d.beginPath();
+        d.moveTo(184,328);
+        d.lineTo(305,330);
+        d.stroke();
+        d.closePath();
+        
+        //Right Ear
+        var a=document.getElementById("c1");
+        var m=a.getContext("2d");
+        y.beginPath();
+        m.arc(77,200,30,0,2*Math.PI);
+        m.stroke(); 
+        m.closePath();
+        
+        //Left ear        
+        var a=document.getElementById("c1");
+        var m=a.getContext("2d");
+        y.beginPath();
+        m.arc(426,208,30,0,2*Math.PI);
+        m.stroke(); 
+        m.closePath();
+        
+        
+        
+        
+    </script>
+    
+   
+    <script> 
+         
+    </script>
+        
+    
+    
+    
+    
+    
+    <input type="button" value="Draw" onclick="shape()" >
+    
+   
+    </body>
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CA2</title>
+</head>
+<body>
+<canvas id="canvas" style="width:800px; height:600px;border:1px solid black;float:left;"></canvas>
+<input type="text" id="txt" name="textbox" value="Enter here"/>
+<input type="button" onclick="draw()" value="Click Here" />
+
+     <input id="c1" name="red" type=button onclick="draw('red')" style="width:50px; height:50px;background-color:red;float:left;">
+
+
+    <input id="c2" name="green" type=button onclick="draw('green')" style="width:50px; height:50px;background-color:green;float:left;">
+
+
+    <input id="c3" name="blue" type=button onclick="draw('blue')" style="width:50px; height:50px;background-color:blue;float:left;" >
+
+
+    <input id="c4" name="chartreuse" type=button onclick="draw('chartreuse')" style="width:50px; height:50px;background-color:chartreuse;float:left;" >
+    
+<script>
+    function draw(color) {
+    var canv = document.getElementById("canvas");
+    var d = document.getElementById("txt").value;    
+    var x =canv.getContext("2d");
+    x.clearRect(0, 0, 300,200);
+    x.arc(150,80,65,0,2*Math.PI);
+    x.fillStyle=color;
+    x.stroke();
+    x.font = "15px Arial";
+    x.fillText(d, 110, 80);    
+        }
+</script>
+</body>
+</html>

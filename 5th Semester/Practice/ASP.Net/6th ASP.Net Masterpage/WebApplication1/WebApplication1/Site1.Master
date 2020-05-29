@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>my layout</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link href="my.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+<header id="header">
+<h1>c# corner</h1>
+</header>
+<nav id="nav">
+<ul>
+<li><a href="home.aspx">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Article</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<aside id="side">
+<h1>news</h1>
+<a href="#"><p>creating html website</p></a>
+<a href="#"><p>learn css</p></a>
+ <a href="#">learn c#</a>
+</aside>
+<div id="con">
+
+
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+<footer id="footer"> <span style="color:black;">copyright @C</span>
+</footer>
+    </div>
+    </form>
+</body>
+</html>

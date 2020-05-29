@@ -1,0 +1,234 @@
+<!-- -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+</head>
+<body>
+<div class="fluid-container" style="border: 2px solid green;">
+    <div class="container">
+        
+        <!--Row1 -->
+    <div class="row">
+        <h1>Row 1 Bootstrap Grid</h1>
+        <div class="col-sm-6" style="border:2px solid red;"> first Column.</div>
+        <div class="col-sm-6" style="border:2px solid red;"> Second Column.</div>
+        </div>
+     
+        <!--Row2 -->
+    <div class="row">
+        <h1>Row 2 Bootrstrap Image</h1>
+        <div class="col-sm-12" style="border:2px solid red;"> Second row, first Column.
+        <img class="img-circle" src="sample.jpg" hieght="200px" width="200px"/>
+        <img class="img-rounded" src="sample.jpg" hieght="200px" width="200px"/>
+        <img class="img-thumbnail" src="sample.jpg" hieght="200px" width="200px"/>
+        </div>        
+    </div>
+    
+        <!--Row3 -->
+    <div class="row">
+        <h1>Row 3 Table</h1>
+        <div class="col-sm-4" style="border:2px solid green;"> 
+            <table class="table">
+                <caption>Simple Table</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>1</td>
+                </tr>
+                 <tr>
+                    <td>y</td>
+                    <td>2</td>
+                </tr>
+                 <tr>
+                    <td>z</td>
+                    <td>3</td>
+                </tr>
+                
+            </table>                    
+        </div>
+        
+         <div class="col-sm-4" style="border:2px solid green;"> 
+            <table class="table table-striped">
+                <caption>Striped Table</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>1</td>
+                </tr>
+                 <tr>
+                    <td>y</td>
+                    <td>2</td>
+                </tr>
+                 <tr>
+                    <td>z</td>
+                    <td>3</td>
+                </tr>
+                
+            </table>                    
+        </div>
+        
+         <div class="col-sm-4" style="border:2px solid green;"> 
+            <table class="table table-bordered">
+                <caption>Bordered Table</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>1</td>
+                </tr>
+                 <tr>
+                    <td>y</td>
+                    <td>2</td>
+                </tr>
+                 <tr>
+                    <td>z</td>
+                    <td>3</td>
+                </tr>
+                
+            </table>                    
+        </div>
+        
+        <div class="col-sm-4" style="border:2px solid green;"> 
+            <table class="table table-hover">
+                <caption>Hover Table</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>1</td>
+                </tr>
+                 <tr>
+                    <td>y</td>
+                    <td>2</td>
+                </tr>
+                 <tr>
+                    <td>z</td>
+                    <td>3</td>
+                </tr>
+                
+            </table>                    
+        </div>
+        <div class="col-sm-4" style="border:2px solid green;"> 
+            <table class="table">
+                <caption>Table With Colors</caption>
+                <tr class=active>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr class=danger>
+                    <td>x</td>
+                    <td>1</td>
+                </tr>
+                 <tr class=success>
+                    <td>y</td>
+                    <td>2</td>
+                </tr>
+                 <tr class=warning>
+                    <td>z</td>
+                    <td>3</td>
+                </tr>
+                
+            </table>                    
+        </div>
+        </div>
+        
+        <!--Row4-->
+        <div class="row">
+        <h1>Buttons</h1>
+            <div class="col-sm-12">
+            <button class="btn">Normal Button</button>
+            <button class="btn btn-success btn-xs">success Button</button>
+            <button class="btn btn-primary btn-sm">primary Button</button>
+            <button class="btn btn-info btn-lg">Button</button>
+            <button class="btn btn-warning btn-sm">warning Button</button>
+            <button class="btn btn-danger btn-xs">danger Button</button>
+            <button class="btn-link">Button Link</button>
+            <button  class="btn btn-block btn-success">Block Button</button>            
+            <button class="btn btn-primary disabled">Disabled Primary</button>
+            
+            
+            </div>        
+        </div>
+        
+        <!--Row5-->
+        <div class="row">
+            <h1>Caret, Badge</h1>
+            <div class="col-sm-12">
+                <span class="caret"></span>Drop Down
+                
+                <script>
+                    //var x = prompt("bage value");
+                    //if(x>20){
+                        //alert("must be less than 20");
+                //    }
+                  //  else {
+                       // Document.write("<span class="badge">+x+"</span>")                               
+                //    }
+                    
+                    function run(){
+                var a = document.getElementById("ch").value;                    
+                if(a>20){
+                    document.getElementById("bg").innerHTML="value is more than 20"
+                    
+                }
+                        else if(a==20){
+                    document.getElementById("bg").innerHTML="value is equal 20"        
+                        }
+                    else{
+                    document.getElementById("bg").innerHTML="value is less than 20"
+                    }
+                    
+                }
+                </script>
+                <input type="text" id="ch" />
+                <Button onclick="run();">Run</Button>
+                
+                <span class="badge" id="bg">My message 10</span>
+                
+            </div>
+        </div>
+        
+        <!--Row 6-->
+        <div class="row">
+            <h1>Pagination</h1>
+            <div class="col-sm-12">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="disabled"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>                
+                </ul>
+                
+                <ul class="breadcrumb">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>                
+                </ul>
+            
+            </div>
+        </div>
+    
+    </div>                            
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js">
+      </script>
+      <script> 
+      function loadMap(lt,ln){
+          var mapOptions = {
+              center:new google.maps.LatLng(lt,ln),zoom:12,mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+          }
+        function showPosition() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position){
+                    var x = position.coords.latitude;
+                    var y = position.coords.longitude;
+                    alert(x);
+                    alert(y);
+                    loadMap(position.coords.latitude,position.coords.longitude);
+                });
+            }
+            else {
+                alert("NAhi ho raha");
+            }
+        }
+      </script>
+    </head>
+    <body >
+        <div id="sample" style="width: 1500px;height: 1500px;"></div>
+    <input type="button" onclick="showPosition();">
+        
+    </body>
+</html>

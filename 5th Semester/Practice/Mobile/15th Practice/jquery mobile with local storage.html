@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script>
+    <script>
+    function winopen(){
+        window.open("#p2");
+    }
+    function closeme(){
+        window.close();
+    }
+    </script>
+    <script>
+        function run(){
+    var w = document.getElementById("t1").value;
+    var x = document.getElementById("t2").value;
+    var y = document.getElementById("t3").value;
+    var z = document.getElementById("t4").value;
+    localStorage.setItem(w);
+    localStorage.setItem(x);
+    localStorage.setItem(y);
+    localStorage.setItem(z);
+    }
+    document.writeln("Total Hits:"+x);
+    </script>
+</head>
+<body>
+<div data-role="page" id="p1">
+    <div data-role="header">
+        <button data-icon="home" onclick="winopen();" data-rel="dialog">Home</button>
+    <h1>Welcome to the Sign Up Page</h1>
+        
+    </div>
+    <div data-role="content" style="text-align: center;">
+    <h1>Please enter the details</h1>
+    <form>
+    <table>
+        <tr>
+        <td>Name</td>
+        <td><input type="text" size="20" id="t1"/></td>
+        </tr>
+        <tr>
+        <td>Last Name</td>
+        <td><input type="text" size="20" id="t2"/></td>
+        </tr>
+        <tr>
+        <td>Email</td>
+        <td><input type="email" size="20" id="t3"/></td>
+        </tr>
+        <tr>
+        <td>Password</td>
+        <td><input type="password" size="20" id="t4"/></td>
+        </tr>        
+        </table>
+        <input type="submit" name="submit" value="Submit" onclick="run();"/>
+        <input type="reset" name="reset" value="Reset" />
+    </form>
+    </div>
+    <div data-role="footer">
+        <p style="text-align:  center">Copy Right</p>
+    </div>
+    
+</div>
+
+    <div data-role="page" id="p2"  >
+    <div data-role="header">
+    <h1>Error in page</h1>
+    </div>
+    <div data-role="content">
+    <a href="#p1"><input type="button" value="Home" /></a>
+    <a href="#" data-rel="back"><input type="button" value="Cancel"  /></a>
+    <a href="#" data-rel="back"><input type="button" value="Close Page" onclick="closeme();" /></a>
+        
+    
+    </div>
+    <div data-role="footer">
+        <p style="text-align:  center"></p>
+    </div>
+    
+</div>
+
+</body>
+</html>

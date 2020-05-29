@@ -1,0 +1,20 @@
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\csc.exe
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\System.Collections.Immutable.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\System.Reflection.Metadata.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\vbc.exe
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\VBCSCompiler.exe
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\roslyn\VBCSCompiler.exe.config
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\Master page with validation.dll.config
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\Master page with validation.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\Master page with validation.pdb
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\obj\Debug\Master page with validation.csprojResolveAssemblyReference.cache
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\obj\Debug\Master page with validation.dll
+D:\LPU\5th Semester\Practice\ASP.Net\8th Web Server Practice\Master page with validation\Master page with validation\obj\Debug\Master page with validation.pdb

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+</head>
+    <script>
+    function start1(){
+        alert("touch");
+        document.write("<img src=image.png />");
+        //document.write("<audio src='audio2.mp3' autoplay> </audio>");
+        
+        //document.getElementById("music").innerHTML=("<audio src= autoplay></audio>");
+    }
+    
+    function move1(){
+        aler("move")
+    }
+    function can(){
+        aler("Touch Cancel");
+    }
+    </script>
+<body>
+<div width="500" height="500" ontouchmove="move1();">Move</div>
+<p ontouchstart="start1();">start</p>
+<button onclick="start1();" value="start">start</button>
+<a href="#" ontouchend="can();">Cancel</a>
+    
+    
+    
+
+</body>
+</html>

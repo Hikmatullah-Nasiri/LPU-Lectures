@@ -1,0 +1,20 @@
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\csc.exe
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\System.Collections.Immutable.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\System.Reflection.Metadata.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\vbc.exe
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\VBCSCompiler.exe
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\roslyn\VBCSCompiler.exe.config
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\Dynamic Control.dll.config
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\Dynamic Control.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\Dynamic Control.pdb
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\obj\Debug\Dynamic Control.csprojResolveAssemblyReference.cache
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\obj\Debug\Dynamic Control.dll
+D:\LPU\5th Semester\Practice\ASP.Net\9th Database\Dynamic Control\Dynamic Control\obj\Debug\Dynamic Control.pdb

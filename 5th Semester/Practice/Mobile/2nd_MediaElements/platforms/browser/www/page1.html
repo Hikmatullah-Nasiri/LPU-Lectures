@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Page</title>
+        <script>
+            function change(){
+                document.getElementById("audio1").src = "audio1.mp3";
+                 document.getElementById("audio1").hidden=false;
+            }
+            
+            function change2(){
+                document.getElementById("audio1").src = "audio2.mp3";
+            }
+            function change3(){
+                document.getElementById("audio1").src = "audio3.mp3";
+            }
+        
+        </script>
+        
+        <style>
+            header{
+                width:100%;
+                text-align: center;
+            }
+            section{
+                width:100%;
+                text-align: center;
+            }
+            
+            body {
+             background-image: url("back2.jpg");
+             background-color: #cccccc;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1 style="color:aliceblue;">Play List</h1>
+        </header>
+        <section>
+            <ul type=none>
+            <li><button onclick="change()" style="width:200px; height:40px;">Song1</button></li>
+            <li><button onclick="change2()" style="width:200px; height:40px;">Song2</button></li>
+            <li><button onclick="change3()" style="width:200px; height:40px;">Song3</button></li>
+            </ul>
+            
+        <audio src="" controls id="audio1" autoplay hidden=true></audio>
+        <a href="index.html"><h3>Return Home</h3></a>
+        </section>
+        
+        <footer></footer>
+        
+    </body>
+</html>
