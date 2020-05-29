@@ -1,0 +1,11 @@
+create table customer002(Cust_id number(20) primary key,Custname varchar(40),Address varchar(40),Mob_no number(20));
+insert into customer002 values(11,'John','Itly',6073000);
+insert into customer002 values(14,'Harish','India',33042500);
+insert into customer002 values(16,'Mohammad','Afghanistan',8095000);
+insert into customer002 values(23,'Pernam','India',2336345);
+insert into customer002 values(22,'Abdul Wali','Somalia',62069000);
+insert into customer002 values(33,'Shafi','Indonisia',30234230);
+insert into customer002 values(51,'Wasi','Afghanistan',8088500);
+insert into customer002 values(55,'Wahid','Yemen',77081000);
+
+create table order002(Order_id number(20) primary key,Ord_desc varchar(80),foreign key(Cust_id) customer002(cust_id));

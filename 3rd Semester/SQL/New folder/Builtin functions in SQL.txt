@@ -1,0 +1,61 @@
+create table employee300(Id number(22), name varchar(20), country varchar(20), salary number(22), grosspay number(22));
+
+desc employee300;
+insert into employee300 values(10,'Ahmad','Afghanistan',40000,45000);
+
+insert into employee300 values(11,'John','Itly',60000,73000);
+insert into employee300 values(14,'Harish','India',33000,42500);
+insert into employee300 values(16,'Mohammad','Afghanistan',80000,95000);
+insert into employee300 values(23,'Pernam','India',23000,28000);
+insert into employee300 values(22,'Abdul Wali','Somalia',62000,69000);
+insert into employee300 values(33,'Shafi','Indonisia',30000,33000);
+insert into employee300 values(51,'Wasi','Afghanistan',80000,88500);
+insert into employee300 values(55,'Wahid','Yemen',77000,81000);
+
+select * from employee300;
+
+1.count ( ) function: It counts the number rows in the table.
+select count(*) from employee300;
+select count (*) from employee300 where country='India';
+
+2.Max ( ) function: it finds out the maximum number in a row.
+select max(salary) from employee300;
+
+3.Min function ( ): it finds out the minmum number or value in a row.
+select min(salary) from employee300;
+
+4.Average function ( ): it finds out the average value of the column.
+select avg(grosspay) from employee300;
+
+5.Sum function ( ) : it sums the values of the column.
+select sum(salary) from employee300;
+
+6.Square Root ( ) function: it takes the square root of a value or a column.
+select SQRT(16);
+select SQRT(salary) from employee300;
+select sum(SQRT(salary)) from employee300;
+
+7.RAND ( ) fuction: It randomly displays the column.
+select * from table orderby rand(column) it is for sql server
+select salary from employee300 order by dbms_random.value; it is for orcle server.
+select * from employee300 order by dbms_random.value;
+
+8.Cancat ( ) function: it is used to cancatinate two columns.
+Select concat(name,salary) from employee300;
+
+9.UPPER ( ) function: it is used to change the letters of column to the uppercase.
+select upper(name) from employee300;
+
+10.LOWER ( ) function: it is used to change the letters of column to the lowercase.
+select lower(name) from employee300;
+
+11.Mod ( ) function: modulas means reminder it divide the column by the given number and show the reminder values.
+select mod(salary,3) from employee300;
+
+12.Substr ( ) function: subtring is used to return the desired string you have given.
+select substr(name,1 from the place it should start,3 to the point it should end) from employee300;
+select substr(name,2,5) from employee300;
+
+13.Length ( ) function: it is used to find out the length of all strings in column.
+select length(country) from employee300;
+
