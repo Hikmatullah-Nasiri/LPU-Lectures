@@ -1,0 +1,53 @@
+1.Data Transfer can be handle by 
+Programmed I/O
+Interrupt Initiated IO
+None 
+Both 
+
+2.DMA 
+ Direct Memory Accesss 
+ Direct Mode Accesss
+
+3.Each data transfer is initiated by an instruction in
+the program
+Programmed IO 
+
+4.computer does not check the flag.
+It continue to perform its task.
+
+5.that interrupt the CPU provides the branch information
+vectored interrupt 
+
+6.all capable of generating the interrupt
+
+7.Devices with high speed transfer are given higher
+priority 
+
+8  priority can be done in two ways
+9
+Stack
+
+       DMA Controller and CPU both access Memory 
+Upon receiving a GO Command DMA performs
+
+nested subroutines
+nested interrupt services
+
+Interface
+Decodes the device address (device code)
+- Decodes the commands (operation)
+- Provides signals for the peripheral controller
+- Synchronizes the data flow and supervises 
+
+Separate I/O read/write control lines in addition to memory read/write 				control lines
+
+ Many computers use a common single bus system for both memory and I/O interface units
+
+
+Processor provide a function code in the control lines  
+
+
+There are four types of command control ,status ,data output and data input I/O BUS is for information transfers between CPU	and I/O devices through their I/O interface
+
+
+MEMORY BUS  is for information transfers between CPU and the MM 

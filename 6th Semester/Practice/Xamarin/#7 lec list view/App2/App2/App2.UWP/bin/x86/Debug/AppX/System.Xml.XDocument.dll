@@ -1,0 +1,331 @@
+tAttribute attribute Namespace set to null.</value>
+  </data>
+  <data name="SizeExceedsRemainingBufferSpace" xml:space="preserve">
+    <value>The specified size exceeds the remaining buffer space ({0} bytes).</value>
+  </data>
+  <data name="JsonNoMatchingStartAttribute" xml:space="preserve">
+    <value>There is no open attribute.</value>
+  </data>
+  <data name="IXmlSerializableCannotHaveCollectionDataContract" xml:space="preserve">
+    <value>Type '{0}' cannot be IXmlSerializable and have CollectionDataContractAttribute attribute.</value>
+  </data>
+  <data name="ArrayExceededSizeAttribute" xml:space="preserve">
+    <value>Array length '{0}' provided by Size attribute is not equal to the number of array elements '{1}' from namespace '{2}' found.</value>
+  </data>
+  <data name="JsonWriteArrayNotSupported" xml:space="preserve">
+    <value>To write JSON arrays, use XML writer methods to write the attribute type='array' followed by methods like WriteStartElement (with the local name 'item'), WriteAttributeString, and WriteEndElement to write the JSON array items.</value>
+  </data>
+  <data name="UnknownXmlType" xml:space="preserve">
+    <value>Type '{0}' is not a valid XML type.</value>
+  </data>
+  <data name="XmlInvalidDeclaration" xml:space="preserve">
+    <value>XML declaration can only be written at the beginning of the document.</value>
+  </data>
+  <data name="InvalidStateInExtensionDataReader" xml:space="preserve">
+    <value>An internal error has occurred. ExtensionDataReader is in an invalid state.</value>
+  </data>
+  <data name="JsonInvalidDataTypeSpecifiedForServerType" xml:space="preserve">
+    <value>Attempted to write an attribute '{0}'='{1}' after writing the attribute with local name '{2}'. The attribute with local name '{2}' is only valid with an attribute '{0}'='{3}'.</value>
+  </data>
+  <data name="PartialTrustDataContractPropertyGetNotPublic" xml:space="preserve">
+    <value>The data contract type '{0}' cannot be serialized because the property '{1}' does not have a public getter. Adding a public getter will fix this error. Alternatively, you can make it internal, and use the InternalsVisibleToAttribute attribute on your assembly in order to enable serialization of internal members - see documentation for more details. Be aware that doing so has certain security implications.</value>
+  </data>
+  <data name="JsonMethodNotSupported" xml:space="preserve">
+    <value>This XmlDictionaryWriter implementation does not support the '{0}' method.</value>
+  </data>
+  <data name="NullValueReturnedForGetOnlyCollection" xml:space="preserve">
+    <value>The get-only collection of type '{0}' returned a null value.  The input stream contains collection items which cannot be added if the instance is null.  Consider initializing the collection either in the constructor of the object or in the getter.</value>
+  </data>
+  <data name="XmlObjectAssignedToIncompatibleInterface" xml:space="preserve">
+    <value>'{0}' is an XML type and cannot be serialized when assigned to an interface type that does not implement IXmlSerializable ('{1}'.)</value>
+  </data>
+  <data name="XmlDictionaryStringIDUndefinedStatic" xml:space="preserve">
+    <value>XmlDictionaryString ID {0} not defined in the static dictionary.</value>
+  </data>
+  <data name="KnownTypeAttributeOneScheme" xml:space="preserve">
+    <value>Type '{0}': If a KnownTypeAttribute attribute specifies a method it must be the only KnownTypeAttribute attribute on that type.</value>
+  </data>
+  <data name="PartialTrustDataContractOnDeserializedNotPublic" xml:space="preserve">
+    <value>The data contract type '{0}' cannot be deserialized because the OnDeserialized method '{1}' is not public. Making the method public will fix this error. Alternatively, you can make it internal, and use the InternalsVisibleToAttribute attribute on your assembly in order to enable serialization of internal members - see documentation for more details. Be aware that doing so has certain security implications.</value>
+  </data>
+  <data name="XmlInvalidFormat" xml:space="preserve">
+    <value>The input source is not correctly formatted.</value>
+  </data>
+  <data name="CanOnlyStoreIntoArgOrLocGot0" xml:space="preserve">
+    <value>An internal error has occurred. Data can only be stored into ArgBuilder or LocalBuilder. Got: {0}.</value>
+  </data>
+  <data name="ValueMustBeInRange" xml:space="preserve">
+    <value>The value of this argument must fall within the range {0} to {1}.</value>
+  </data>
+  <data name="ReferencedTypeMatchingMessage" xml:space="preserve">
+    <value>(matching)</value>
+  </data>
+  <data name="XmlEndElementExpected" xml:space="preserve">
+    <value>End element '{0}' from namespace '{1}' expected. Found {2}.</value>
+  </data>
+  <data name="PartialTrustCollectionContractTypeNotPublic" xml:space="preserve">
+    <value>The collection data contract type '{0}' cannot be deserialized because it does not have a public parameterless constructor. Adding a public parameterless constructor will fix this error. Alternatively, you can make it internal, and use the InternalsVisibleToAttribute attribute on your assembly in order to enable serialization of internal members - see documentation for more details. Be aware that doing so has certain security implications.</value>
+  </data>
+  <data name="OrderCannotBeNegative" xml:space="preserve">
+    <value>Property 'Order' in DataMemberAttribute attribute cannot be a negative number.</value>
+  </data>
+  <data name="XmlInvalidCommentChars" xml:space="preserve">
+    <value>XML comments cannot contain '--' or end with '-'.</value>
+  </data>
+  <data name="CannotDeserializeRefAtTopLevel" xml:space="preserve">
+    <value>Cannot deserialize since root element references unrecognized object with id '{0}'.</value>
+  </data>
+  <data name="InvalidSizeDefinition" xml:space="preserve">
+    <value>Invalid Size '{0}'. Must be non-negative integer.</value>
+  </data>
+  <data name="OffsetExceedsBufferSize" xml:space="preserve">
+    <value>The specified offset exceeds the buffer size ({0} bytes).</value>
+  </data>
+  <data name="XmlCanonicalizationStarted" xml:space="preserve">
+    <value>Canonicalization already started.</value>
+  </data>
+  <data name="ErrorWriteStartObject" xml:space="preserve">
+    <value>There was an error writing start element of object {0}. {1}</value>
+  </data>
+  <data name="XmlOnlyWhitespace" xml:space="preserve">
+    <value>Only whitespace characters can be written with this method.</value>
+  </data>
+  <data name="XmlFoundElement" xml:space="preserve">
+    <value>element '{0}' from namespace '{1}'</value>
+  </data>
+  <data name="XmlExpectedEncoding" xml:space="preserve">
+    <value>The expected encoding '{0}' does not match the actual encoding '{1}'.</value>
+  </data>
+  <data name="EnumTypeCannotHaveIsReference" xml:space="preserve">
+    <value>Enum type '{0}' cannot have the IsReference setting of '{1}'. Either change the setting to '{2}', or remove it completely.</value>
+  </data>
+  <data name="ReferencedTypeNotMatchingMessage" xml:space="preserve">
+    <value>(not matching)</value>
+  </data>
+  <data name="IsAnyCannotHaveXmlRoot" xml:space="preserve">
+    <value>Type '{0}' cannot specify an XmlRootAttribute attribute because its IsAny setting is 'true'. This type must write all its contents including the root element. Verify that the IXmlSerializable implementation is correct.</value>
+  </data>
+  <data name="XmlDuplicateAttribute" xml:space="preserve">
+    <value>Duplicate attribute found. Both '{0}' and '{1}' are from the namespace '{2}'.</value>
+  </data>
+  <data name="NonAttributedSerializableTypesMustHaveDefaultConstructor" xml:space="preserve">
+    <value>The Type '{0}' must have a parameterless constructor.</value>
+  </data>
+  <data name="XmlDeclMissing" xml:space="preserve">
+    <value>An XML declaration is required for all non-UTF8 documents.</value>
+  </data>
+  <data name="XmlArrayTooSmallInput" xml:space="preserve">
+    <value>Array too small.  Length of available data must be at least {0}.</value>
+  </data>
+  <data name="SerializationInfo_ConstructorNotFound" xml:space="preserve">
+    <value>The constructor with parameters (SerializationInfo, StreamingContext) is not found in ISerializable type '{0}'.</value>
+  </data>
+  <data name="CannotExportNullKnownType" xml:space="preserve">
+    <value>Cannot export null type provided via KnownTypesCollection.</value>
+  </data>
+  <data name="ParameterCountMismatch" xml:space="preserve">
+    <value>Invalid number of parameters to call method '{0}'. Expected '{1}' parameters, but '{2}' were provided.</value>
+  </data>
+  <data name="JsonInvalidLocalNameEmpty" xml:space="preserve">
+    <value>The empty string is not a valid local name in JSON.</value>
+  </data>
+  <data name="XmlMalformedDecl" xml:space="preserve">
+    <value>Malformed XML declaration.</value>
+  </data>
+  <data name="XmlDictionaryStringIDUndefinedSession" xml:space="preserve">
+    <value>XmlDictionaryString ID {0} not defined in the XmlBinaryReaderSession.</value>
+  </data>
+  <data name="MissingGetSchemaMethod" xml:space="preserve">
+    <value>Type '{0}' does not have a static method '{1}' that takes a parameter of type 'System.Xml.Schema.XmlSchemaSet' as specified by the XmlSchemaProviderAttribute attribute.</value>
+  </data>
+  <data name="ValueTypeCannotHaveId" xml:space="preserve">
+    <value>ValueType '{0}' cannot have id.</value>
+  </data>
+  <data name="InvalidDataContractName" xml:space="preserve">
+    <value>Type '{0}' cannot have DataContractAttribute attribute Name set to null or empty string.</value>
+  </data>
+  <data name="InvalidReturnTypeOnGetSchemaMethod" xml:space="preserve">
+    <value>Method '{0}.{1}()' returns '{2}'. The return type must be compatible with '{3}'.</value>
+  </data>
+  <data name="XmlStartElementExpected" xml:space="preserve">
+    <value>Start element expected. Found {0}.</value>
+  </data>
+  <data name="NonOptionalFieldMemberOnIsReferenceSerializableType" xml:space="preserve">
+    <value>{0}.{1}' is not marked with OptionalFieldAttribute, thus indicating that it must be serialized. However, '{0}' derives from a class marked with DataContractAttribute and an IsReference setting of '{2}'. It is not possible to have required data members on IsReference classes. Either decorate '{0}.{1}' with OptionalFieldAttribute, or disable the IsReference setting on the appropriate parent class.</value>
+  </data>
+  <data name="InvalidReturnSchemaOnGetSchemaMethod" xml:space="preserve">
+    <value>Method '{0}.GetSchema()' must return a schema with a valid Id.</value>
+  </data>
+  <data name="ExpectingElement" xml:space="preserve">
+    <value>Expecting element '{1}' from namespace '{0}'.</value>
+  </data>
+  <data name="CollectionMustHaveGetEnumeratorMethod" xml:space="preserve">
+    <value>Collection type '{0}' does not have a valid GetEnumerator method.</value>
+  </data>
+  <data name="SerializationCodeIsMissingForType" xml:space="preserve">
+    <value>Type '{0}' cannot be serialized, serialization code for the type is missing. Consult the SDK documentation for adding it as a root serialization type.</value>
+  </data>
+  <data name="ExtensionDataSetMustReturnVoid" xml:space="preserve">
+    <value>IExtensibleDataObject property setter '{1}' in type '{0}' must return void.</value>
+  </data>
+  <data name="XmlDeclMissingVersion" xml:space="preserve">
+    <value>Version not found in XML declaration.</value>
+  </data>
+  <data name="CannotExportNullAssembly" xml:space="preserve">
+    <value>Cannot export null assembly provided via '{0}' parameter.</value>
+  </data>
+  <data name="CollectionTypeDoesNotHaveDefaultCtor" xml:space="preserve">
+    <value>{0} does not have a default constructor.</value>
+  </data>
+  <data name="CallbacksCannotBeVirtualMethods" xml:space="preserve">
+    <value>Virtual Method '{0}' of type '{1}' cannot be marked with '{2}' attribute. </value>
+  </data>
+  <data name="AttributeNotFound" xml:space="preserve">
+    <value>XML '{2}' '{3}:{4}' does not contain expected attribute '{0}:{1}'. The deserializer has no knowledge of which type to deserialize. Check that the type being serialized has the same contract as the type being deserialized.</value>
+  </data>
+  <data name="XmlFoundComment" xml:space="preserve">
+    <value>comment '{0}'</value>
+  </data>
+  <data name="XmlFullStartElementNameExpected" xml:space="preserve">
+    <value>Non-empty start element '{0}' expected. Found {1}.</value>
+  </data>
+  <data name="XmlFoundNodeType" xml:space="preserve">
+    <value>node {0}</value>
+  </data>
+  <data name="IXmlSerializableMissingEndElements" xml:space="preserve">
+    <value>IXmlSerializable.WriteXml method of type '{0}' did not close all open tags. Verify that the IXmlSerializable implementation is correct.</value>
+  </data>
+  <data name="InvalidDataContractNamespace" xml:space="preserve">
+    <value>Type '{0}' cannot have DataContractAttribute attribute Namespace set to null.</value>
+  </data>
+  <data name="ValueTypeCannotHaveIsReference" xml:space="preserve">
+    <value>Value type '{0}' cannot have the IsReference setting of '{1}'. Either change the setting to '{2}', or remove it completely. </value>
+  </data>
+  <data name="InvalidDataMemberName" xml:space="preserve">
+    <value>Member '{0}' in type '{1}' cannot have DataMemberAttribute attribute Name set to null or empty string.</value>
+  </data>
+  <data name="CollectionAssignedToIncompatibleInterface" xml:space="preserve">
+    <value>'{0}' is a collection type and cannot be serialized when assigned to an interface type that does not implement IEnumerable ('{1}'.)</value>
+  </data>
+  <data name="AmbiguousReferencedCollectionTypes3" xml:space="preserve">
+    <value>List of referenced collection types contains more than one type with data contract name '{0}' in namespace '{1}'. Include only one of the following types. Only matching types can be valid references: {2}</value>
+  </data>
+  <data name="AmbiguousReferencedCollectionTypes1" xml:space="preserve">
+    <value>List of referenced collection types contains more than one type with same data contract name. Include only one of the following types. Only matching types can be valid references: {0}</value>
+  </data>
+  <data name="IsAnyCannotBeSerializedAsDerivedType" xml:space="preserve">
+    <value>An object of type '{0}' cannot be serialized at the top level for IXmlSerializable root type '{1}' since its IsAny setting is 'true'. This type must write all its contents including the root element. Verify that the IXmlSerializable implementation is correct.</value>
+  </data>
+  <data name="JsonInvalidMethodBetweenStartEndAttribute" xml:space="preserve">
+    <value>Cannot write content while an attribute is being written.</value>
+  </data>
+  <data name="ObjectTableOverflow" xml:space="preserve">
+    <value>An internal error has occurred. Object table overflow. This could be caused by serializing or deserializing extremely large object graphs.</value>
+  </data>
+  <data name="PartialTrustDataContractFieldSetNotPublic" xml:space="preserve">
+    <value>The data contract type '{0}' cannot be deserialized because the member '{1}' is not public. Making the member public will fix this error. Alternatively, you can make it internal, and use the InternalsVisibleToAttribute attribute on your assembly in order to enable serialization of internal members - see documentation for more details. Be aware that doing so has certain security implications.</value>
+  </data>
+  <data name="XmlInvalidVersion" xml:space="preserve">
+    <value>XML version must be '1.0'.</value>
+  </data>
+  <data name="KnownTypeAttributeUnknownMethod" xml:space="preserve">
+    <value>KnownTypeAttribute attribute on type '{1}' specifies a method named '{0}' to provide known types. Static method '{0}()' was not found on this type. Ensure that the method exists and is marked as static.</value>
+  </data>
+  <data name="EncounteredWithNameNamespace" xml:space="preserve">
+    <value>{0}. Encountered '{1}'  with name '{2}', namespace '{3}'.</value>
+  </data>
+  <data name="ValueTypeCannotBeNull" xml:space="preserve">
+    <value>ValueType '{0}' cannot be null.</value>
+  </data>
+  <data name="InvalidCollectionDataContract" xml:space="preserve">
+    <value>Type '{0}' with CollectionDataContractAttribute attribute is an invalid collection type since it</value>
+  </data>
+  <data name="XmlBadBOM" xml:space="preserve">
+    <value>Unrecognized Byte Order Mark.</value>
+  </data>
+  <data name="IXmlSerializableMustHaveDefaultConstructor" xml:space="preserve">
+    <value>IXmlSerializable Type '{0}' must have default constructor.</value>
+  </data>
+  <data name="XmlKeyAlreadyExists" xml:space="preserve">
+    <value>The specified key already exists in the dictionary.</value>
+  </data>
+  <data name="PartialTrustDataContractOnDeserializingNotPublic" xml:space="preserve">
+    <value>The data contract type '{0}' cannot be deserialized because the OnDeserializing method '{1}' is not public. Making the method public will fix this error. Alternatively, you can make it internal, and use the InternalsVisibleToAttribute attribute on your assembly in order to enable serialization of internal members - see documentation for more details. Be aware that doing so has certain security implications.</value>
+  </data>
+  <data name="DupKeyValueName" xml:space="preserve">
+    <value>The collection data contract type '{0}' specifies the same value '{1}' for both the KeyName and the ValueName properties. This is not allowed. Consider changing either the KeyName or the ValueName property.</value>
+  </data>
+  <data name="XmlInvalidStream" xml:space="preserve">
+    <value>Stream returned by IStreamProvider cannot be null.</value>
+  </data>
+  <data name="XmlInvalidConversionWithoutValue" xml:space="preserve">
+    <value>The value cannot be parsed as the type '{0}'.</value>
+  </data>
+  <data name="XmlMaxDepthExceeded" xml:space="preserve">
+    <value>The maximum read depth ({0}) has been exceeded because XML data being read has more levels of nesting than is allowed by the quota. This quota may be increased by changing the MaxDepth property on the XmlDictionaryReaderQuotas object used when creating the XML reader.</value>
+  </data>
+  <data name="MissingSchemaType" xml:space="preserve">
+    <value>Schema type '{0}' returned by CLR type '{1}' is not found in the XmlSchemaSet.</value>
+  </data>
+  <data name="DeserializedObjectWithIdNotFound" xml:space="preserve">
+    <value>Deserialized object with reference id '{0}' not found in stream.</value>
+  </data>
+  <data name="JsonPrefixMustBeNullOrEmpty" xml:space="preserve">
+    <value>Encountered unexpected prefix '{0}'. The prefix must be null or empty.</value>
+  </data>
+  <data name="JsonInvalidBytes" xml:space="preserve">
+    <value>Invalid byte encoding.</value>
+  </data>
+  <data name="ResolveTypeReturnedNull" xml:space="preserve">
+    <value>An object of type '{0}' which derives from DataContractResolver returned a null typeName or typeNamespace but not both from its TryResolveType method when attempting to resolve the name for an object of type '{1}'. Change the TryResolveType implementation to return non-null values, or to return null values for both typeName and typeNamespace in order to serialize as the declared type.</value>
+  </data>
+  <data name="SurrogatesWithGetOnlyCollectionsNotSupportedSerDeser" xml:space="preserve">
+    <value>Using surrogates with get-only collection properties is not supported.  Consider removing the surrogate associated with '{0}'.</value>
+  </data>
+  <data name="InvalidMember" xml:space="preserve">
+    <value>Member '{0}.{1}' cannot be serialized since it is neither a field nor a property, and therefore cannot be marked with the DataMemberAttribute attribute. Remove the DataMemberAttribute attribute from the '{1}' member.</value>
+  </data>
+  <data name="JsonInvalidFFFE" xml:space="preserve">
+    <value>Characters with hexadecimal values 0xFFFE and 0xFFFF are not valid.</value>
+  </data>
+  <data name="JsonOnlyWhitespace" xml:space="preserve">
+    <value>Unexpected character '{0}'. '{1}' can write only whitespace characters.</value>
+  </data>
+  <data name="XmlInvalidRootData" xml:space="preserve">
+    <value>The data at the root level is invalid.</value>
+  </data>
+  <data name="EnumTypeNotSupportedByDataContractJsonSerializer" xml:space="preserve">
+    <value>DataContractJsonSerializer does not support data members of type '{0}'.  Consider using int, System.Object, or a concrete enum definition instead.</value>
+  </data>
+  <data name="IsNotAssignableFrom" xml:space="preserve">
+    <value>An internal error has occurred. '{0}' is not assignable from '{1}' - error generating code for serialization.</value>
+  </data>
+  <data name="TooManyDataMembers" xml:space="preserve">
+    <value>Member '{0}.{1}' has more than one DataMemberAttribute attribute.</value>
+  </data>
+  <data name="CollectionTypeCannotHaveDataContract" xml:space="preserve">
+    <value>{0} has DataContractAttribute attribute.</value>
+  </data>
+  <data name="InvalidPrimitiveType" xml:space="preserve">
+    <value>Type '{0}' is not a valid serializable type.</value>
+  </data>
+  <data name="XmlElementAttributes" xml:space="preserve">
+    <value>Only Element nodes have attributes.</value>
+  </data>
+  <data name="OnlyDataContractTypesCanHaveExtensionData" xml:space="preserve">
+    <value>Type '{0}' does not have DataContractAttribute attribute and therefore cannot support IExtensibleDataObject. </value>
+  </data>
+  <data name="GenericNameBraceMismatch" xml:space="preserve">
+    <value>The data contract name '{0}' for type '{1}' has a curly brace '{{' that is not matched with a closing curly brace. Curly braces have special meaning in data contract names - they are used to customize the naming of data contracts for generic types.</value>
+  </data>
+  <data name="InvalidCharacterEncountered" xml:space="preserve">
+    <value>Encountered invalid character '{0}'.</value>
+  </data>
+  <data name="XmlBase64DataExpected" xml:space="preserve">
+    <value>Base64 encoded data expected. Found {0}.</value>
+  </data>
+  <data name="GenericCallbackException" xml:space="preserve">
+    <value>A user callback threw an exception.  Check the exception stack and inner exception to determine the callback that failed.</value>
+  </data>
+  <data name="ClrTypeNotFound" xml:space="preserve">
+    <value>The deserializer cannot load the type to deserialize because type '{1}' could not be found in assembly

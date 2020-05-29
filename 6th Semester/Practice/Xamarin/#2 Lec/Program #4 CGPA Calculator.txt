@@ -1,0 +1,37 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.WriteLine("Enter meter Subject1's CA Marks  : ");
+		double CaMarks = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Enter meter Subject1's Theory Mid Term Marks  : ");
+		double MidMarks = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Enter meter Subject1's Theory End Term Marks  : ");
+		double EndMarks = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Enter meter Subject1's Attendence Marks  : ");
+		double AttMarks = int.Parse(Console.ReadLine());
+		
+		
+		
+		CaMarks = Math.Ceiling(((CaMarks * 25 ) / 100 ));
+		MidMarks =  Math.Ceiling(( MidMarks * 20 ) / 40);
+		EndMarks =  Math.Ceiling((EndMarks * 50 ) / 70);
+		AttMarks = Math.Ceiling( (AttMarks * 5) / 5);
+		
+		double TotMarks = CaMarks + MidMarks + EndMarks + AttMarks;
+		Console.WriteLine("CaA Weightage" + CaMarks);
+		Console.WriteLine("Mid Term Weightage" + MidMarks);
+		Console.WriteLine("End Term Weightage" + EndMarks);
+		Console.WriteLine("Attendence Weightage" + AttMarks);
+		
+		Console.WriteLine("Total number of coins are " + TotMarks);
+		Console.WriteLine("CGPA " + TotMarks/10);
+			
+	}
+}

@@ -1,0 +1,293 @@
+fProgramming in R
+
+	Vector arithmetic
+		addition subtraction multiplication division
+v1=c(5,3,4,3)
+> v2=c(3,5,7,4)
+> v3=v1+v2
+> v3
+[1]  8  8 11  7
+
+
+		vector element recycling
+v1<-c(3,4,5,6,3,11)
+> v2<-c(4,11)
+# v2 becomes c(4,11,4,11,4,11)
+> add.result<-v1+v2
+> print(add.result)
+[1]  7 15  9 17  7 22
+points: v2 will not replicate if the larger value is not divisible by small value. 
+
+		vector element sorting
+> v<-c(3,8,4,5,0,11,-9,304)	
+> sort.result<-sort(v)
+> sort.result
+[1]  -9   0   3   4   5   8  11 304
+
+Sorting in descending order
+> sort.result<-sort(v,decreasing=TRUE)
+> sort.result
+[1] 304  11   8   5   4   3   0  -9
+
+
+v1<-c("red","blue","yellow","violet")
+> sort.result<-sort(v1)
+> sort.result
+[1] "blue"   "red"  "violet" "yellow"
+
+	Sorting in descending order
+
+> sort.result<-sort(v1,decreasing=TRUE)
+> sort.result
+[1] "yellow" "violet" "red"    "blue"  
+
+	Order() function
+this function will sort and shows the index position of the values
+x=c(7,1,8,3,2,6,5,2,2,4)
+> order(x)
+ [1]  2  5  8  9  4 10  7  6  1  3
+		Sorting in descending order
+> order(x,decreasing=TRUE)
+ [1]  3  1  6  7 10  4  5  8  9  2
+it will sort and show the values of sorted indexes.
+x[order(x)]
+ [1] 1 2 2 2 3 4 5 6 7 8
+
+	modify	Vector in R
+> x<-c(-3,-2,-1,0,1,2,3)
+> x
+[1] -3 -2 -1  0  1  2  3
+> x[2]<-0;x
+[1] -3  0 -1  0  1  2  3
+> x[x<0]<-5;x
+[1] 5 0 5 0 1 2 3
+> x<-x[1:4];x
+[1] 5 0 5 0
+
+	delete a vector
+> x
+[1] 5 0 5 0
+> x<-NULL
+> x
+NULL
+	NA value and how to handle NA value
+sum (2,7,5)
+[1] 14
+> x=c(2,NA,3,1,4)
+> sum(x)
+[1] NA
+> sum(x,na.rm=TRUE)
+[1] 10
+> mean(x,na.rm=TRUE)
+[1] 2.5
+> prod(x,na.rm=TRUE)
+[1] 24
+
+	Vector has one dimension 		
+
+		Matrix has two or more dimensions 
+	By defualt matrix is column wise
+> matrix(1:9, nrow = 3, ncol=3)
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+
+> matrix(1:9, nrow = 3)
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+	creatin row wise matrix
+
+matrix(1:9, nrow = 3, byrow=TRUE)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+
+	giving names to the headings
+> x<-matrix(1:9, nrow = 3, dimnames = list(c("X","Y","Z"), c("A","B","C")))
+  A B C
+X 1 4 7
+Y 2 5 8
+Z 3 6 9
+
+> colnames(x)
+[1] "A" "B" "C"
+> rownames(x)
+[1] "X" "Y" "Z"
+
+	Another way of creating matrix
+	
+	column wise
+cbind(c(1,2,3),c(4,5,6))
+     [,1] [,2]
+[1,]    1    4
+[2,]    2    5
+[3,]    3    6
+	row wise
+> rbind(c(1,2,3),c(4,5,6))
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+
+Another way of creating matrix using vector
+x <-c(1,2,3,4,5,6)
+> class(x)
+[1] "numeric"
+> dim(x) <-c(2,3) #number of rows and columns
+> x
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+class(x)
+		Accessing elements of matrix
+x<-matrix(1:9, nrow = 3, ncol=3)
+> x
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+	# accessing 1 and 2 row and 2 , 3 column	
+x[c(1,2),c(2,3)]
+     [,1] [,2]
+[1,]    4    7
+[2,]    5    8
+
+	# accessing 3 and 2 rows and all columns
+x[c(3,2),]
+     [,1] [,2] [,3]
+[1,]    3    6    9
+[2,]    2    5    8
+
+	# accesing all the columns and rows
+> x[,]
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+	# accessing all the columns and rows ecept the first row 
+> x[-1,]
+     [,1] [,2] [,3]
+[1,]    2    5    8
+[2,]    3    6    9
+
+	# accessing columns wise
+> x[1:4]
+[1] 1 2 3 4
+	# accessing specific columns
+> x[c(3,5,7)]
+[1] 3 5 7
+ 	
+	Using Logical vector as index
+
+> x
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+> x[c(TRUE,FALSE,TRUE),c(TRUE,TRUE,FALSE)]
+     [,1] [,2]
+[1,]    1    4
+[2,]    3    6
+> x[c(TRUE,FALSE),c(2,3)]
+     [,1] [,2]
+[1,]    4    7
+[2,]    6    9
+
+
+	Using character index
+> x<-matrix(1:9, nrow = 3, dimnames = list(c("X","Y","Z"), c("A","B","C")))
+> x
+  A B C
+X 1 4 7
+Y 2 5 8
+Z 3 6 9
+> x[,"A"]
+X Y Z 
+1 2 3 
+> 
+> x[TRUE,c("A","C")]
+  A C
+X 1 7
+Y 2 8
+Z 3 9
+> x[2:3,c("A","C")]
+  A C
+Y 2 8
+Z 3 9
+> 
+
+	Modifying a Matrix in R
+> x
+  A B C
+X 1 4 7
+Y 2 5 8
+Z 3 6 9
+	#Selecting a specific position of in Matrix
+> x[2,2]<-10
+> x
+  A  B C
+X 1  4 7
+Y 2 10 8
+Z 3  6 9
+	#selecting from all rows and columns and applying condition
+> x[x<5]<-0;x
+  A  B C
+X 0  0 7
+Y 0 10 8
+Z 0  6 9
+
+	Transpose of Matrix
+> x
+  A  B C
+X 0  0 7
+Y 0 10 8
+Z 0  6 9
+> t(x)
+  X  Y Z
+A 0  0 0
+B 0 10 6
+C 7  8 9
+	adding row or column
+adding column
+> cbind(x,c(1,2,3))
+  A  B C  
+X 0  0 7 1
+Y 0 10 8 2
+Z 0  6 9 3
+
+adding row
+> rbind(x,c(1,2,3))
+  A  B C
+X 0  0 7
+Y 0 10 8
+Z 0  6 9
+  1  2 3
+
+Modyifyinf a dimension
+> x
+  A  B C  
+X 0  0 7 1
+Y 0 10 8 2
+Z 0  6 9 3
+
+> dim(x)<-c(4,3);
+> x
+     [,1] [,2] [,3]
+[1,]    0   10    9
+[2,]    0    6    1
+[3,]    0    7    2
+[4,]    0    8    3
+
+> dim(x) <-c(1,12)
+> x
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11] [,12]
+[1,]    0    0    0    0   10    6    7    8    9     1     2     3
+
+

@@ -1,0 +1,7 @@
+emp_data<-data.frame(
+Sr.No=c(1,2,3,4,5),
+emp_id=c(1,2,3,4,5),
+emp_name=c("Rick","Dan","Michelle","Ryan","Gary"),
+salary=c(623.30,515.20,611.00,729.00,843.25),
+start_date=as.Date(c("2012-01-01","2013-09-23","2014-11-15","2014-05-11","2015-03-02"),
+srtingsAsFactors=False))

@@ -1,0 +1,18 @@
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\Slider Control.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\Data and time picker.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\Appointment_Management System.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\ca_practice_shoping_items.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#5 lec\App1\App1\App1\obj\Debug\netstandard2.0\Page2.xaml.g.cs

@@ -1,0 +1,15 @@
+Data Wrangling
+	it is like cleaning of data
+	raw data will remain raw data but after cleaning 
+	it is cleaning for analysis purpose
+
+Steps in data analysis:
+	1. store the data
+	2. transform the data according to our requirements
+	3. project data (visualization)
+	4. model fitting
+Data wrangling packages:
+Tidyr	 : to make the data tidy cleaning
+Plyr	 : like normalization in dbms by spliting data and apply some logic and combine the data again	
+Dplyr	 : a new version of plyr
+Reshape2 : to reshape the data

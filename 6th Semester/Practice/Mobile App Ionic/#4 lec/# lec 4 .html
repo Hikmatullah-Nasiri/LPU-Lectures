@@ -1,0 +1,32 @@
+
+    <ion-header>
+        <ion-toolbar color="warning">
+            <ion-title>
+            Addition
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+<ion-content> 
+
+        <ion-item>
+        <ion-label position=floating>First Value</ion-label>
+        <ion-input type="text"[(ngModel)]=n1> </ion-input>                
+        </ion-item>
+        
+        <ion-item>
+        <ion-label position=floating>Second Value</ion-label>
+        <ion-input type="text"[(ngModel)]=n2> </ion-input>        
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>Sum is {{sum}} </ion-label>
+        </ion-item>
+        
+        <ion-item>
+        
+        <ion-button (click)="addition()">Sum</ion-button>
+        <ion-button (click)="clear()">Clear</ion-button>
+        </ion-item>
+</ion-content>
+

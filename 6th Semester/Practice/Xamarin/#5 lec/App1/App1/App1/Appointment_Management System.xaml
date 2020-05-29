@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Appointment_Management_System">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl1" Text="Appointment System" FontSize="Large"/>
+            <Entry x:Name="dname" Placeholder="Enter Doctor's Name"/>
+            <Entry x:Name="dpname" Placeholder="Enter Department"/>
+            <Label Text="Select Date" FontSize="Medium"/>
+            <DatePicker x:Name="dp" MinimumDate="01/01/2020"
+                        MaximumDate="12/30/2020"
+                        DateSelected="dateselect"
+                        />
+            <Label Text="Time" FontSize="Medium" />
+            <TimePicker x:Name="tp"/>
+            <Button Clicked="Submit" Text="Submit"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

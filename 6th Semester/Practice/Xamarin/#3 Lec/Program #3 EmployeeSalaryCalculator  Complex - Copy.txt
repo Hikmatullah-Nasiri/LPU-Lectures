@@ -1,0 +1,64 @@
+using System;
+	
+public class Program
+{
+	class EmployeeSalary
+	{
+	int Emp_Id;
+	string Emp_Name;
+	double Basic_Salary;
+	double NetSalary;
+	double TA, HA, TAX;
+	
+	//Below are the variables for designation calculator function
+	string Emp_desig;
+	public void getDetails(){
+	Console.WriteLine("Enter your Name ");
+	Emp_Name = Console.ReadLine();
+	
+	Console.WriteLine("Enter your Employee ID ");
+	Emp_Id = int.Parse(Console.ReadLine());
+	
+	Console.WriteLine("Enter your Basic_Salary ");
+	Basic_Salary = int.Parse(Console.ReadLine());
+	}
+	
+	public void calSalary()
+	{
+		TA = 1000;
+		HA = 5000;
+		double TotSalary = Basic_Salary + TA + HA;
+		TAX = (TotSalary * 10)/100;
+		NetSalary = TotSalary - TAX;
+		Console.WriteLine(Emp_Name+" your Total Salary is "+TotSalary);
+		Console.WriteLine(Emp_Name+" your Net Salary is "+NetSalary);
+	}
+	public void desigCalc(){
+	Console.WriteLine("Enter your Desination");
+	Emp_desig = Console.ReadLine();
+	if(Emp_desig=="Project Manager")
+	{
+		Basic_Salary = 30000;
+	}
+	else if(Emp_desig=="Designer")
+	{
+	Basic_Salary = 25000;
+	}	
+	else {
+	Basic_Salary = 20000;
+	}	
+		
+		
+		
+	}
+	
+	}				
+	
+	public static void Main()
+	{
+		EmployeeSalary emp=new EmployeeSalary();
+		emp.desigCalc();
+		emp.calSalary();
+		
+	}
+}

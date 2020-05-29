@@ -1,0 +1,5 @@
+a = as.integer(readline(prompt = "Enter value 1 :"))
+b = as.integer(readline(prompt = "Enter value 2 :"))
+c = as.integer(readline("1 add, 2 subtraction,3 multiplication, 4 division :"))
+d=switch(c,a+b,a-b,a*b,a/b)
+print(d)

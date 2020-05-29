@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.SignUp">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="AliceBlue"/>
+                <Setter Property="WidthRequest" Value="200" />
+            </Style>
+            </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sign Up" HorizontalOptions="Center"/>
+            <Label Text="Name :"/>
+            <Entry Placeholder="Enter your name"/>
+
+            <Label Text="Last Name :"/>
+            <Entry Placeholder="Enter your last name" />
+
+            <Label Text="Email :"/>
+            <Entry Placeholder="example@email.com" />
+
+            <Label Text="Address :" />
+            <Entry Placeholder="Enter your current address" />
+
+            <Label Text="Password :"/>
+            <Entry IsPassword="True" Placeholder="Enter the password" />
+            <Button Text="Submit" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

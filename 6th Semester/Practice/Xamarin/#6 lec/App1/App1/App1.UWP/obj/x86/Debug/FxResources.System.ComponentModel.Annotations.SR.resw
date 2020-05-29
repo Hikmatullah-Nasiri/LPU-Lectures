@@ -1,0 +1,175 @@
+ï»¿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CompareAttribute_UnknownProperty" xml:space="preserve">
+    <value>Could not find a property named {0}.</value>
+  </data>
+  <data name="CustomValidationAttribute_Type_Conversion_Failed" xml:space="preserve">
+    <value>Could not convert the value of type '{0}' to '{1}' as expected by method {2}.{3}.</value>
+  </data>
+  <data name="RangeAttribute_MinGreaterThanMax" xml:space="preserve">
+    <value>The maximum value '{0}' must be greater than or equal to the minimum value '{1}'.</value>
+  </data>
+  <data name="CustomValidationAttribute_Type_Must_Be_Public" xml:space="preserve">
+    <value>The custom validation type '{0}' must be public.</value>
+  </data>
+  <data name="RangeAttribute_ValidationError" xml:space="preserve">
+    <value>The field {0} must be between {1} and {2}.</value>
+  </data>
+  <data name="ArgumentIsNullOrWhitespace" xml:space="preserve">
+    <value>The argument '{0}' cannot be null, empty or contain only whitespace.</value>
+  </data>
+  <data name="RegularExpressionAttribute_Empty_Pattern" xml:space="preserve">
+    <value>The pattern must be set to a valid regular expression.</value>
+  </data>
+  <data name="CreditCardAttribute_Invalid" xml:space="preserve">
+    <value>The {0} field is not a valid credit card number.</value>
+  </data>
+  <data name="UIHintImplementation_ControlParameterKeyIsNotAString" xml:space="preserve">
+    <value>The key parameter at position {0} with value '{1}' is not a string. Every key control parameter must be a string.</value>
+  </data>
+  <data name="StringLengthAttribute_ValidationError" xml:space="preserve">
+    <value>The field {0} must be a string with a maximum length of {1}.</value>
+  </data>
+  <data name="LocalizableString_LocalizationFailed" xml:space="preserve">
+    <value>Cannot retrieve property '{0}' because localization failed.  Type '{1}' is not public or does not contain a public static string property with the name '{2}'.</value>
+  </data>
+  <data name="StringLengthAttribute_ValidationErrorIncludingMinimum" xml:space="preserve">
+    <value>The field {0} must be a string with a minimum length of {2} and a maximum length of {1}.</value>
+  </data>
+  <data name="CustomValidationAttribute_Method_Required" xml:space="preserve">
+    <value>The CustomValidationAttribute.Method was not specified.</value>
+  </data>
+  <data name="AttributeStoreH      d°     J°      ä    šÒÁvÖ                < m u g . j s H      d°     J°     Hä    šÒÁvÖ  €             < m u g . j s P      f°     e°     ä    ¢.ÒÁvÖ                < l e r n a . j s o n P      f°     e°     àä    ¢.ÒÁvÖ  €             < l e r n a . j s o n X      g°     e°     0ä    ¢.ÒÁvÖ                < p a c k a g e . j s o n     X      g°     e°     ˆä    ªUÒÁvÖ  €             < p a c k a g e . j s o n     P      j°     i°     àä    ªUÒÁvÖ                < i n d e x . j s     P      j°     i°     0ä    ªUÒÁvÖ  €             < i n d e x . j s     X      k°     i°     €ä    ªUÒÁvÖ                < p a c k a g e . j s o n     X      k°     i°     Øä    ªUÒÁvÖ  €             < p a c k a g e . j s o n     P      i°     h°     0ä    ªUÒÁvÖ               < p a c k a g e - a   P      i°     h°     €ä    ´|ÒÁvÖ  €            < p a c k a g e - a   P      m°     l°     Ðä    ´|ÒÁvÖ                < i n d e x . j s     P      m°     l°      ä    À£ÒÁvÖ  €             < i n d e x . j s     X      n°     l°     pä    À£ÒÁvÖ                < p a c k a g e . j s o n     X      n°     l°     Èä    À£ÒÁvÖ  €             < p a c k a g e . j s o n     P      l°     h°      ä    À£ÒÁvÖ               < p a c k a g e - b   P      l°     h°     pä    À£ÒÁvÖ  €            < p a c k a g e - b   P      h°     e°     Àä    À£ÒÁvÖ               < p a c k a g e s     P      h°     e°     ä    ÊÊÒÁvÖ  €            < p a c k a g e s     P      e°     J°     `ä    ÊÊÒÁvÖ               < m u l t i r e p o   P      e°     J°     °ä    ÊÊÒÁvÖ  €            < m u l t i r e p o   X      q°     p°      ä    ÖñÒÁvÖ                < o t h e r - l i b . j s     X      q°     p°     Xä    ÖñÒÁvÖ  €             < o t h e r - l i b . j s     H      p°     o°     °ä    ÖñÒÁvÖ               < l i b       H      p°     o°     øä    ÖñÒÁvÖ  €            < l i b       P      r°     o°     @ä    ÖñÒÁvÖ                < r o o t . j s       P      r°     o°     ä    ÖñÒÁvÖ  €             < r o o t . j s       P      o°     J°     àä    äÓÁvÖ               < o t h e r _ p a t h P      o°     J°     0ä    äÓÁvÖ  €            < o t h e r _ p a t h P      u°     t°     €ä    ì?ÓÁvÖ                < i n d e x . j s     P      u°     t°     Ðä    ì?ÓÁvÖ  €             < i n d e x . j s     H      t°     s°      ä    ì?ÓÁvÖ               < f o o       H      t°     s°     hä    ì?ÓÁvÖ  €            < f o o       H      s°     J°     °ä    ì?ÓÁvÖ               < q u u x     H      s°     J°     øä    ÷fÓÁvÖ  €            < q u u x     P      y°     x°     @ä    ýÓÁvÖ                < i n d e x . j s     P      y°     x°     ä    ýÓÁvÖ  €             < i n d e x . j s     H      x°     v°     àä    µÓÁvÖ               < f o o       H      x°     v°     (ä    µÓÁvÖ  €            < f o o       H      w°     v°     pä    µÓÁvÖ                < f o o . j s H      w°     v°     ¸ä    µÓÁvÖ  €             < f o o . j s P      v°     J°      ä    µÓÁvÖ               < s a m e _ n a m e s P      v°     J°     Pä    µÓÁvÖ  €            < s a m e _ n a m e s H      }°     |°      ä    ÜÓÁvÖ                < f o o . j s H      }°     |°     èä    ÜÓÁvÖ  €             < f o o . j s X      |°     {°     0ä    ÜÓÁvÖ               < n o d e _ m o d u l e s     X      |°     {°     ˆä    ÔÁvÖ  €            < n o d e _ m o d u l e s     P      °     ~°     àä    ÔÁvÖ                < . g i t k e e p     P      °     ~°     0ä    ÔÁvÖ  €             < . g i t k e e p     X      ~°     {°     €ä    ÔÁvÖ               < s y m l i n k _ t a r g e t                                         X      ~°     {°       ä    ÔÁvÖ  €            < s y m l i n k _ t a r g e t @      {°     z°     X ä    ÔÁvÖ               < _   @      {°     z°     ˜ ä    ÔÁvÖ  €            < _   P      z°     J°     Ø ä    ÔÁvÖ               < s y m l i n k e d   P      z°     J°     (!ä    )*ÔÁvÖ  €            < s y m l i n k e d   P      °     €°     x!ä    )*ÔÁvÖ                < m a i n . j s       P      °     €°     È!ä    )*ÔÁvÖ  €             < m a i n . j s       `      €°     J°     "ä    )*ÔÁvÖ               < w i t h o u t _ b a s e d i r       `      €°     J°     x"ä    3QÔÁvÖ  €            < w i t h o u t _ b a s e d i r       P      J°     #¨    
+ Ø"ä    3QÔÁvÖ               < r e s o l v e r     P      J°     #¨    
+ (#ä    3QÔÁvÖ  €            < r e s o l v e r     X      H°     #¨    
+ x#ä    3QÔÁvÖ                < r e s o l v e r . j s       X      H°     #¨    
+ Ð#ä    3QÔÁvÖ  €             < r e s o l v e r . j s       `      G°     #¨    
+ ($ä    3QÔÁvÖ                 < r e s o l v e r _ s y n c . j s     `      G°     #¨    
+ ˆ$ä    3QÔÁvÖ  €              < r e s o l v e r _ s y n c . j s     P      †°     …°     è$ä    9xÔÁvÖ                < i n d e x . j s     P      †°     …°     8%ä    9xÔÁvÖ  €             < i n d e x . j s     H      …°     „°     ˆ%ä    9xÔÁvÖ               < u t i l     H      …°     „°     Ð%ä    ;ŸÔÁvÖ  €            < u t i l     X      „°     ƒ°     &ä    ;ŸÔÁvÖ               < n o d e _ m o d u l e s     X      „°     ƒ°     p&ä    ;ŸÔÁvÖ  €            < n o d e _ m o d u l e s     X      ƒ°     #¨    
+ È&ä    ;ŸÔÁvÖ               < s h a d o w e d _ c o r e   X      ƒ°     #¨    
+  'ä    ;ŸÔÁvÖ  €            < s h a d o w e d _ c o r e   `      ‚°     #¨    
+ x'ä    ;ŸÔÁvÖ                 < s h a d o w e d _ c o r e . j s     `      ‚°     #¨    
+ Ø'ä    ;ŸÔÁvÖ  €              < s h a d o w e d _ c o r e . j s     P      ‡°     #¨    
+ 8(ä    ;ŸÔÁvÖ                < s u b d i r s . j s P      ‡°     #¨    
+ ˆ(ä    TíÔÁvÖ  €             < s u b d i r s . j s X      ˆ°     #¨    
+ Ø(ä    TíÔÁvÖ                < s y m l i n k s . j s       X      ˆ°     #¨    
+ 0)ä    TíÔÁvÖ  €             < s y m l i n k s . j s       H      #¨    
+ æk     ˆ)ä    TíÔÁvÖ               < t e s t     H      #¨    
+ æk     Ð)ä    TíÔÁvÖ  €            < t e s t     P      æk     i     *ä    TíÔÁvÖ               < r e s o l v e       P      æk     i     h*ä    TíÔÁvÖ  €            < r e s o l v e       X      œl     8k     ¸*ä    TíÔÁvÖ                < . t r a v i s . y m l       X      œl     8k     +ä    cÕÁvÖ  €             < . t r a v i s . y m l     

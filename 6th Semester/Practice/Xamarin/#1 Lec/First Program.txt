@@ -1,0 +1,25 @@
+public class Program
+{
+	public static void Main()
+	{
+			Console.WriteLine("Enter your name");
+			string Name = Console.ReadLine();
+			Console.WriteLine("Enter your Registeration Number");
+			string Id = Console.ReadLine();
+			Console.WriteLine("My name is "+Name);
+			Console.WriteLine("My Registeration # is "+Id);
+			
+			Console.WriteLine("Enter your name");
+			string CheckName = Console.ReadLine();
+			if(CheckName==Name){
+				Console.WriteLine("Welcome "+Name );
+			}
+			else{
+				Console.WriteLine("Sorry your name is not registered" );
+			}
+				
+	}
+}
+
+
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Large" Text="Food Order System" TextColor="Red"/>
+            <Label FontSize="Medium" Text="Select your Item in Five Range" />
+            <Label FontSize="Medium" Text="500-600 for Burger" />
+            <Label FontSize="Medium" Text="600-700 for Rice Bean" />
+            <Label FontSize="Medium" Text="700-800 for Pizza" />
+            <Label FontSize="Medium" Text="800-900 for Large Pizza" />
+            <Label FontSize="Medium" Text="900-1000 for Mutton" />
+            <Label x:Name="lbl1" Text="" FontSize="Large" />
+            <Slider x:Name="sl1" Minimum="0" Maximum="1000" ValueChanged="onvaluechange"/>
+            <Label x:Name="lbl2" Text="" FontSize="Medium" />
+            <Button Text="Order Now" Clicked="order" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

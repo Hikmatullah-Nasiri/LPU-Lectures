@@ -1,0 +1,259 @@
+Ôªø<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InvalidNullArgument" xml:space="preserve">
+    <value>Null is not a valid value for {0}.</value>
+  </data>
+  <data name="ConvertInvalidPrimitive" xml:space="preserve">
+    <value>{0} is not a valid value for {1}.</value>
+  </data>
+  <data name="ErrorMissingPropertyAccessors" xml:space="preserve">
+    <value>Accessor methods for the {0} property are missing.</value>
+  </data>
+  <data name="ErrorInvalidEventType" xml:space="preserve">
+    <value>Invalid type for the {0} event.</value>
+  </data>
+  <data name="TypeDescriptorAlreadyAssociated" xml:space="preserve">
+    <value>The primary and secondary objects are already associated with each other.</value>
+  </data>
+  <data name="InstanceDescriptorMustBeStatic" xml:space="preserve">
+    <value>Parameter must be static.</value>
+  </data>
+  <data name="CultureInfoConverterInvalidCulture" xml:space="preserve">
+    <value>The {0} culture cannot be converted to a CultureInfo object on this computer.</value>
+  </data>
+  <data name="EnumConverterInvalidValue" xml:space="preserve">
+    <value>The value '{0}' is not a valid value for the enum '{1}'.</value>
+  </data>
+  <data name="InstanceCreationEditorDefaultText" xml:space="preserve">
+    <value>(New...)</value>
+  </data>
+  <data name="PropertyTabAttributeTypeLoadException" xml:space="preserve">
+    <value>Couldn't find type {0}</value>
+  </data>
+  <data name="TimerInvalidInterval" xml:space="preserve">
+    <value>'{0}' is not a valid value for 'Interval'. 'Interval' must be greater than {1}.</value>
+  </data>
+  <data name="MaskedTextProviderMaskNullOrEmpty" xml:space="preserve">
+    <value>The Mask value cannot be null or empty.</value>
+  </data>
+  <data name="InstanceDescriptorMustBeReadable" xml:space="preserve">
+    <value>Parameter must be readable.</value>
+  </data>
+  <data name="DuplicateComponentName" xml:space="preserve">
+    <value>Duplicate component name '{0}'.  Component names must be unique and case-insensitive.</value>
+  </data>
+  <data name="LicExceptionTypeOnly" xml:space="preserve">
+    <value>A valid license cannot be granted for the type {0}. Contact the manufacturer of the component for more information.</value>
+  </data>
+  <data name="InstanceDescriptorLengthMismatch" xml:space="preserve">
+    <value>Length mismatch.</value>
+  </data>
+  <data name="InstanceDescriptorCannotBeStatic" xml:space="preserve">
+    <value>Parameter cannot be static.</value>
+  </data>
+  <data name="ErrorInvalidEventHandler" xml:space="preserve">
+    <value>Invalid event handler for the {0} event.</value>
+  </data>
+  <data name="MetaExtenderName" xml:space="preserve">
+    <value>{0} on {1}</value>
+  </data>
+  <data name="TypeDescriptorArgsCountMismatch" xml:space="preserve">
+    <value>The number of elements in the Type and Object arrays must match.</value>
+  </data>
+  <data name="Collection" xml:space="preserve">
+    <value>(Collection)</value>
+  </data>
+  <data name="PropertyValueInvalidEntry" xml:space="preserve">
+    <value>IDictionary parameter contains at least one entry that is not valid. Ensure all values are consistent with the object's properties.</value>
+  </data>
+  <data name="ErrorServiceExists" xml:space="preserve">
+    <value>The service {0} already exists in the service container.</value>
+  </data>
+  <data name="TypeDescriptorUnsupportedRemoteObject" xml:space="preserve">
+    <value>The object {0} is being remoted by a proxy that does not support interface discovery.  This type of remoted object is not supported.</value>
+  </data>
+  <data name="TimerInterval" xml:space="preserve">
+    <value>The number of milliseconds between timer events.</value>
+  </data>
+  <data name="TimerSynchronizingObject" xml:space="preserve">
+    <value>The object used to marshal the event handler calls issued when an interval has elapsed.</value>
+  </data>
+  <data name="InvalidParameter" xml:space="preserve">
+    <value>Invalid value '{1}' for parameter '{0}'.</value>
+  </data>
+  <data name="toStringNone" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="TimerEnabled" xml:space="preserve">
+    <value>Indicates whether the timer is enabled to fire events at a defined interval.</value>
+  </data>
+  <data name="TypeDescriptorExpectedElementType" xml:space="preserve">
+    <value>Expected types in the collection to be of type {0}.</value>
+  </data>
+  <data name="LicMgrContextCannotBeChanged" xml:space="preserve">
+    <value>The CurrentContext property of the LicenseManager is currently locked and cannot be changed.</value>
+  </data>
+  <data name="LicMgrAlreadyLocked" xml:space="preserve">
+    <value>The CurrentContext property of the LicenseManager is already locked by another user.</value>
+  </data>
+  <data name="Array" xml:space="preserve">
+    <value>{0} Array</value>
+  </data>
+  <data name="TimerAutoReset" xml:space="preserve">
+    <value>Indicates whether the timer will be restarted when it is enabled.</value>
+  </data>
+  <data name="PropertyTabAttributeParamsBothNull" xml:space="preserve">
+    <value>An array of tab type names or tab types must be specified</value>
+  </data>
+  <data name="PropertyTabAttributeArrayLengthMismatch" xml:space="preserve">
+    <value>tabClasses must have the same number of items as tabScopes</value>
+  </data>
+  <data name="CHECKOUTCanceled" xml:space="preserve">
+    <value>The checkout was canceled by the user.</value>
+  </data>
+  <data name="CantModifyListSortDescriptionCollection" xml:space="preserve">
+    <value>Once a ListSortDescriptionCollection has been created it can't be modified.</value>
+  </data>
+  <data name="InvalidMemberName" xml:space="preserve">
+    <value>Invalid member name</value>
+  </data>
+  <data name="LicExceptionTypeAndInstance" xml:space="preserve">
+    <value>An instance of type '{1}' was being created, and a valid license could not be granted for the type '{0}'. Please,  contact the manufacturer of the component for more information.</value>
+  </data>
+  <data name="MaskedTextProviderMaskInvalidChar" xml:space="preserve">
+    <value>The specified mask contains invalid characters.</value>
+  </data>
+  <data name="LicMgrDifferentUser" xml:space="preserve">
+    <value>The CurrentContext property of the LicenseManager can only be unlocked with the same contextUser.</value>
+  </data>
+  <data name="CollectionConverterText" xml:space="preserve">
+    <value>(Collection)</value>P      Ñm     òl    	  p‰    36‡¡v÷                < p o p d . j s       P      Ñm     òl    	 Pp‰    4]‡¡v÷  Ä             < p o p d . j s       P      ¶m     òl    	 †p‰    4]‡¡v÷                < p u s h d . j s     P      ¶m     òl    	 p‰    4]‡¡v÷  Ä             < p u s h d . j s     H      ±m     òl    	 @q‰    4]‡¡v÷                < p w d . j s H      ±m     òl    	 àq‰    4]‡¡v÷  Ä             < p w d . j s H      «m     òl    	 –q‰    @Ñ‡¡v÷               
+ < r m . j s   H      «m     òl    	 r‰    @Ñ‡¡v÷  Ä            
+ < r m . j s   H      w     òl    	 `r‰    @Ñ‡¡v÷                < s e d . j s H      w     òl    	 ®r‰    @Ñ‡¡v÷  Ä             < s e d . j s P      ÛÄ     òl    	 r‰    @Ñ‡¡v÷                < t e m p d i r . j s P      ÛÄ     òl    	 @s‰    C´‡¡v÷  Ä             < t e m p d i r . j s P      òî     òl    	 ês‰    C´‡¡v÷                < t e s t . j s       P      òî     òl    	 ‡s‰    C´‡¡v÷  Ä             < t e s t . j s       H      ¨î     òl    	 0t‰    C´‡¡v÷               
+ < t o . j s   H      ¨î     òl    	 xt‰    C´‡¡v÷  Ä            
+ < t o . j s   P      &®    
+ òl    	 ¿t‰    C´‡¡v÷                < t o E n d . j s     P      &®    
+ òl    	 u‰    C´‡¡v÷  Ä             < t o E n d . j s     P      ú®    
+ òl    	 `u‰    C´‡¡v÷                < w h i c h . j s     P      ú®    
+ òl    	 ∞u‰    R“‡¡v÷  Ä             < w h i c h . j s     H      òl    	 }j      v‰    R“‡¡v÷               < s r c       H      òl    	 }j     Hv‰    R“‡¡v÷  Ä            < s r c       P      }j     i     êv‰    R“‡¡v÷               < s h e l l j s       P      }j     i     ‡v‰    R“‡¡v÷  Ä            < s h e l l j s       P      =l    
+ kk     0w‰    Z˘‡¡v÷                < c o d e s . j s o n P      =l    
+ kk     Äw‰    Z˘‡¡v÷  Ä             < c o d e s . j s o n P      %l    
+ kk     –w‰    Z˘‡¡v÷                < H I S T O R Y . m d P      %l    
+ kk      x‰    Z˘‡¡v÷  Ä             < H I S T O R Y . m d P      l     kk     px‰    Z˘‡¡v÷                < i n d e x . j s     P      l     kk     ¿x‰    nG·¡v÷  Ä             < i n d e x . j s     P      ‘k    ' kk     y‰    nG·¡v÷                < L I C E N S E       P      ‘k    ' kk     `y‰    nG·¡v÷  Ä             < L I C E N S E       X      li     kk     ∞y‰    nG·¡v÷                < p a c k a g e . j s o n     X      li     kk     z‰    vn·¡v÷  Ä             < p a c k a g e . j s o n     P      æk     kk     `z‰    vn·¡v÷                < R E A D M E . m d   P      æk     kk     ∞z‰    vn·¡v÷  Ä             < R E A D M E . m d   P      kk     i      {‰    vn·¡v÷               < s t a t u s e s     P      kk     i     P{‰    vn·¡v÷  Ä            < s t a t u s e s     X      ±     ±     †{‰    áï·¡v÷                < c o d e p o i n t a t . j s X      ±     ±     ¯{‰

@@ -1,0 +1,100 @@
+Programming in R
+
+1+1
+
+2+3*4
+
+2^6
+
+exp(1)
+
+sqrt(10)
+
+pi
+
+2*pi*6378
+
+sqrt(2)
+
+seq(1,10, by=.5)
+
+	Vector
+c(2,3,5)
+
+c(TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE)
+
+c("aa","bb","cc","dd","ee")
+
+length(c("aa","bb","cc","dd","ee"))
+
+Repeatation
+rep(1,10)
+	Sequence by default is 1
+seq(2,6)
+	sequence is 4
+seq(4,20,by=4)
+	Assigning vector to the variable
+x <- c(2,0,0,4)
+y <- c(1,9,9,9)
+	Addition of Vector's variable
+x + y
+	Square root of vector's variable
+sqrt(x)
+	Assigning vector to the variable
+v3 <- c(1,2,3,4,5,6,7,8)
+	max function
+max(v3)
+	min function
+min(v3) 
+	length function
+length(v3)
+	which max function finds out the index of max value in vector  variable
+which.max(v3)
+	which min function finds out the index of min value in vector variable
+which.min(v3)
+	this method will findout the value by the help of index location
+
+creating a sequence from 5 to 13
+v<-5:13
+
+Printing function
+print(v)
+
+creating a sequence from 6.6 to 12.6
+v<-6.6:12.6
+
+ v<-3.8:11.4
+> print(v)
+[1]  3.8  4.8  5.8  6.8  7.8  8.8  9.8 10.8
+
+
+
+using psositoin
+t<-c("Sun","Mon","Tue","wed","Thur","Fri","Sat")
+u<-t[c(2,3,6)]
+print(u)
+[1] "Mon" "Tue" "Fri"
+
+	using logical indexing
+v<-t[c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)]
+print(v)
+[1] "Sun"
+	using negative indexing
+v<-t[c(-2,-5)]
+print(v)
+[1] "Sun" "Tue" "wed" "Fri" "Sat"
+
+	using 0/1 indexing
+v<-t[c(0,0,0,0,0,0,0,0,1)]
+print(v)
+[1] "Sun"
+
+
+
+
+
+
+
+
+
+

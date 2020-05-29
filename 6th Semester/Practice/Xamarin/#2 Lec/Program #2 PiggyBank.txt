@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the number of 10Rs coins  : ");
+		int coin10 = int.Parse(Console.ReadLine());
+		Console.WriteLine("Enter the number of 5Rs coins  : ");
+		int coin5 = int.Parse(Console.ReadLine());
+		Console.WriteLine("Enter the number of 2Rs coins  : ");
+		int coin2= int.Parse(Console.ReadLine());
+		Console.WriteLine("Enter the number of 1Rs coins  : ");
+		int coin1 = int.Parse(Console.ReadLine());
+		int result = (coin10*10)+(coin5*5)+(coin2*2)+coin1;
+		Console.WriteLine("Total number of coins are "+result);
+		
+			
+	}
+}

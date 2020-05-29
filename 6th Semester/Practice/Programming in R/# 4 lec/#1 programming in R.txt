@@ -1,0 +1,202 @@
+Repeatation and Sequence
+>rep(1:5, 3)
+[1] 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5
+
+> rep(0:5, each=3)
+ [1] 0 0 0 1 1 1 2 2 2 3 3 3 4 4 4 5 5 5
+
+> rep(1:5, times  =   1:5)
+ [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5
+> rep(1:5, length.out =    7)
+[1] 1 2 3 4 5 1 2
+
+> lo<-rep(c(TRUE,FALSE,TRUE,FALSE),times = c(1,2,3,4))
+> lo
+ [1]  TRUE FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE
+
+Datastructure :
+	Vector: __________	similar values
+	list:_____________	different values
+				|
+				|
+				|	
+	Df Data frame: data is stored in form of table. different values in form of rows and columns.
+> df <- data.frame(
++ name = c ("Ram","Karan","Ankit","Ritika") ,
++ birth = c (1995,1992,2003,2000),
++ gender = factor(c("M","M","M","F"))
++ )
+> df
+    name birth gender
+1    Ram  1995      M
+2  Karan  1992      M
+3  Ankit  2003      M
+4 Ritika  2000      F
+	#Repeatation we can assign logical values to the repeatation
+> lo<-rep(c(TRUE,FALSE,TRUE,FALSE),times = c(1,2,3,4))
+> lo
+ [1]  TRUE FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE
+> vec<-1:10
+> vec
+ [1]  1  2  3  4  5  6  7  8  9 10
+> vec[5]
+[1] 5
+> vec<-vec-1
+> vec[5]
+[1] 4
+> vec[c(5,7,9)]
+[1] 4 6 8
+> vec[lo]
+[1] 0 3 4 5
+> vec[]
+ [1] 0 1 2 3 4 5 6 7 8 9
+> vec<-1:10
+> vec[]
+ [1]  1  2  3  4  5  6  7  8  9 10
+> vec<-vec-2
+> vec[]
+ [1] -1  0  1  2  3  4  5  6  7  8
+> 
+
+> df
+    name birth gender
+1    Ram  1995      M
+2  Karan  1992      M
+3  Ankit  2003      M
+4 Ritika  2000      F
+	Selecting 2nd row and 3 column
+> df[2,3]
+[1] M
+Levels: F M
+	selecting 4 and 2 row and 3 coumn
+> df[c(4,2),3]
+[1] F M
+Levels: F M
+
+> df[2:4,2:3]
+  birth gender
+2  1992      M
+3  2003      M
+4  2000      F
+> df[2:4,]
+    name birth gender
+2  Karan  1992      M
+3  Ankit  2003      M
+4 Ritika  2000      F
+> df[,c(3,2)]
+  gender birth
+1      M  1995
+2      M  1992
+3      M  2003
+4      F  2000
+	Data frame selection
+	selecting row where name is Ram
+	$ is used for columns
+> df[df$name=="Ram",]
+  name birth gender
+1  Ram  1995      M
+	selection of columns where birth is 2000 or more 
+
+> df[df$birth>=2000,c("name","gender")]
+    name gender
+3  Ankit      M
+4 Ritika      F
+ 
+ 
+
+> df
+    name birth gender
+1    Ram  1995      M
+2  Karan  1992      M
+3  Ankit  2003      M
+4 Ritika  2000      F
+> 
+> df[-3,]
+    name birth gender
+1    Ram  1995      M
+2  Karan  1992      M
+4 Ritika  2000      F
+
+> df[c(-1,-3),-2]
+    name gender
+2  Karan      M
+4 Ritika      F
+
+
+
+> #Names of Colums
+> nam<-columns(df)
+Error in columns(df) : could not find function "columns"
+> nam<-colnamnes(df)
+Error in colnamnes(df) : could not find function "colnamnes"
+> nam<-colnames(df)
+> nam
+[1] "name"   "birth"  "gender"
+> nam[-2]
+[1] "name"   "gender"
+> df[,nam[-2]]
+    name gender
+1    Ram      M
+2  Karan      M
+3  Ankit      M
+4 Ritika      F
+> #Addming Columns
+> df$Semster=NA
+
+> df
+    name birth gender Semster
+1    Ram  1995      M      NA
+2  Karan  1992      M      NA
+3  Ankit  2003      M      NA
+4 Ritika  2000      F      NA
+> df$Semster=c(7,8,3,1)
+> df
+    name birth gender Semster
+1    Ram  1995      M       7
+2  Karan  1992      M       8
+3  Ankit  2003      M       3
+4 Ritika  2000      F       1
+
+list accessing
+> x <- list(foo = 1:4, bar = 0.6)
+> $foo
+Error: unexpected '$' in "$"
+> x <- list(foo = 1:4, bar = 0.6)
+> x[1]
+$`foo`
+[1] 1 2 3 4
+
+> class[x[1]]
+Error in class[x[1]] : object of type 'builtin' is not subsettable
+
+> class(x[1])
+[1] "list"
+
+> x[[1]]
+[1] 1 2 3 4
+
+> class(x[[1]])
+[1] "integer"
+ 
+		Data Sets
+	2 types
+In built dataset
+By user dataset
+Data that is given for the analysis is called data set
+> #Veiw Data
+> ###Veiw(airquality)
+> #Number of Row
+> nrow(airquality)
+[1] 153
+> ncol(airquality)
+[1] 6
+> #Structuer of Data
+> str(airquality)
+'data.frame':   153 obs. of  6 variables:
+ $ Ozone  : int  41 36 12 18 NA 28 23 19 8 NA ...
+ $ Solar.R: int  190 118 149 313 NA NA 299 99 19 194 ...
+ $ Wind   : num  7.4 8 12.6 11.5 14.3 14.9 8.6 13.8 20.1 8.6 ...
+ $ Temp   : int  67 72 74 62 56 66 65 59 61 69 ...
+ $ Month  : int  5 5 5 5 5 5 5 5 5 5 ...
+ $ Day    : int  1 2 3 4 5 6 7 8 9 10 ...
+

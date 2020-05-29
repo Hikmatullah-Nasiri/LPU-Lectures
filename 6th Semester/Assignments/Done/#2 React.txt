@@ -1,0 +1,1 @@
+Develop an application :1)to use 3 react native tools;2)to implement shopping site in react

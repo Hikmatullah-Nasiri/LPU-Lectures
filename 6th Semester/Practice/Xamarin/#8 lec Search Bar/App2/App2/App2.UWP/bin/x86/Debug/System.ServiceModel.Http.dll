@@ -1,0 +1,680 @@
+le>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>true</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<IsUnsigned>false</IsUnsigned>
+</DataTypes>
+<DataTypes>
+<TypeName>varbinary</TypeName>
+<ProviderDbType>21</ProviderDbType>
+<ColumnSize>8000</ColumnSize>
+<CreateFormat>varbinary({0})</CreateFormat>
+<CreateParameters>max length</CreateParameters>
+<DataType>System.Byte[]</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<MaximumVersion>08.99.999.9</MaximumVersion>
+<LiteralPrefix>0x</LiteralPrefix>
+</DataTypes>
+<DataTypes>
+<TypeName>timestamp</TypeName>
+<ProviderDbType>19</ProviderDbType>
+<ColumnSize>8</ColumnSize>
+<CreateFormat>timestamp</CreateFormat>
+<DataType>System.Byte[]</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>false</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>true</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>false</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<LiteralPrefix>0x</LiteralPrefix>
+</DataTypes>
+<DataTypes>
+<TypeName>binary</TypeName>
+<ProviderDbType>1</ProviderDbType>
+<ColumnSize>8000</ColumnSize>
+<CreateFormat>binary({0})</CreateFormat>
+<CreateParameters>length</CreateParameters>
+<DataType>System.Byte[]</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<LiteralPrefix>0x</LiteralPrefix>
+</DataTypes>
+<DataTypes>
+<TypeName>image</TypeName>
+<ProviderDbType>7</ProviderDbType>
+<ColumnSize>2147483647</ColumnSize>
+<CreateFormat>image</CreateFormat>
+<DataType>System.Byte[]</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>true</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>false</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<LiteralPrefix>0x</LiteralPrefix>
+</DataTypes>
+<DataTypes>
+<TypeName>char</TypeName>
+<ProviderDbType>3</ProviderDbType>
+<ColumnSize>8000</ColumnSize>
+<CreateFormat>char</CreateFormat>
+<CreateParameters>length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumVersion>08.99.999.9</MaximumVersion>
+<LiteralPrefix>'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>text</TypeName>
+<ProviderDbType>18</ProviderDbType>
+<ColumnSize>2147483647</ColumnSize>
+<CreateFormat>text</CreateFormat>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>true</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>false</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<LiteralPrefix>'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>varchar</TypeName>
+<ProviderDbType>22</ProviderDbType>
+<ColumnSize>8000</ColumnSize>
+<CreateFormat>varchar({0})</CreateFormat>
+<CreateParameters>max length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumVersion>08.99.999.9</MaximumVersion>
+<LiteralPrefix>'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>nchar</TypeName>
+<ProviderDbType>10</ProviderDbType>
+<ColumnSize>4000</ColumnSize>
+<CreateFormat>nchar({0})</CreateFormat>
+<CreateParameters>length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumVersion>08.99.999.9</MaximumVersion>
+<LiteralPrefix>N'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>ntext</TypeName>
+<ProviderDbType>11</ProviderDbType>
+<ColumnSize>1073741823</ColumnSize>
+<CreateFormat>ntext</CreateFormat>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>true</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>false</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<LiteralPrefix>N'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>nvarchar</TypeName>
+<ProviderDbType>12</ProviderDbType>
+<ColumnSize>4000</ColumnSize>
+<CreateFormat>nvarchar({0})</CreateFormat>
+<CreateParameters>max length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumVersion>08.99.999.9</MaximumVersion>
+<LiteralPrefix>N'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>decimal</TypeName>
+<ProviderDbType>5</ProviderDbType>
+<ColumnSize>38</ColumnSize>
+<CreateFormat>decimal({0}, {1})</CreateFormat>
+<CreateParameters>precision,scale</CreateParameters>
+<DataType>System.Decimal</DataType>
+<IsAutoIncrementable>true</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<IsUnsigned>false</IsUnsigned>
+<MaximumScale>38</MaximumScale>
+<MinimumScale>0</MinimumScale>
+</DataTypes>
+<DataTypes>
+<TypeName>numeric</TypeName>
+<ProviderDbType>5</ProviderDbType>
+<ColumnSize>38</ColumnSize>
+<CreateFormat>numeric({0}, {1})</CreateFormat>
+<CreateParameters>precision,scale</CreateParameters>
+<DataType>System.Decimal</DataType>
+<IsAutoIncrementable>true</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<IsUnsigned>false</IsUnsigned>
+<MaximumScale>38</MaximumScale>
+<MinimumScale>0</MinimumScale>
+</DataTypes>
+<DataTypes>
+<TypeName>datetime</TypeName>
+<ProviderDbType>4</ProviderDbType>
+<ColumnSize>23</ColumnSize>
+<CreateFormat>datetime</CreateFormat>
+<DataType>System.DateTime</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<LiteralPrefix>{ts '</LiteralPrefix>
+<LiteralSuffix>'}</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>smalldatetime</TypeName>
+<ProviderDbType>15</ProviderDbType>
+<ColumnSize>16</ColumnSize>
+<CreateFormat>smalldatetime</CreateFormat>
+<DataType>System.DateTime</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<LiteralPrefix>{ts '</LiteralPrefix>
+<LiteralSuffix>'}</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>sql_variant</TypeName>
+<ProviderDbType>23</ProviderDbType>
+<CreateFormat>sql_variant</CreateFormat>
+<DataType>System.Object</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<IsLiteralSupported>false</IsLiteralSupported>
+</DataTypes>
+<DataTypes>
+<TypeName>xml</TypeName>
+<ProviderDbType>25</ProviderDbType>
+<ColumnSize>2147483647</ColumnSize>
+<CreateFormat>xml</CreateFormat>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>false</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>true</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>false</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<MinimumVersion>09.00.000.0</MinimumVersion>
+<IsLiteralSupported>false</IsLiteralSupported>
+</DataTypes>
+<DataTypes>
+<TypeName>varchar</TypeName>
+<ProviderDbType>22</ProviderDbType>
+<ColumnSize>2147483647</ColumnSize>
+<CreateFormat>varchar({0})</CreateFormat>
+<CreateParameters>max length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MinimumVersion>09.00.000.0</MinimumVersion>
+<LiteralPrefix>'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>char</TypeName>
+<ProviderDbType>3</ProviderDbType>
+<ColumnSize>2147483647</ColumnSize>
+<CreateFormat>char({0})</CreateFormat>
+<CreateParameters>length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MinimumVersion>09.00.000.0</MinimumVersion>
+<LiteralPrefix>'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>nchar</TypeName>
+<ProviderDbType>10</ProviderDbType>
+<ColumnSize>1073741823</ColumnSize>
+<CreateFormat>nchar({0})</CreateFormat>
+<CreateParameters>length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MinimumVersion>09.00.000.0</MinimumVersion>
+<LiteralPrefix>N'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>nvarchar</TypeName>
+<ProviderDbType>12</ProviderDbType>
+<ColumnSize>1073741823</ColumnSize>
+<CreateFormat>nvarchar({0})</CreateFormat>
+<CreateParameters>max length</CreateParameters>
+<DataType>System.String</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MinimumVersion>09.00.000.0</MinimumVersion>
+<LiteralPrefix>N'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>varbinary</TypeName>
+<ProviderDbType>21</ProviderDbType>
+<ColumnSize>1073741823</ColumnSize>
+<CreateFormat>varbinary({0})</CreateFormat>
+<CreateParameters>max length</CreateParameters>
+<DataType>System.Byte[]</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<MinimumVersion>09.00.000.0</MinimumVersion>
+<LiteralPrefix>0x</LiteralPrefix>
+</DataTypes>
+<DataTypes>
+<TypeName>uniqueidentifier</TypeName>
+<ProviderDbType>14</ProviderDbType>
+<ColumnSize>16</ColumnSize>
+<CreateFormat>uniqueidentifier</CreateFormat>
+<DataType>System.Guid</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>false</IsSearchableWithLike>
+<LiteralPrefix>'</LiteralPrefix>
+<LiteralSuffix>'</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>date</TypeName>
+<ProviderDbType>31</ProviderDbType>
+<ColumnSize>3</ColumnSize>
+<CreateFormat>date</CreateFormat>
+<DataType>System.DateTime</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>false</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>true</IsFixedLength>
+<IsFixedPrecisionScale>true</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MinimumVersion>10.00.000.0</MinimumVersion>
+<LiteralPrefix>{ts '</LiteralPrefix>
+<LiteralSuffix>'}</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>time</TypeName>
+<ProviderDbType>32</ProviderDbType>
+<ColumnSize>5</ColumnSize>
+<CreateFormat>time({0})</CreateFormat>
+<CreateParameters>scale</CreateParameters>
+<DataType>System.TimeSpan</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>false</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumScale>7</MaximumScale>
+<MinimumScale>0</MinimumScale>
+<MinimumVersion>10.00.000.0</MinimumVersion>
+<LiteralPrefix>{ts '</LiteralPrefix>
+<LiteralSuffix>'}</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>datetime2</TypeName>
+<ProviderDbType>33</ProviderDbType>
+<ColumnSize>8</ColumnSize>
+<CreateFormat>datetime2({0})</CreateFormat>
+<CreateParameters>scale</CreateParameters>
+<DataType>System.DateTime</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumScale>7</MaximumScale>
+<MinimumScale>0</MinimumScale>
+<MinimumVersion>10.00.000.0</MinimumVersion>
+<LiteralPrefix>{ts '</LiteralPrefix>
+<LiteralSuffix>'}</LiteralSuffix>
+</DataTypes>
+<DataTypes>
+<TypeName>datetimeoffset</TypeName>
+<ProviderDbType>34</ProviderDbType>
+<ColumnSize>10</ColumnSize>
+<CreateFormat>datetimeoffset({0})</CreateFormat>
+<CreateParameters>scale</CreateParameters>
+<DataType>System.DateTimeOffset</DataType>
+<IsAutoIncrementable>false</IsAutoIncrementable>
+<IsBestMatch>true</IsBestMatch>
+<IsCaseSensitive>false</IsCaseSensitive>
+<IsConcurrencyType>false</IsConcurrencyType>
+<IsFixedLength>false</IsFixedLength>
+<IsFixedPrecisionScale>false</IsFixedPrecisionScale>
+<IsLong>false</IsLong>
+<IsNullable>true</IsNullable>
+<IsSearchable>true</IsSearchable>
+<IsSearchableWithLike>true</IsSearchableWithLike>
+<MaximumScale>7</MaximumScale>
+<MinimumScale>0</MinimumScale>
+<MinimumVersion>10.00.000.0</MinimumVersion>
+<LiteralPrefix>{ts '</LiteralPrefix>
+<LiteralSuffix>'}</LiteralSuffix>
+</DataTypes>
+ <ReservedWords>
+  <ReservedWord>ADD</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>EXCEPT</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PERCENT</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>ALL</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>EXEC</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PLAN</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>ALTER</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>EXECUTE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PRECISION</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>AND</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>EXISTS</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PRIMARY</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>ANY</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>EXIT</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PRINT</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>AS</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FETCH</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PROC</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>ASC</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FILE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PROCEDURE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>AUTHORIZATION</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FILLFACTOR</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>PUBLIC</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BACKUP</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FOR</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>RAISERROR</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BEGIN</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FOREIGN</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>READ</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BETWEEN</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FREETEXT</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>READTEXT</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BREAK</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FREETEXTTABLE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>RECONFIGURE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BROWSE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FROM</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>REFERENCES</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BULK</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FULL</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>REPLICATION</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>BY</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>FUNCTION</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>RESTORE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>CASCADE</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <ReservedWord>GOTO</ReservedWord>
+  </ReservedWords>
+  <ReservedWords>
+  <Res

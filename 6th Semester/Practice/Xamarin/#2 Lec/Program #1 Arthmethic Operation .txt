@@ -1,0 +1,16 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the first value1 : ");
+		int value1 = int.Parse(Console.ReadLine());
+		Console.WriteLine("Enter the second value2 : ");
+		int value2 = int.Parse(Console.ReadLine());
+		int result = value1 + value2;
+		Console.WriteLine("Addition "+result);
+		
+			
+	}
+}

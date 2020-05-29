@@ -1,0 +1,5 @@
+Functions
+	In Built function like mean,length etc...
+	User Define Functions (security is the reason to create user define functions)
+
+	

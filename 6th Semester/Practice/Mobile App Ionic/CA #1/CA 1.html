@@ -1,0 +1,36 @@
+
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>
+            E-Cart
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+<ion-content> 
+
+        <ion-item >
+        <ion-label position=floating color="warning"  >Order Number</ion-label>
+        <ion-input type="text"[(ngModel)]=n1> </ion-input>                
+        </ion-item>
+        
+        <ion-item >
+        <ion-label position=floating color="success" >Item 1</ion-label>
+        <ion-input type="text"[(ngModel)]=it1> </ion-input>        
+        </ion-item>
+        
+        <ion-item>
+        <ion-label position=floating color="success">Item 2</ion-label>
+        <ion-input type="text"[(ngModel)]=it2> </ion-input>        
+        </ion-item>
+        
+        <ion-item>
+            <ion-label color="danger">Total is {{total}} </ion-label>        
+        </ion-item>
+        
+        <ion-item>        
+        <ion-button (click)="addition()" color="tertiary" size="4"> OK </ion-button>
+        <ion-button (click)="clear()" color="warning" size="4">Clear</ion-button>
+        </ion-item>
+</ion-content>
+

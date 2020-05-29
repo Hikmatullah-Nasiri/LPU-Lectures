@@ -1,0 +1,5 @@
+nmap ip 
+top thousand will be checked
+nmap ums.lpu.in 
+will show you the open ports only
+nmap -F google.com

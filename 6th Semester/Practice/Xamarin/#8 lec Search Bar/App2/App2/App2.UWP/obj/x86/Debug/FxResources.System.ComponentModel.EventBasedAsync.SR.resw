@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="ForegroundFocusBrush" />
+    <RootPropertyPathName Name="BackgroundFocusBrush" />
+    <RootPropertyPathName Name="PlaceholderForegroundFocusBrush" />
+    <RootPropertyPathName Name="PlaceholderForegroundBrush" />
+    <RootPropertyPathName Name="Foreground" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="TextAlignment" />
+    <RootPropertyPathName Name="FormsDataTemplate" />
+    <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="Container" />
+    <RootPropertyPathName Name="ItemHeight" />
+    <RootPropertyPathName Name="ItemWidth" />
+    <RootPropertyPathName Name="ItemSpacing" />
+    <RootPropertyPathName Name="HeaderItemTemplateContext" />
+    <RootPropertyPathName Name="TintBrush" />
+    <RootPropertyPathName Name="DefaultFillBrush" />
+    <RootPropertyPathName Name="TemplateSettings" />
+    <RootPropertyPathName Name="ClipRect" />
+    <RootPropertyPathName Name="CompactVerticalDelta" />
+    <RootPropertyPathName Name="CommandBarTemplateSettings" />
+    <RootPropertyPathName Name="NegativeOverflowContentHeight" />
+    <RootPropertyPathName Name="ContentHeight" />
+    <RootPropertyPathName Name="HiddenVerticalDelta" />
+    <RootPropertyPathName Name="OverflowContentClipRect" />
+    <RootPropertyPathName Name="OverflowContentHeight" />
+    <RootPropertyPathName Name="MinimalVerticalDelta" />
+    <RootPropertyPathName Name="OverflowContentMaxHeight" />
+    <RootPropertyPathName Name="OverflowContentMinWidth" />
+    <RootPropertyPathName Name="OverflowContentHorizontalOffset" />
+    <RootPropertyPathName Name="IndicatorLengthDelta" />
+    <RootPropertyPathName Name="ElementOpacity" />
+    <RootPropertyPathName Name="EllipseAnimationEndPosition" />
+    <RootPropertyPathName Name="EllipseAnimationWellPosition" />
+    <RootPropertyPathName Name="ContainerAnimationStartPosition" />
+    <RootPropertyPathName Name="ContainerAnimationEndPosition" />
+    <RootPropertyPathName Name="EllipseDiameter" />
+    <RootPropertyPathName Name="EllipseOffset" />
+    <RootPropertyPathName Name="IsPaneOpen" />
+    <RootPropertyPathName Name="Master" />
+    <RootPropertyPathName Name="Detail" />
+    <RootPropertyPathName Name="DetailTitleView" />
+    <RootPropertyPathName Name="TitleView" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="TitleColor" />
+    <RootPropertyPathName Name="AutomationId" />
+    <RootPropertyPathName Name="IsEnabled" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="HorizontalTextAlignment" />
+    <RootPropertyPathName Name="Placeholder" />
+    <RootPropertyPathName Name="Keyboard" />
+    <RootPropertyPathName Name="Label" />
+    <RootPropertyPathName Name="LabelColor" />
+    <RootPropertyPathName Name="On" />
+    <RootPropertyPathName Name="FlowDirection" />
+    <RootPropertyPathName Name="DetailColor" />
+    <RootPropertyPathName Name="TextColor" />
+    <RootPropertyPathName Name="ImageSource" />
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="Cell" />
+    <RootPropertyPathName Name="RenderHeight" />
+    <RootPropertyPathName Name="View" />
+    <RootPropertyPathName Name="Command" />
+    <RootPropertyPathName Name="CommandParameter" />
+    <RootPropertyPathName Name="Icon" />
+    <RootPropertyPathName Name="FlyoutIcon" />
+    <RootPropertyPathName Name="Tag" />
+    <RootPropertyPathName Name="ThumbImageSource" />
+    <RootPropertyPathName Name="IconImageSource" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
+      <RootProperty Name="TextBoxStyle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="FocusVisualMargin" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="MaxWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="FontWeight" />
+      <RootMethod Name="GetIsTemplateFocusTarget" />
+      <RootMethod Name="SetIsTemplateFocusTarget" />
+    </RootType>
+    <RootType FullName="Xamarin.Forms.Platform.UWP.FormsTextBox">
+      <RootProperty Name="ForegroundFocusBrush" />
+      <RootProperty Name="PlaceholderForegroundBrush" />
+      <RootProperty Name="PlaceholderForegroundFocusBrush" />
+      <RootProperty Name="BackgroundFocusBrush" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="DesiredCandidateWindowAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="SelectionHighlightColor" />
+      <RootProperty Name="IsSpellCheckEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
+      <RootProperty Name="IsVerticalScrollChainingEnabled" />
+      <RootProperty Name="BringIntoViewOnFocusChange" />
+      <RootProperty Name="Content" />
+   

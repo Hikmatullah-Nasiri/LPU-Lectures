@@ -1,0 +1,45 @@
+using System;
+	
+public class Program
+{
+	class EmployeeSalary
+	{
+	int Emp_Id;
+	string Emp_Name;
+	double Basic_Salary;
+	double NetSalary;
+	double TA, HA, TAX;
+	
+	public void getDetails(){
+	Console.WriteLine("Enter your Name ");
+	Emp_Name = Console.ReadLine();
+	
+	Console.WriteLine("Enter your Employee ID ");
+	Emp_Id = int.Parse(Console.ReadLine());
+	
+	Console.WriteLine("Enter your Basic_Salary ");
+	Basic_Salary = int.Parse(Console.ReadLine());
+	}
+	
+	public void calSalary()
+	{
+		TA = 1000;
+		HA = 5000;
+		double TotSalary = Basic_Salary + TA + HA;
+		TAX = (TotSalary * 10)/100;
+		NetSalary = TotSalary - TAX;
+		Console.WriteLine(Emp_Name+" your Total Salary is "+TotSalary);
+		Console.WriteLine(Emp_Name+" your Net Salary is "+NetSalary);
+	}
+	
+	}				
+	
+	public static void Main()
+	{
+		Console.WriteLine("Hello World123");
+		EmployeeSalary emp=new EmployeeSalary();
+		emp.getDetails();
+		emp.calSalary();
+		
+	}
+}

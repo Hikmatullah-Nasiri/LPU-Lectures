@@ -1,0 +1,8 @@
+Subseting
+> mydata3<-read.csv(file.choose(),header=TRUE)
+> mydata_Europe=subset(mydata,Region=="Europe")
+> mydata_Europe
+
+1.> mean(mydata_Europe$LiteracyRate,na.rm=TRUE)
+[1] 98.78077
+

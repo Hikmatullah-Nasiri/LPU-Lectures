@@ -1,0 +1,163 @@
+ï»¿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Dell\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\;C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\runtime.win10-x86.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\runtime.win10-x86.Microsoft.Net.Native.SharedLibrary.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\runtime.win10-x86.Microsoft.Net.Native.Compiler.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\runtime.win10-x86.Microsoft.Net.Native.Compiler.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x64.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x64.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\runtime.win10-x64.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\runtime.win10-x64.Microsoft.Net.Native.SharedLibrary.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\runtime.win10-x64.Microsoft.Net.Native.Compiler.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\runtime.win10-x64.Microsoft.Net.Native.Compiler.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\runtime.win10-arm.Microsoft.Net.Native.Compiler.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\runtime.win10-arm.Microsoft.Net.Native.Compiler.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.ui.xaml\2.1.190606001\build\Microsoft.UI.Xaml.props" Condition="Exists('$(NuGetPackageRoot)microsoft.ui.xaml\2.1.190606001\build\Microsoft.UI.Xaml.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.uwpcoreruntimesdk\2.1.2\build\Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.uwpcoreruntimesdk\2.1.2\build\Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.native.compiler\2.1.8\build\Microsoft.Net.Native.Compiler.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.native.compiler\2.1.8\build\Microsoft.Net.Native.Compiler.props')" />
+    <Import Project="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.3.0.908675\build\Xamarin.Forms.props" Condition="Exists('C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.3.0.908675\build\Xamarin.Forms.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.1.2</Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8</Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8</Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler>
+    <Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.1.2</Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8</Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8</Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler>
+    <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.1.2</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\Dell\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8</Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler>
+    <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">C:\Users\Dell\.nuget\packages\microsoft.ui.xaml\2.1.190606001</PkgMicrosoft_UI_Xaml>
+    <PkgMicrosoft_Net_UWPCoreRuntimeSdk Condition=" '$(PkgMicrosoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\Dell\.nuget\packages\microsoft.net.uwpcoreruntimesdk\2.1.2</PkgMicrosoft_Net_UWPCoreRuntimeSdk>
+    <PkgMicrosoft_Net_Native_Compiler Condition=" '$(PkgMicrosoft_Net_Native_Compiler)' == '' ">C:\Users\Dell\.nuget\packages\microsoft.net.native.compiler\2.1.8</PkgMicrosoft_Net_Native_Compiler>
+  </PropertyGroup>
+</Project>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ‰PNG
+
+   IHDR         çı0   	pHYs  %  %IR$ğ  	šIDATxœíklE†·´FDñ‡ÆDTÀ¨`ô§&h DQ”¥¹(m¥(P°BAî¹‡Ñ€ÆhTA$‚Â_, Æ`â]ƒ‚¢ü@Ö÷“Á¶»åì·—ÙÙ¼O²ÙíìÙoß=óÎÙ™i•Gˆ‚*Ûˆ›Ğ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DCTĞ8DEaÓÒÒÒ«AXnÄrVÆ§?‚¥Ë+:tØ›ñ¹3¡Æi†cÕTQQ‘µaJéÓÚÚú´ÔÀ<K-êH…Âu'³Ä¶Áw	4}ól°­'I
+e”ğ3°,°­#€ĞÕF:j[HRÍ8O#s®´­ÃhmØœe[KRÆ8ø9¸«	¶u´Ãh”‡åı¶…$AaŒQ²Ï·-"Ñ†»N#6‡ÚÖ’…02ä,ƒmë(ƒÁĞ¹&Úe[H\Šbœ¹ÈŒ¶uœÑ(Z±y»m-qqŞ8xn¸r›må"ZE3uÖÚÖ§ƒÒ[…ÅÅšÊ,è^³-D‹ëÆ/ÿjÛ:¢"šE;6çÚÖ¢ÅYãàvVõ¶uÄ ×ğ*~²~³-Dƒ³ÆSPr/´-B‹hÇ]g
+6Ÿ°­Eƒ“ÆAI½«!¶u$À\ËbÜu>·-$*NÌA‰­,çƒ(ÕÇ±ªÆ²KÅÉd,—byqÎÓ@Üï±zË_¾¸½³¬g¹Ä™ƒÍ¾6qÎ8(¡ıñ…÷‰pˆdf3Jõ_úNÄšì)ßAC-–múºDŒÓG®	úÖitØÂ)ã tVF­~#c¤Ê¾›mÚz°o>öÅúªˆ:¶"£ß
+H¯2|Q‘êùè8®8Ö
+®g$¾ÜnQÃ1½QªïCf¿íK?Šô1Ø\1^Mˆ¾QØ×]¡¯›\6çG=ÖÎ_l',“b„˜	“¬ƒyş)M”\¤„Ì+ë5 4¼ŒcšıéˆÑ1âè›„Ø«ã@Œ™á’q^À—ÚQ{¼éS‹Íé»k°oÇé¸ñ™?±²[ªÖÄĞ×Q®›#µ1²Ä	ã 4_‹Õ°B7}b~.M”ê0Ò—csx{#s§aù%@ßõ^2ÍÃk	ô|‘@¬TqÂ8Ş‰êwl­¦ê=Ëc»'¢Ä?Ö¨ˆ}_cÕº)‰·óæA^ªçwÄ•6¹7é|Ş/ÁÕˆ¹¥z{i¢4ı›êy˜9êüÏG2ú/ Æ¦E®U®9ïÛsmdŠô_™Bh©2ßêOD¦-Äù†c}o×ÇÈÈwôIçøÙø|Òúf#î‡y®çİ8OâËë‘t\Ä¼¥ú˜áM_ú1¤?ƒÍÿã ¡«°ê·tïš‚¾ˆ-ï°&;)rkd Ô R<ÅLdÎZdÒß¥‰0Óû8÷Æ’ŸÇHÛé?Ç^‚%ÍÎñĞñÎ}0Ås¨É­q@=2¯SZÁû
+d|6vË]§ööBºn`ßÔ4;ÇËµãrîÚ´Î‡\_˜Œ¨ÎàTÏ¢TKƒŞ¥‰RFú*l~4œûzyÁ5³¤©6íW‡28W$òjœ®YôµÁ9ÎÅ¹¤5 `Ÿ£%@[¥©zçxÓgG¡>Mû\QÉ¥q²™Ó²ë^dš4ÿoÉR+äÒ8ÈÌ}È´ßÓ¾ë˜g˜6Ïæ-÷blşà˜&¥TÛqüTÀşíißuÌw°/ÍshÉ«q!sVz!Õà™î¾¤*±Ù9h(şŞ!ÏFØL{àÊ<>ß¹4¡øhZ5+Äş±Û4.šó‰%IÓñ÷:|Öÿ¼3é÷§U³2?“A5¾\[ãHûJu6Óš¶d¬¿G@†3w›ÿş5H“˜Ë|úöCßTlÎLI_C^Ûp„ÜG@¦-6?‰¶#æ6«± #\Õè€C¤1n59ìÓ7Ïô L´õ1÷äer¨0ònœÓCo}Â¡ÃdÆ‹³ttAfÅæ$_úQ¤‹¾wÖ7&Ïï©„\G·Ä¾W qY‰˜mÚEp8Ç#íW‹Ï,Å±?•&â˜5HßœÔøuqcŞßŒ¹7¡_è®¸}rL¾q!»Û}VÁ¹ÏÁñÒíâñ€İ'{Æª#†Œ%Ïå+?NG†¶ TËÃéˆ˜¡^D¬ |}Ër#}yšü=ôğ÷g¦aÜ^ŠË†ñä'Œ# cŸG‰¨íwlzğµº‚tYf”©¡Ò|¶Àn©Â?è)û#îA¹FÍ±6pÉ8L½yÊcCzğI[QÏ:î‚ŞˆuÊ«üı«è+wg “]á 8c¡¤‡^¤±U8f‹L•€Œ–yˆ#7²áüò<ts@ºLK;$êØ*ó¥\[T6qÍ8òHúĞ¼Wî1æ3ìÙ¨1/SH¹	:ÂŒ¯ûôIB©ê1^]Ş«ß~œ2 c¬‘9›"Œ—Á½pÌ™^ÛIÂjXå01å%¨Ò¨wÃM®œ3Aªç;Ë™±Â|fuÒÌjkœf&'ªß~œ4JèîrĞ9Àr¹Û"48iƒ4ÿ?äÅvk™?<ß+—pÖ8¦ú+Ó¹Í±­EƒLã&×`[‡g#À4/!†¹6ó(4%ÚmëˆƒëÆ9fªç‘æ·Éu.Ïq,8mÁÌo“ØÛé´Áİf³ë³ªÎGùø!ÍYY‰ƒ'­¶u$AQŒ³w^ş§°]QQ€ÿ#Â8†z”èiË´Éh—g‚?…Â'ƒÎãq™Z”ÿ'Æ8‚é<.Õó\ı_Né$ÚlëH’¢G¦Ÿå%ß¹=.2maş°P(ã¦s»LJdûÖËæV5.t>JáŒ# £–Â<Ÿ ãy'Æ~gm 1ŒÌ…,3œîÍøÜ™PHã&Ã³­£¨Ö8$]h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢‚Æ!*h¢â_®ä²eª    IEND®B`‚                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.DiscreteTransferEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.PointSpecularEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ColorManagementProfile" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.Transform2DEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.CrossFadeEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.DisplacementMapEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.EmbossEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.TurbulenceEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ArithmeticCompositeEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.DpiCompensationEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.TileEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.AlphaMaskEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.LinearTransferEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.SepiaEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ColorMatrixEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.DirectionalBlurEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.UnPremultiplyEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.AtlasEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ShadowEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.GaussianBlurEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ColorSourceEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.HighlightsAndShadowsEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.InvertEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.SpotDiffuseEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.HueToRgbEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.DistantDiffuseEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ContrastEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.BlendEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.TintEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.Transform3DEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.PremultiplyEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.GrayscaleEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ChromaKeyEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.CompositeEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.OpacityMetadataEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ConvolveMatrixEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ScaleEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.BrightnessEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.SpotSpecularEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.MorphologyEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.SaturationEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ExposureEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.TableTransferEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.HueRotationEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.BorderEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.ColorManagementEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.GammaTransferEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.RgbToHueEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.TemperatureAndTintEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.EffectTransferTable3D" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.PointDiffuseEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.DistantSpecularEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Effects.SharpenEffect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Brushes.CanvasImageBrush" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Brushes.CanvasRadialGradientBrush" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Brushes.CanvasSolidColorBrush" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Brushes.CanvasLinearGradientBrush" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Printing.CanvasPrintDocument" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Geometry.CanvasPathBuilder" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Geometry.CanvasGradientMesh" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Geometry.CanvasCachedGeometry" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasCommandList" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasSwapChainPanel" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedUpdateEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasImageSource" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasDrawEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedControl" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasVirtualImageSource" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedDrawEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Xaml.CanvasVirtualControl" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.UI.Composition.CanvasComposition" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasRenderTarget" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasSpriteBatch" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasBitmap" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasSwapChain" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasVirtualBitmap" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasImage" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.CanvasDevice" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasFontSet" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasTextLayout" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasTextFormat" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasNumberSubstitution" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasTypography" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasTextRenderingParameters" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Graphics.Canvas.Text.CanvasTextAnalyzer" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>App2.UWP.exe</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.UI.Xaml.Markup.ReflectionXamlMetadataProvider" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="16.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
+    <build:Item Name="OperatingSystem" Version="10.0.18362.1 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29728.190" />
+    <build:Item Name="ProjectGUID" Value="{EF0EAA8C-90C5-41A7-9D96-3226FAD18F7C}" />
+    <build:Item Name="OptimizingToolset" Value="None" />
+    <build:Item Name="TargetRuntime" Value="Managed" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.18362.1" />
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="true" />
+    <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

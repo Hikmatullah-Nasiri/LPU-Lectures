@@ -1,0 +1,51 @@
+Data Files
+	#Command to show you the current working directory.
+getwd()
+[1]"C:/Users/Nasiri"
+	#Command to change current working directory
+setwd("D:/LPU/6th Semester/Practice/Programming in R/# 5 lec")
+
+setwd("C:/Users/Nasiri")
+forward slash will give error.
+1) save type .csv
+2) THere are 3 methods to read the data
+	1.read.csv
+	2.read.table
+	3.interactive way
+1.method 1
+> #Data from*.csv
+> mydata<-read.csv("data.csv",header=TRUE)
+> mydata
+
+> webData<-read.csv("http://dss.princeton.edu/training/students.csv",header=TRUE)
+> webData
+
+2.method
+	first goto the excel file and copy the data without pasting it
+	then run the following command to copy the from clipboard.
+> mydata2<-read.table("clipboard",header=TRUE,sep="\t")
+
+3.Method 3
+	this command will open a window and give you option to choose the file.
+> mydata3<-read.csv(file.choose(),header=TRUE)
+>mydata3
+
+	first goto the csv file and copy the data to the txt file and execute the command
+> data<-read.table("students.txt",header=TRUE,sep="\t")
+> data
+	Exploring Data files
+> summary(mydata) summary of the data
+> str(mydata)	structure of the data
+> head(mydata) 	head will show first 6 rows
+> tail(mydata)	tail will show last 6 rows	
+> edit(mydata)	this command will edit the data 
+
+> head(mydata,n=10) first 10 rows of data set
+> head(mydata,n=-10) all rows but except first 10
+> tail(mydata,n=10) all the last 10 
+> tail(mydata,n=-10) all rows but not the last 10 
+> mydata[1:10,]	first 10 rwos
+> mydata[1:10,1:3] first 10 rows of data of the first 3 variables
+
+
+

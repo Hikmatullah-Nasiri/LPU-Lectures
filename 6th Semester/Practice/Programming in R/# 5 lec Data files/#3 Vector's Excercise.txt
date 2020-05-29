@@ -1,0 +1,9 @@
+1. > friends<-c("RP","Harish","Sabir","Karan","Paranam","Ibrahim")
+2. > length(friend)
+3. > friends[1:2]
+4. > friends[c(2,3)]
+5. > sort(friends)
+6. > friends[order(friends)]
+7.
+8. > v1<-c(1,2,NA,4)
+   v1[!is.na(v1)]

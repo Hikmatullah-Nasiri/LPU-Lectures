@@ -1,0 +1,435 @@
+leInput<T2>, v3: ObservableInput<T3>, v4: ObservableInput<T4>, v5: ObservableInput<T5>, v6: ObservableInput<T6>, project: (v1: T, v2: T2, v3: T3, v4: T4, v5: T5, v6: T6) => R): Observable<R>;
+
+export function zipStatic<T, T2>(v1: ObservableInput<T>, v2: ObservableInput<T2>): Observable<[T, T2]>;
+export function zipStatic<T, T2, T3>(v1: ObservableInput<T>, v2: ObservableInput<T2>, v3: ObservableInput<T3>): Observable<[T, T2, T3]>;
+export function zipStatic<T, T2, T3, T4>(v1: ObservableInput<T>, v2: ObservableInput<T2>, v3: ObservableInput<T3>, v4: ObservableInput<T4>): Observable<[T, T2, T3, T4]>;
+export function zipStatic<T, T2, T3, T4, T5>(v1: ObservableInput<T>, v2: ObservableInput<T2>, v3: ObservableInput<T3>, v4: ObservableInput<T4>, v5: ObservableInput<T5>): Observable<[T, T2, T3, T4, T5]>;
+export function zipStatic<T, T2, T3, T4, T5, T6>(v1: ObservableInput<T>, v2: ObservableInput<T2>, v3: ObservableInput<T3>, v4: ObservableInput<T4>, v5: ObservableInput<T5>, v6: ObservableInput<T6>): Observable<[T, T2, T3, T4, T5, T6]>;
+
+export function zipStatic<T>(array: ObservableInput<T>[]): Observable<T[]>;
+export function zipStatic<R>(array: ObservableInput<any>[]): Observable<R>;
+export function zipStatic<T, R>(array: ObservableInput<T>[], project: (...values: Array<T>) => R): Observable<R>;
+export function zipStatic<R>(array: ObservableInput<any>[], project: (...values: Array<any>) => R): Observable<R>;
+
+export function zipStatic<T>(...observables: Array<ObservableInput<T>>): Observable<T[]>;
+export function zipStatic<T, R>(...observables: Array<ObservableInput<T> | ((...values: Array<T>) => R)>): Observable<R>;
+export function zipStatic<R>(...observables: Array<ObservableInput<any> | ((...values: Array<any>) => R)>): Observable<R>;
+/* tslint:enable:max-line-length */
+
+/**
+ * Combines multiple Observables to create an Observable whose values are calculated from the values, in order, of each
+ * of its input Observables.
+ *
+ * If the latest parameter is a function, this function is used to compute the created value from the input values.
+ * Otherwise, an array of the input values is returned.
+ *
+ * @example <caption>Combine age and name from different sources</caption>
+ *
+ * let age$ = Observable.of<number>(27, 25, 29);
+ * let name$ = Observable.of<string>('Foo', 'Bar', 'Beer');
+ * let isDev$ = Observable.of<boolean>(true, true, false);
+ *
+ * Observable
+ *     .zip(age$,
+ *          name$,
+ *          isDev$,
+ *          (age: number, name: string, isDev: boolean) => ({ age, name, isDev }))
+ *     .subscribe(x => console.log(x));
+ *
+ * // outputs
+ * // { age: 27, name: 'Foo', isDev: true }
+ * // { age: 25, name: 'Bar', isDev: true }
+ * // { age: 29, name: 'Beer', isDev: false }
+ *
+ * @param observables
+ * @return {Observable<R>}
+ * @static true
+ * @name zip
+ * @owner Observable
+ */
+export function zipStatic<T, R>(...observables: Array<ObservableInput<any> | ((...values: Array<any>) => R)>): Observable<R> {
+  const project = <((...ys: Array<any>) => R)> observables[observables.length - 1];
+  if (typeof project === 'function') {
+    observables.pop();
+  }
+  return new ArrayObservable(observables).lift(new ZipOperator(project));
+}
+
+export class ZipOperator<T, R> implements Operator<T, R> {
+
+  project: (...values: Array<any>) => R;
+
+  constructor(project?: (...values: Array<any>) => R) {
+    this.project = project;
+  }
+
+  call(subscriber: Subscriber<R>, source: any): any {
+    return source.subscribe(new ZipSubscriber(subscriber, this.project));
+  }
+}
+
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+export class ZipSubscriber<T, R> extends Subscriber<T> {
+  private values: any;
+  private project: (...values: Array<any>) => R;
+  private iterators: LookAheadIterator<any>[] = [];
+  private active = 0;
+
+  constructor(destination: Subscriber<R>,
+              project?: (...values: Array<any>) => R,
+              values: any = Object.create(null)) {
+    super(destination);
+    this.project = (typeof project === 'function') ? project : null;
+    this.values = values;
+  }
+
+  protected _next(value: any) {
+    const iterators = this.iterators;
+    if (isArray(value)) {
+      iterators.push(new StaticArrayIterator(value));
+    } else if (typeof value[Symbol_iterator] === 'function') {
+      iterators.push(new StaticIterator(value[Symbol_iterator]()));
+    } else {
+      iterators.push(new ZipBufferIterator(this.destination, this, value));
+    }
+  }
+
+  protected _complete() {
+    const iterators = this.iterators;
+    const len = iterators.length;
+
+    if (len === 0) {
+      this.destination.complete();
+      return;
+    }
+
+    this.active = len;
+    for (let i = 0; i < len; i++) {
+      let iterator: ZipBufferIterator<any, any> = <any>iterators[i];
+      if (iterator.stillUnsubscribed) {
+        this.add(iterator.subscribe(iterator, i));
+      } else {
+        this.active--; // not an observable
+      }
+    }
+  }
+
+  notifyInactive() {
+    this.active--;
+    if (this.active === 0) {
+      this.destination.complete();
+    }
+  }
+
+  checkIterators() {
+    const iterators = this.iterators;
+    const len = iterators.length;
+    const destination = this.destination;
+
+    // abort if not all of them have values
+    for (let i = 0; i < len; i++) {
+      let iterator = iterators[i];
+      if (typeof iterator.hasValue === 'function' && !iterator.hasValue()) {
+        return;
+      }
+    }
+
+    let shouldComplete = false;
+    const args: any[] = [];
+    for (let i = 0; i < len; i++) {
+      let iterator = iterators[i];
+      let result = iterator.next();
+
+      // check to see if it's completed now that you've gotten
+      // the next value.
+      if (iterator.hasCompleted()) {
+        shouldComplete = true;
+      }
+
+      if (result.done) {
+        destination.complete();
+        return;
+      }
+
+      args.push(result.value);
+    }
+
+    if (this.project) {
+      this._tryProject(args);
+    } else {
+      destination.next(args);
+    }
+
+    if (shouldComplete) {
+      destination.complete();
+    }
+  }
+
+  protected _tryProject(args: any[]) {
+    let result: any;
+    try {
+      result = this.project.apply(this, args);
+    } catch (err) {
+      this.destination.error(err);
+      return;
+    }
+    this.destination.next(result);
+  }
+}
+
+interface LookAheadIterator<T> extends Iterator<T> {
+  hasValue(): boolean;
+  hasCompleted(): boolean;
+}
+
+class StaticIterator<T> implements LookAheadIterator<T> {
+  private nextResult: IteratorResult<T>;
+
+  constructor(private iterator: Iterator<T>) {
+    this.nextResult = iterator.next();
+  }
+
+  hasValue() {
+    return true;
+  }
+
+  next(): IteratorResult<T> {
+    const result = this.nextResult;
+    this.nextResult = this.iterator.next();
+    return result;
+  }
+
+  hasCompleted() {
+    const nextResult = this.nextResult;
+    return nextResult && nextResult.done;
+  }
+}
+
+class StaticArrayIterator<T> implements LookAheadIterator<T> {
+  private index = 0;
+  private length = 0;
+
+  constructor(private array: T[]) {
+    this.length = array.length;
+  }
+
+  [Symbol_iterator]() {
+    return this;
+  }
+
+  next(value?: any): IteratorResult<T> {
+    const i = this.index++;
+    const array = this.array;
+    return i < this.length ? { value: array[i], done: false } : { value: null, done: true };
+  }
+
+  hasValue() {
+    return this.array.length > this.index;
+  }
+
+  hasCompleted() {
+    return this.array.length === this.index;
+  }
+}
+
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+class ZipBufferIterator<T, R> extends OuterSubscriber<T, R> implements LookAheadIterator<T> {
+  stillUnsubscribed = true;
+  buffer: T[] = [];
+  isComplete = false;
+
+  constructor(destination: PartialObserver<T>,
+              private parent: ZipSubscriber<T, R>,
+              private observable: Observable<T>) {
+    super(destination);
+  }
+
+  [Symbol_iterator]() {
+    return this;
+  }
+
+  // NOTE: there is actually a name collision here with Subscriber.next and Iterator.next
+  //    this is legit because `next()` will never be called by a subscription in this case.
+  next(): IteratorResult<T> {
+    const buffer = this.buffer;
+    if (buffer.length === 0 && this.isComplete) {
+      return { value: null, done: true };
+    } else {
+      return { value: buffer.shift(), done: false };
+    }
+  }
+
+  hasValue() {
+    return this.buffer.length > 0;
+  }
+
+  hasCompleted() {
+    return this.buffer.length === 0 && this.isComplete;
+  }
+
+  notifyComplete() {
+    if (this.buffer.length > 0) {
+      this.isComplete = true;
+      this.parent.notifyInactive();
+    } else {
+      this.destination.complete();
+    }
+  }
+
+  notifyNext(outerValue: T, innerValue: any,
+             outerIndex: number, innerIndex: number,
+             innerSub: InnerSubscriber<T, R>): void {
+    this.buffer.push(innerValue);
+    this.parent.checkIterators();
+  }
+
+  subscribe(value: any, index: number) {
+    return subscribeToResult<any, any>(this, this.observable, this, index);
+  }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        G	‚Ÿ„íUxşšP… 0Fí·Ş#F»Ä-TŸ¯xA1wÌ›ß;ƒ“¡aµ±ü÷›²Î"KTÿùÃÂ  £‚«0‚§0Uÿ0ÿ0U#4øÙRFp
+í@ûvû³+°Ã5³0U†0	+‚7 0˜U#0€¬‚`@V'—å%ü*á
+S•Yä¤¡c¤a0_10
+	’&‰“ò,dcom10
+	’&‰“ò,d	microsoft1-0+U$Microsoft Root Certificate Authority‚y­¡J ¥­LsXô.e0PUI0G0E C A†?http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl0T+H0F0D+0†8http://www.microsoft.com/pki/certs/MicrosoftRootCert.crt0U%0
++0	*†H†÷ ‚ —ŠÃ\D6İé´­wÛÎyQM±.tq[m«Î¾{¸.Ô¢Œmb¸WËN P™İz@âW»¯Xšá†¬»xò‹Ğì;îâ¾
+ÈHâğSİO«’äçjÕ€Áæ”ò/…é‘*$"pûöüäx™.÷âp¼Nk
+r•¸¡9œg-ÅQêb\?˜‹ ?â2ùÌ1Jv1=+rÈêp=ÿ…
+ßÂ
+ağ×¸ëN‹Å5+^£¿ë¼}B{ÔSr!î0Ê»xe\[
+ÒÚ˜õ<¹fX³-/çù…†ÌQVèp”l¬9LÔöy¿ªzb)ï¢›)4wbÉ=m‚ğÇ,»ÏC³åùì}µã¤¨t5¸NÅq#&v<RŒqZFC¼³³°MgÈŸBÿ€y!€0fèB^È"!ĞCé+é»ôHÌ,ÔØ2€L&*H$_ZêVï¦Ş™Ê:o½'tîv!¿›‚Á'T¶±j=‰¡va´n¡¦¿ªGğoıŠ2l²şßQÈŒ#Éf½‡d=-¯Y¸ä!åµ°Êc´xTÔA.P¬”°¥x«³ –uÙ’‡u"/2¨n [Œ%¿ ï„Ê!ÖëOÉšîIà÷eo‰}ÈiÈænê§—Î1)ÿÅ[\ØM¡Øú/?.UkÉ£ı1‚(0‚(00y10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Code Signing PCA3  ±İíºTée¸_   ±0	+  ¢0	*†H†÷	1
++‚70
++‚710
++‚70#	*†H†÷	1œ†‹XØVu2!Ï™ÈÕ JëÊ0B
++‚71402 € M i c r o s o f t¡€http://www.microsoft.com0	*†H†÷ ‚ ‹XK˜Õ!‹LËíœÙM©)¡‚cƒpÖ/b_3&Y©ÁîÇ%—¯G¿½rÂ Xe{zêwc1½öÏ·Æ£ÈÌy‡£ Ä ñf´jıã:=j¸1Ğ
+§‡{Ç0¦d	¤QösHpMOo—åŒáš"8ÎŠw¶×Ì—œa¸‡.TU—¯BäæfúÈÜîJÆ(Í ÌcvåaÛr~¬Íy2ÊõÆ
+•Ü„qÙ2ñŒÊ0µ›¡ÊØ}è\ãù6€8ä(´y¯‡ı5µ6ª¡„ŒÓno²?ÿ‚ïÍÿ»}ÄDŒ0Jõî‘X=w¤sZ-4ğÕİï+KÕU!µDäÔ—±¡‚%¼0‚$	*†H†÷	1‚0‚00w10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1!0UMicrosoft Time-Stamp PCA3  c¥*'åÙ    0	+  ]0	*†H†÷	1	*†H†÷0	*†H†÷	1181004184519Z0#	*†H†÷	1h¡€hJ"¿!mÃùÏ›dÅp/{0	*†H†÷ ‚ 	c¸ÙY ¦¾ÅXÒ*™µAF×­dj4çke0%j&~BÆímş†hóYÎV£ğ„ –`Gám¹ø,_<h$Œ%æ{#ß«7#5¼ÊÓ7Ï‘°‰}¼AN'¶›)>ùËÙÕ†ÌŒ¡°õb²¤ş%M= şß»¯AxfŒ îòªí¬I\®¤]ùş,Y}…©éz×“ÃôëæÒa*’üş©©ãº šøP–·[&Õ¦á‹¹ƒ”ÄgÚÊ¯Y¾—_å£jÅN']E
+ê1Xsx©€~ªÎ3c¬%’`ïøÁS)|öß"o™ïÛ`şÂXÛ3Oˆ0‚#
++‚71‚#€0‚#|	*†H†÷ ‚#m0‚#i10	`†He 0\
++‚7 N0L0
++‚70	  ¢€ 010	`†He  «˜½÷¼˜=‚Ös«şŠú¸ææ"bßçòœÂéFŒt ‚0‚ÿ0‚ç 3  ^%™£¸    0	*†H†÷ 0~10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1(0&UMicrosoft Code Signing PCA 20110180712200848Z190726200848Z0t10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation10UMicrosoft Corporation0‚"0	*†H†÷ ‚ 0‚
+‚ Ñ”v6æ†«6şiùF|‹ˆPËp°U©$~9çŸ¬{—²Îs
+ûÔ›$\µ9İ~3lü;&ó˜ª]SkªÃì¸ÒïÏWÌeË¯M.2±V+N4‰şi!½>DûŞ…¿|v†}r±v›aæŠdLFÎ¶Õ:Œw“wg!œ¶Z^G†õ<Ñ	Ê=Í²é¡PxÑ„ˆâ<"ü¯–Ì]™Àíë¥Z˜’õÈ@Njs¯ŞãtzÓ_F—¼âg(w™¬Á1 şK^TÊÄe?
+ã£FÛö,:¾hœæ4¿§‡e9&ÉcÔïÅİ½%şı(ô4†y¬*Õ_0‘;äjë±Ê# £‚~0‚z0U%0
++‚7L+0UG¾ÀËá¦?ıeÖ8ò]·¯w÷@ÿ0PUI0G¤E0C1)0'U Microsoft Operations Puerto Rico10U230012+4379650U#0€HndåPÓ‚ª77"µm¨Êu•0TUM0K0I G E†Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a+U0S0Q+0†Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0Uÿ0 0	*†H†÷ ‚ ŸõÉS?&ì¢DØÑŸc–K?\Å3£¤Ãl¯Àºëeì3§¬[Ô½aç1çÃ&´¬õ'ÓH“†ˆş5‘d"Ñk-;¨,”)Ò7–æ5ÿÎÈ$±â9ùnxØ¶)`'v4$›İ¹—uË;­‚"€‰„»˜P °&†I¯Î}EC4–Ï\,Ô“òg«âsÈ=£Íü2`é°0û,».–„“E(T\Í–ı ÛØ¶0ÊC±óHÀ²F]^v*XŸÔîòôúHLµa‹°ŒAéª¸ôÿjB¹>éì”ü€»xã#§x[²mùYÁ}¶Ñ9Éyàƒ`
+Ú=°Ñí6¿Eé6nå=;§Ô§%æv£³EZC1‚ÚØ„®¹°uõö}Q7'èµ5„q÷Wª®ú‰qÉ˜ÒZdv¾ŒÃ}j‘ñôòÙ51¸Ûrú´uÈˆ›j¿˜EÇf²×ÿÎ’uäëæ†ÒÈÛ'À[•oIoX]i*ŞSKøèÊ{ölù…ªOš¿ªWİ`Æõq ôQ¨šÊéÑë4G=uú"ìU?j9kéZ?ô#x0²ò¦8Ë5ª˜Y$@¸:g¤_ şØ;IûáímƒPÎğ>àÙèŒ!JAÂŞë[îÃnnæT5fgr|êRö"Är?®0‚z0‚b 
+aÒ     0	*†H†÷ 0ˆ10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1200U)Microsoft Root Certificate Authority 20110110708205909Z260708210909Z0~10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1(0&UMicrosoft Code Signing PCA 20110‚"0	*†H†÷ ‚ 0‚
+‚ «ğúr.­Ønª‚M4ºò¶X!ŸB*kéZPª¸8IºÃİ7kÆØğ8Â™°È9Õ1BÓ‰yd‡~”`$l¯Iœéh^Òß›S²
+,Ã¯Ù©+®z	¯×–YÊ`éfvè2R&/ç«PÏ³D·]ØÄ.u«hóËmó:\¡ôFºà8d¬nd5x¦ c-Ó@“øãŞÕ\y¥I)ç¾ w¾”=ïûã+ZMV(¢zrà:·I^ØííC‘ƒÙ{²{†Ù>±Œ]è‰O„ò¡/Yä;-®3XÅ·>ş2Ó³=±²¯’8~Ò€,õNV‘!5%Ã9ndSºœ­#„Ëôº†÷_ğĞR¿Œ”‡¼À!t%_(¶Ì'(8%˜9J6Ï|±’®#§©fìajá(I_ˆâ%]Ó!K>RÄµW?$ğÑz[/Õ#ãp]QFw³ø á¼¬‚_ÛÀ³½ÔUKç9¡é#I¼¸D|EäÁÃrzàrç$ß¿F™ÅïÂWÛƒìMI0§«ßì[Ÿ¯üİ°fâÁ—{íÖíKçI)§(¦§}g€æŠbx_²/„×Wœ\¿w((ñímÃ(,@7OÁá…D‰Ä	LÅÔ¥C/t•÷nøx X,]`•š>O3„Ú°ˆŞNô–°¼F l˜ÒàÖˆŒ £‚í0‚é0	+‚7 0UHndåPÓ‚ª77"µm¨Êu•0	+‚7
+ S u b C A0U†0Uÿ0ÿ0U#0€r-:1C¹Náê§Ç1Ñ#‰40ZUS0Q0O M K†Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^+R0P0N+0†Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0ŸU —0”0‘	+‚7.0ƒ0?+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@+042  L e g a l _ p o l i c y _ s t a t e m e n t . 0	*†H†÷ ‚ gò†¥˜àTy.ÓØtg"›–ác’™B–}ÒyÁe_.,>øÃrÑmƒş¾?è
+Ê;¿G©£óiÛc¿"5¥—]e„}‹FPUØ’|ÒKó<B‹RĞ°ıkã>.)›æ=¥Ôµw”9âédÉD=xz#ó}¦tƒôË&F*ÂŠ»¤©›íhúh.• *?*kXIc	inZ˜–äƒôÀóF+Şü;Ğ½5ïn%®å¯'íĞİó¯™(—˜M=ò‰ÖÃ2âğÅ-Î[´I9
+Æ
+ÂÆ­®å²ÙÛˆQEX82q'±ô'øŞ,: i˜²Y‰hno§·tÃ@¦*(>‚?MfÀ³Mõáo}E§vå@*e£Ã]Rb†Ãc6—†ßÚóøò¡š'áÍ¥—Ğî]cAã[œ‡>wÑ±u¾aaµğÜÆ¾ßAÇ(îŞe/ì—ö¡\–Ø Ö¡F½Yó—¥	KH™€Ğ )Å±›¥?Ew5ÆÒ¢¢Ÿzz"úH•«ûG#€õø¿k·K—âëuxìê7™yKÿÖ³#huæ¯úü‹ë€êi;¯ü0íLßßumc‘=ÑVNO¿€W"¡x2!zïA
+±?û¨Ì¤]Á¡ˆ›WqVNHEÀBÉ›v[
+€HkıyŸÁ½mmjÉRszPÍ1‚n0‚j0•0~10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1(0&UMicrosoft Code Signing PCA 20113  ^%™£¸    0	`†He  Á0
+*†H†÷	10	*†H†÷	1
++‚70
++‚710
++‚70/	*†H†÷	1" T¡rWò©‚ôJ<ß…¯ò›z”{ø‚öì×vã0B
++‚71402 € M i c r o s o f t¡€http://www.microsoft.com0	*†H†÷ ‚ Ï	ƒš¤CÖW¤ïD˜Xƒˆ¸{öX
+pz­tD˜ ×$ò»hrBşŞ¥’àôE–ÀPßÉhìdawé•¼÷Ûø]§¹­z ğAªŒñâÜï<E];Õç²Ô!àÓ®" ¿pøŠ¨ÛÁ}¥2®DE+"dGĞ<xM0ì¨ÛGfr.î?İıÄnfGp­ ¥¨ƒ"ÏàŸõOîDk9í(İÅ˜‚¿êA*ø-Z™’8ÍÃ¿‹´€úÙ$7UÒiXo)¹Óü¾ËzDû¶Æ¿8@5"¤¬èp>åMpvÑÿ¥·‚„…êçÀ°¯ó¡‚å0‚á
++‚71‚Ñ0‚Í	*†H†÷ ‚¾0‚º10	`†He 0‚Q*†H†÷	 ‚@‚<0‚8
++„Y
+010	`†He  r*'rõ—á"§P@BmÔÙá1İ|/¨Êzq©[´™ák820181004184520.477Z0€ô Ğ¤Í0Ê10	UUS10	UWA10URedmond10U
+Microsoft Corporation1-0+U$Microsoft Ireland Operations Limited1&0$UThales TSS ESN:D082-4BFD-EEBA1%0#UMicrosoft Time-Stamp service ‚<0‚ñ0‚Ù 3   â8{féêÁØ     â0	*†H†÷ 0|10	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1&0$UMicrosoft Time-Stamp PCA 20100180823202703Z191123202703Z0Ê10	UUS10	UWA10URedmond10U
+Microsoft Corporation1-0+U$Microsoft Ireland Operations Limited1&0$UThales TSS ESN:D082-4BFD-EEBA1%0#UMicrosoft Time-Stamp service0‚"0	*†H†÷ ‚ 0‚
+‚ ¨«½…sB-nf|³¿Aå‡,ÓJ"1(¬±rÁéa}×OïÄ3 2§¿ú¦Rs:š°Çò[ÆLßÜ8˜€iB9Æ»£À«VI£ö÷ùU¸Å¨|½¿§‡ø·N‹Bï¶³Ñ[~È+éÅœ[õ‡säÄ Kå¶ÖÀêÅKÖg´¢Ì<A5^b8/'‹u1÷	Â6C]8ì÷BÃ¾%Œ€9…«MÂçËMè:â‚h+™9ÃìáZÇ~]“ôôYmŸ”İwÃõŞˆQ³WÉG°_Ë}KF†Tù¤Cw6Á£¡›)éQù>CØø|Ä•õ¯Í³ëµ‘–aœ8ıX- £‚0‚0U‰>úÃö§ç+’ößkèÒñ{0U#0€Õc:\Š1óC{|FÅ3hZ…mU0VUO0M0K I G†Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z+N0L0J+0†>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0Uÿ0 0U%0
++0	*†H†÷ ‚ @{»!'¸”‡*àÑ#N;Ó‡ĞÁc7„"°õå¬/ˆÄ\`‡È8zo6NYØy´F¾ä½5.ÕZÒI¤;‹XYØj2l9XÒK–ñxÈaÇÕ,'„ó‹Ô»Íy–©(ÇßÆ o…“ù;bNG(#Ÿkà“
+­tòÛHÅWÙr½âw¾2Ğ{á–|N9hğ..—¦Zå,oè£jëebÜ\+5aÍ‚Á8;„²<Æß©BFĞJf@öÎÏœ-‘AÛªı™B¨r3ø¯z±”Íó¼ŸênO‰ò—g.bß™µ©àZ©ÕLO „DZU”a_AÙ-Lv:¿th
+–0‚q0‚Y 
+a	*     0	*†H†÷ 0ˆ10[![Build Status](https://travis-ci.org/ReactiveX/rxjs.svg?branch=master)](https://travis-ci.org/ReactiveX/rxjs)
+[![Coverage Status](https://coveralls.io/repos/github/ReactiveX/rxjs/badge.svg?branch=master)](https://coveralls.io/github/ReactiveX/rxjs?branch=master)
+[![npm version](https://badge.fury.io/js/%40reactivex%2Frxjs.svg)](http://badge.fury.io/js/%40reactivex%2Frxjs)
+[![Join the chat at https://gitter.im/Reactive-Extensions/RxJS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Reactive-Extensions/RxJS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/rxjs5.svg)](https://saucelabs.com/u/rxjs5)
+
+# RxJS 5
+
+Reactive Extensions Library for JavaScript. This is a rewrite of [Reactive-Extensions/RxJS](https://github.com/Reactive-Extensions/RxJS) and is the latest production-ready version of RxJS. This rewrite is meant to have better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that reduce the API surface.
+
+[Apache 2.0 License](LICENSE.txt)
+
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contribution Guidelines](CONTRIBUTING.md)
+- [Maintainer Guidelines](doc/maintainer-guidelines.md)
+- [Creating Operators](doc/operator-creation.md)
+- [Migrating From RxJS 4 to RxJS 5](MIGRATION.md)
+- [API Documentation (WIP)](http://reactivex.io/rxjs)
+
+## Versions In This Repository
+
+- [master](https://github.com/ReactiveX/rxjs/commits/master) - commits that will be included in the next _minor_ or _patch_ release
+- [next](https://github.com/ReactiveX/rxjs/commits/next) - commits that will be included in the next _major_ release (breaking changes)
+
+Most PRs should be made to **master**, unless you know it is a breaking change.
+
+## Important
+
+By contributing or commenting on issues in this repository, whether you've read them or not, you're agreeing to the [Contributor Code of Conduct](CODE_OF_CONDUCT.md). Much like traffic laws, ignorance doesn't grant you immunity.
+
+## Installation and Usage
+
+### ES6 via npm
+
+```sh
+npm install rxjs
+```
+
+To import the entire core set of functionality:
+
+```js
+import Rx from 'rxjs/Rx';
+
+Rx.Observable.of(1,2,3)
+```
+
+To import only what you need by patching (this is useful for size-sensitive bundling):
+
+```js
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
+
+Observable.of(1,2,3).map(x => x + '!!!'); // etc
+```
+
+To import what you need and use it with proposed [bind operator](https://github.com/tc39/proposal-bind-operator):
+
+> Note: This additional syntax requires [transpiler support](http://babeljs.io/docs/plugins/transform-function-bind/) and this syntax may be completely withdrawn from TC39 without notice! Use at your own risk.
+
+```js
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
+import { map } from 'rxjs/operator/map';
+
+Observable::of(1,2,3)::map(x => x + '!!!'); // etc
+```
+
+### CommonJS via npm
+
+To install this library for CommonJS (CJS) usage, use the following comman

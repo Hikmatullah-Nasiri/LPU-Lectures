@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="mynewstyle" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Yellow" />
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label x:Name="lbl1" Text="Feedback Form"></Label>
+        <Entry Placeholder="Your Name" Style="{StaticResource mynewstyle}"></Entry>
+        <Entry Placeholder="Your Email" Style="{StaticResource mynewstyle}"></Entry>
+        <Picker Title="Select from the list below">
+            <Picker.Items >
+                <x:String>A</x:String>
+                <x:String>B</x:String>
+            </Picker.Items>
+        </Picker>
+        <Editor HeightRequest="100"/>
+        <Button Text="Send Feedback" />
+    </StackLayout>
+</ContentPage>

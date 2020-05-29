@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Slider_Control">
+    <ContentPage.Content>
+        <StackLayout>
+            <BoxView x:Name="mybox" Color="Red" HeightRequest="100" WidthRequest="50"/>
+            <Label x:Name="lblvalue" FontSize="Large" />
+            <Slider x:Name="myslider" ValueChanged="onvaluechanged"  Minimum="0" Maximum="50" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,675 @@
+n the HttpTransportBindingElement, please set it to Digest, Negotiate, NTLM, Basic, or Anonymous.</value>
+  </data>
+  <data name="InputTypeListEmptyError" xml:space="preserve">
+    <value>The input handler list cannot be empty.</value>
+  </data>
+  <data name="UnexpectedXmlChildNode" xml:space="preserve">
+    <value>XML child node {0} of type {1} is unexpected for element {2}.</value>
+  </data>
+  <data name="SFxInstanceNotInitialized" xml:space="preserve">
+    <value>The InstanceContext has no provider for creating Service implementation objects.</value>
+  </data>
+  <data name="EncodingBindingElementDoesNotHandleReaderQuotas" xml:space="preserve">
+    <value>Unable to obtain XmlDictionaryReaderQuotas from the Binding. If you have specified a custom EncodingBindingElement, verify that the EncodingBindingElement can handle XmlDictionaryReaderQuotas in its GetProperty&lt;T&gt;() method.</value>
+  </data>
+  <data name="HttpAuthorizationFailed" xml:space="preserve">
+    <value>The HTTP request is unauthorized with client authentication scheme '{0}'. The authentication header received from the server was '{1}'.</value>
+  </data>
+  <data name="SFxKnownTypeAttributeInvalid1" xml:space="preserve">
+    <value>{0} must contain either a single ServiceKnownTypeAttribute that refers to a method or a set of ServiceKnownTypeAttributes, each specifying a valid type</value>
+  </data>
+  <data name="FramingUpgradeInvalid" xml:space="preserve">
+    <value>The requested upgrade is not supported by '{0}'. This could be due to mismatched bindings (for example security enabled on the client and not on the server).</value>
+  </data>
+  <data name="ItemNotAvailableInDeserializedRST" xml:space="preserve">
+    <value>{0} is not available in deserialized RequestSecurityToken.</value>
+  </data>
+  <data name="SFxStreamRequestMessageClosed" xml:space="preserve">
+    <value>The message containing this stream has been closed. Note that request streams cannot be accessed after the service operation returns.</value>
+  </data>
+  <data name="MessageVersionMissingFromBinding" xml:space="preserve">
+    <value>None of the binding elements in binding '{0}' define a message version. At least one binding element must define a message version and return it from the GetProperty&lt;MessageVersion&gt; method.</value>
+  </data>
+  <data name="WebSocketInvalidProtocolInvalidCharInProtocolString" xml:space="preserve">
+    <value>The subprotocol '{0}' is invalid because it contains the invalid character '{1}'.</value>
+  </data>
+  <data name="SFxContractHasZeroOperations" xml:space="preserve">
+    <value>ContractDescription '{0}' has zero operations; a contract must have at least one operation.</value>
+  </data>
+  <data name="WebSocketInvalidProtocolEmptySubprotocolString" xml:space="preserve">
+    <value>Empty string is not a valid subprotocol value. Please use \"null\" to specify no value.</value>
+  </data>
+  <data name="UnexpectedElementExpectingElement" xml:space="preserve">
+    <value>'{0}' from namespace '{1}' is not expected. Expecting element '{2}' from namespace '{3}'</value>
+  </data>
+  <data name="SFxTypedOrUntypedMessageCannotBeMixedWithVoidInRpc" xml:space="preserve">
+    <value>When using the rpc-encoded style, message contract types or the System.ServiceModel.Channels.Message type cannot be used if the operation has no parameters or has a void return value. Add a blank message contract type as a parameter or return type to operation '{0}'.</value>
+  </data>
+  <data name="AChannelServiceEndpointSBindingIsNull0" xml:space="preserve">
+    <value>A Channel/Service endpoint's Binding is null.</value>
+  </data>
+  <data name="WebSocketStreamWriteCalledAfterEOMSent" xml:space="preserve">
+    <value>Cannot write to the stream because the end of the stream marker was already written.</value>
+  </data>
+  <data name="X509InvalidUsageTime" xml:space="preserve">
+    <value>The X.509 certificate ({0}) usage time is invalid.  The usage time '{1}' does not fall between NotBefore time '{2}' and NotAfter time '{3}'.</value>
+  </data>
+  <data name="XmlBufferQuotaExceeded" xml:space="preserve">
+    <value>The size necessary to buffer the XML content exceeded the buffer quota.</value>
+  </data>
+  <data name="InAContractInheritanceHierarchyIfParentHasCallbackChildMustToo" xml:space="preserve">
+    <value>Because base ServiceContract '{0}' has a CallbackContract '{1}', derived ServiceContract '{2}' must also specify either '{1}' or a derived type as its CallbackContract.</value>
+  </data>
+  <data name="SFxEndpointDispatcherMultipleChannelDispatcher0" xml:space="preserve">
+    <value>Cannot add EndpointDispatcher to more than one ChannelDispatcher.</value>
+  </data>
+  <data name="ServicesWithoutAServiceContractAttributeCan2" xml:space="preserve">
+    <value>The {0} declared on method '{1}' in type '{2}' is invalid. {0}s are only valid on methods that are declared in a type that has ServiceContractAttribute. Either add ServiceContractAttribute to type '{2}' or remove {0} from method '{1}'.</value>
+  </data>
+  <data name="SFxReplyActionMismatch3" xml:space="preserve">
+    <value>A reply message was received for operation '{0}' with action '{1}'. However, your client code requires action '{2}'.</value>
+  </data>
+  <data name="SFxCallbackBehaviorAttributeOnlyOnDuplex" xml:space="preserve">
+    <value>CallbackBehaviorAttribute can only be run as a behavior on an endpoint with a duplex contract. Contract '{0}' is not duplex, as it contains no callback operations.</value>
+  </data>
+  <data name="ErrorDeserializingTokenXml" xml:space="preserve">
+    <value>There was an error deserializing the security token XML. Please see the inner exception for more details.</value>
+  </data>
+  <data name="SFxTypedOrUntypedMessageCannotBeMixedWithParameters" xml:space="preserve">
+    <value>The operation '{0}' could not be loaded because it has a parameter or return type of type System.ServiceModel.Channels.Message or a type that has MessageContractAttribute and other parameters of different types. When using System.ServiceModel.Channels.Message or types with MessageContractAttribute, the method must not use any other types of parameters.</value>
+  </data>
+  <data name="ActivityBoundary" xml:space="preserve">
+    <value>ActivityBoundary</value>
+  </data>
+  <data name="AChannelServiceEndpointSContractSNameIsNull0" xml:space="preserve">
+    <value>A Channel/Service endpoint's Contract's name is null or empty.</value>
+  </data>
+  <data name="MessageBodyReaderInvalidReadState" xml:space="preserve">
+    <value>The body reader is in ReadState '{0}' and cannot be consumed.</value>
+  </data>
+  <data name="AChannelServiceEndpointSContractSNamespace0" xml:space="preserve">
+    <value>A Channel/Service endpoint's Contract's namespace is null.</value>
+  </data>
+  <data name="HttpAddressingNoneHeaderOnWire" xml:space="preserve">
+    <value>The incoming message contains a SOAP header representing the WS-Addressing '{0}', yet the HTTP transport is configured with AddressingVersion.None.  As a result, the message is being dropped.  If this is not desired, then update your HTTP binding to support a different AddressingVersion.</value>
+  </data>
+  <data name="SFxSetEnableFaultsOnChannelDispatcher0" xml:space="preserve">
+    <value>This property sets EnableFaults on the client. To set EnableFaults on the server, use ChannelDispatcher's EnableFaults.</value>
+  </data>
+  <data name="RemoteIdentityFailedVerification" xml:space="preserve">
+    <value>The following remote identity failed verification: '{0}'.</value>
+  </data>
+  <data name="TcpConnectError" xml:space="preserve">
+    <value>Could not connect to {0}. TCP error code {1}: {2}. </value>
+  </data>
+  <data name="TokenCancellationNotSupported" xml:space="preserve">
+    <value>The token provider '{0}' does not support token cancellation.</value>
+  </data>
+  <data name="SyncTaskMatchConsistency_ReturnType5" xml:space="preserve">
+    <value>The synchronous OperationContract method '{0}' in type '{1}' was matched with the task-based asynchronous OperationContract method '{2}' because they have the same operation name '{3}'. When a synchronous OperationContract method is matched to a task-based asynchronous OperationContract method, the two OperationContracts must define the same return type. In this case, the return types are different. To fix it, ensure that method '{0}' and method '{2}' have the same return type. Alternatively, changing the name of one of the methods will prevent matching. </value>
+  </data>
+  <data name="OneWayOperationReturnedLargeFault" xml:space="preserve">
+    <value>The one-way operation returned a fault message with Action='{0}'.</value>
+  </data>
+  <data name="CouldNotFindNamespaceForPrefix" xml:space="preserve">
+    <value>There is no namespace binding for prefix '{0}' in scope.</value>
+  </data>
+  <data name="SFxWrapperNameCannotBeEmpty" xml:space="preserve">
+    <value>Wrapper element name cannot be empty.</value>
+  </data>
+  <data name="SFxInvalidAsyncResultState0" xml:space="preserve">
+    <value>IAsyncResult's State must be the state argument passed to your Begin call.</value>
+  </data>
+  <data name="SFXBindingNameCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Binding name cannot be null or empty.</value>
+  </data>
+  <data name="MultipleMessageHeaders" xml:space="preserve">
+    <value>Multiple headers with name '{0}' and namespace '{1}' found.</value>
+  </data>
+  <data name="PreambleAckIncorrect" xml:space="preserve">
+    <value>You have tried to create a channel to a service that does not support .Net Framing. </value>
+  </data>
+  <data name="InvalidQName" xml:space="preserve">
+    <value>The QName is invalid.</value>
+  </data>
+  <data name="BaseAddressDuplicateScheme" xml:space="preserve">
+    <value>This collection already contains an address with scheme {0}.  There can be at most one address per scheme in this collection. If your service is being hosted in IIS you can fix the problem by setting 'system.serviceModel/serviceHostingEnvironment/multipleSiteBindingsEnabled' to true or specifying 'system.serviceModel/serviceHostingEnvironment/baseAddressPrefixFilters'.</value>
+  </data>
+  <data name="IdentityCheckFailedForOutgoingMessage" xml:space="preserve">
+    <value>The identity check failed for the outgoing message. The expected identity is '{0}' for the '{1}' target endpoint.</value>
+  </data>
+  <data name="BinaryEncoderSessionMalformed" xml:space="preserve">
+    <value>The binary encoder session information is not properly formed.</value>
+  </data>
+  <data name="SFxOperationMustHaveOneOrTwoMessages" xml:space="preserve">
+    <value>OperationDescription '{0}' is invalid because its Messages property contains an invalid number of MessageDescription instances. Each OperationDescription must have one or two messages.</value>
+  </data>
+  <data name="MessageBodyToStringError" xml:space="preserve">
+    <value>... Error reading body: {0}: {1} ...</value>
+  </data>
+  <data name="EncoderUnrecognizedCharSet" xml:space="preserve">
+    <value>Unrecognized charSet '{0}' in contentType.</value>
+  </data>
+  <data name="RequestChannelSendTimedOut" xml:space="preserve">
+    <value>The request channel timed out attempting to send after {0}. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout.</value>
+  </data>
+  <data name="EncoderMessageVersionMismatch" xml:space="preserve">
+    <value>The message version of the outgoing message ({0}) does not match that of the encoder ({1}). Make sure the binding is configured with the same version as the message.</value>
+  </data>
+  <data name="InvalidMessageState" xml:space="preserve">
+    <value>An internal error has occurred. Invalid MessageState.</value>
+  </data>
+  <data name="BaseAddressMustBeAbsolute" xml:space="preserve">
+    <value>Only an absolute Uri can be used as a base address.</value>
+  </data>
+  <data name="CopyHttpHeaderFailed" xml:space="preserve">
+    <value>Failed to copy the HTTP header '{0}' with value '{1}' to '{2}'.</value>
+  </data>
+  <data name="TaskAsyncMatchConsistency_Attributes6" xml:space="preserve">
+    <value>The task-based asynchronous OperationContract method '{0}' in type '{1}' was matched with the asynchronous OperationContract methods '{2}' and '{3}' because they have the same operation name '{4}'. When a task-based asynchronous OperationContract method is matched to a pair of asynchronous OperationContract methods, any additional attributes must be declared on the task-based asynchronous OperationContract method. In this case, the asynchronous OperationContract method '{2}' has one or more attributes of type '{5}'. To fix it, remove the '{5}' attribute or attributes from method '{2}'. Alternatively, changing the name of one of the methods will prevent matching. </value>
+  </data>
+  <data name="MessagePropertiesArraySize0" xml:space="preserve">
+    <value>The array passed does not have enough space to hold all the properties contained by this collection.</value>
+  </data>
+  <data name="SFxParametersMustBeEmpty" xml:space="preserve">
+    <value>The 'parameters' argument must be either null or an empty array.</value>
+  </data>
+  <data name="MoreThanOneEndMethodFoundForAsyncBeginMethod3" xml:space="preserve">
+    <value>OperationContract method '{0}' in type '{1}' does not properly implement the async pattern, as more than one corresponding method '{2}' was found. When using the async pattern, exactly one end method must be provided. Either remove or rename one or more of the '{2}' methods such that there is just one, or set the AsyncPattern property on method '{0}' to false.</value>
+  </data>
+  <data name="UserNamePasswordNotProvidedOnClientCredentials" xml:space="preserve">
+    <value>The username is not provided. Specify username in ClientCredentials.</value>
+  </data>
+  <data name="MaxReceivedMessageSizeExceeded" xml:space="preserve">
+    <value>The maximum message size quota for incoming messages ({0}) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element.</value>
+  </data>
+  <data name="CloneNotImplementedCorrectly" xml:space="preserve">
+    <value>Clone() was not implemented properly by '{0}'. The cloned object was '{1}'.</value>
+  </data>
+  <data name="SFxParameterNameCannotBeNull" xml:space="preserve">
+    <value>All parameter names used in operations that make up a service contract must not be null.</value>
+  </data>
+  <data name="SFxInvalidChannelToOperationContext" xml:space="preserve">
+    <value>Invalid IContextChannel passed to OperationContext. Must be either a server dispatching channel or a client proxy channel.</value>
+  </data>
+  <data name="BindingDoesnTSupportAnyChannelTypes1" xml:space="preserve">
+    <value>Binding '{0}' doesn't support creating any channel types. This often indicates that the BindingElements in a CustomBinding have been stacked incorrectly or in the wrong order. A Transport is required at the bottom of the stack. The recommended order for BindingElements is: TransactionFlow, ReliableSession, Security, CompositeDuplex, OneWay, StreamSecurity, MessageEncoding, Transport. </value>
+  </data>
+  <data name="BodyWriterReturnedIsNotBuffered" xml:space="preserve">
+    <value>The body writer returned from OnCreateBufferedCopy was not buffered.</value>
+  </data>
+  <data name="WaitForMessageTimedOut" xml:space="preserve">
+    <value>WaitForMessage timed out after {0}. The time allotted to this operation may have been a portion of a longer timeout.</value>
+  </data>
+  <data name="MessageIsEmpty" xml:space="preserve">
+    <value>The body of the message cannot be read because it is empty.</value>
+  </data>
+  <data name="AddressingExtensionInBadNS" xml:space="preserve">
+    <value>The element '{0}' in namespace '{1}' is not valid. This either means that element '{0}' is a duplicate element, or that it is not a legal extension because extension elements cannot be in the addressing namespace.</value>
+  </data>
+  <data name="MultipleSecurityCredentialsManagersInChannelBindingParameters" xml:space="preserve">
+    <value>The ClientCredentials cannot be added to the binding parameters because the binding parameters already contains a SecurityCredentialsManager '{0}'. If you are configuring custom credentials for the channel, please first remove any existing ClientCredentials from the behaviors collection before adding the custom credential.</value>
+  </data>
+  <data name="SFxOperationContractOnNonServiceContract" xml:space="preserve">
+    <value>Method '{0}' has OperationContractAttribute, but enclosing type '{1}' does not have ServiceContractAttribute. OperationContractAttribute can only be used on methods in ServiceContractAttribute types or on their CallbackContract types.</value>
+  </data>
+  <data name="FramingFaultTooLong" xml:space="preserve">
+    <value>The framing fault size ({0}) exceeds the quota.</value>
+  </data>
+  <data name="SFxInvalidReplyAction" xml:space="preserve">
+    <value>Outgoing reply message for operation '{0}' specified Action='{1}', but contract for that operation specifies ReplyAction='{2}'.    The Action specified in the Message must match the ReplyAction in the contract, or the operation contract must specify ReplyAction='*'.</value>
+  </data>
+  <data name="CloseTimedOut" xml:space="preserve">
+    <value>Close timed out after {0}.  Increase the timeout value passed to the call to Close or increase the CloseTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout.</value>
+  </data>
+  <data name="FoundMultipleCerts" xml:space="preserve">
+    <value>Found multiple X.509 certificates using the following search criteria: StoreName '{0}', StoreLocation '{1}', FindType '{2}', FindValue '{3}'. Provide a more specific find value.</value>
+  </data>
+  <data name="SFxFaultContractDuplicateDetailType" xml:space="preserve">
+    <value>In operation {0}, more than one fault is declared with detail type {1}</value>
+  </data>
+  <data name="SyncTaskMatchConsistency_Parameters5" xml:space="preserve">
+    <value>The synchronous OperationContract method '{0}' in type '{1}' was matched with the task-based asynchronous OperationContract method '{2}' because they have the same operation name '{3}'. When a synchronous OperationContract method is matched to a task-based asynchronous OperationContract method, the two OperationContracts must define the same number and types of parameters. In this case, some of the arguments are different. To fix it, ensure that the OperationContracts define the same number and types of arguments, in the same order. Alternatively, changing the name of one of the methods will prevent matching. </value>
+  </data>
+  <data name="FramingRecordTypeMismatch" xml:space="preserve">
+    <value>Expected record type '{0}', found '{1}'.</value>
+  </data>
+  <data name="CannotHaveTwoOperationsWithTheSameName3" xml:space="preserve">
+    <value>Cannot have two operations in the same contract with the same name, methods {0} and {1} in type {2} violate this rule. You can change the name of one of the operations by changing the method name or by using the Name property of OperationContractAttribute.</value>
+  </data>
+  <data name="InvalidTokenProvided" xml:space="preserve">
+    <value>The token provider of type '{0}' did not return a token of type '{1}'. Check the credential configuration.</value>
+  </data>
+  <data name="SFxKnownTypeAttributeReturnType3" xml:space="preserve">
+    <value>The return type of method {1} in type {2} must be IEnumerable&lt;Type&gt; to be used by ServiceKnownTypeAttribute in {0}</value>
+  </data>
+  <data name="OneWayOperationShouldNotSpecifyAReplyAction1" xml:space="preserve">
+    <value>One way operation {0} cannot not specify a reply action.</value>
+  </data>
+  <data name="SFxHeadersAreNotSupportedInEncoded" xml:space="preserve">
+    <value>Message {0} must not have headers to be used in RPC encoded style.</value>
+  </data>
+  <data name="ErrorDeserializingKeyIdentifierClauseFromTokenXml" xml:space="preserve">
+    <value>There was an error creating the security key identifier clause from the security token XML. Please see the inner exception for more details.</value>
+  </data>
+  <data name="SFxChannelFactoryTypeMustBeInterface" xml:space="preserve">
+    <value>The type argument passed to the generic ChannelFactory class must be an interface type.</value>
+  </data>
+  <data name="LocalIdCannotBeEmpty" xml:space="preserve">
+    <value>The localId cannot be empty. Specify a valid 'localId'.</value>
+  </data>
+  <data name="TcpConnectNoBufs" xml:space="preserve">
+    <value>Insufficient winsock resources available to complete socket connection initiation.</value>
+  </data>
+  <data name="SFxChannelTerminated0" xml:space="preserve">
+    <value>An operation marked as IsTerminating has already been invoked on this channel, causing the channel's connection to terminate.  No more operations may be invoked on this channel.  Please re-create the channel to continue communication.</value>
+  </data>
+  <data name="SFxMultipleContractStarOperations0" xml:space="preserve">
+    <value>A ServiceContract has more the one operation with an Action of \"*\".  A ServiceContract can have at most one operation an Action = \"*\".</value>
+  </data>
+  <data name="CannotAddTwoItemsWithTheSameKeyToSynchronizedKeyedCollection0" xml:space="preserve">
+    <value>Cannot add two items with the same key to SynchronizedKeyedCollection.</value>
+  </data>
+  <data name="SFxInvalidStreamOffsetLength" xml:space="preserve">
+    <value>Buffer size must be at least {0} bytes.</value>
+  </data>
+  <data name="SFxRequestTimedOut2" xml:space="preserve">
+    <value>This request operation sent to {0} did not receive a reply within the configured timeout ({1}).  The time allotted to this operation may have been a portion of a longer timeout.  This may be because the service is still processing the operation or because the service was unable to send a reply message.  Please consider increasing the operation timeout (by casting the channel/proxy to IContextChannel and setting the OperationTimeout property) and ensure that the service is able to connect to the client.</value>
+  </data>
+  <data name="SFxRequestTimedOut1" xml:space="preserve">
+    <value>This request operation did not receive a reply within the configured timeout ({0}).  The time allotted to this operation may have been a portion of a longer timeout.  This may be because the service is still processing the operation or because the service was unable to send a reply message.  Please consider increasing the operation timeout (by casting the channel/proxy to IContextChannel and setting the OperationTimeout property) and ensure that the service is able to connect to the client.</value>
+  </data>
+  <data name="SendCannotBeCalledAfterCloseOutputSession" xml:space="preserve">
+    <value>You cannot Send messages on a channel after CloseOutputSession has been called.</value>
+  </data>
+  <data name="MultipleIdentities" xml:space="preserve">
+    <value>The extensions cannot contain an Identity if one is supplied as a constructor argument.</value>
+  </data>
+  <data name="MultipleMessageHeadersWithActor" xml:space="preserve">
+    <value>Multiple headers with name '{0}' and namespace '{1}' and role '{2}' found.</value>
+  </data>
+  <data name="EnvelopeVersionUnknown" xml:space="preserve">
+    <value>Unrecognized envelope version: {0}.</value>
+  </data>
+  <data name="ServerRejectedSessionPreamble" xml:space="preserve">
+    <value>The server at {0} rejected the session-establishment request.</value>
+  </data>
+  <data name="SFxHeaderNamespaceMismatchInMessageContract" xml:space="preserve">
+    <value>Header namespace mismatch in member {1} of type {0}. The header namespace found in the description is {2}. The element namespace deduced by the formatter is {3}. This mismatch can happen if the Namespace specified in XmlElementAttribute or XmlArrayAttribute does not match the namespace specified in the MessageHeaderAttribute or MessageHeaderArrayAttribute or the contract namespace.</value>
+  </data>
+  <data name="SFxParameterMustBeArrayOfOneElement" xml:space="preserve">
+    <value>The 'parameters' argument must be an array of one element.</value>
+  </data>
+  <data name="NoChannelBuilderAvailable" xml:space="preserve">
+    <value>The binding (Name={0}, Namespace={1}) cannot be used to create a ChannelFactory or a ChannelListener because it appears to be missing a TransportBindingElement.  Every binding must have at least one binding element that derives from TransportBindingElement.</value>
+  </data>
+  <data name="OneWayAndFaultsIncompatible2" xml:space="preserve">
+    <value>The method '{1}' in type '{0}' is marked IsOneWay=true and declares one or more FaultContractAttributes. One-way methods cannot declare FaultContractAttributes. To fix it, change IsOneWay to false or remove the FaultContractAttributes.</value>
+  </data>
+  <data name="TcpConnectingToViaTimedOut" xml:space="preserve">
+    <value>Connecting to via {0} timed out after {1}. Connection attempts were made to {2} of {3} available addresses ({4}). Check the RemoteAddress of your channel and verify that the DNS records for this endpoint correspond to valid IP Addresses. The time allotted to this operation may have been a portion of a longer timeout.</value>
+  </data>
+  <data name="ObjectIsReadOnly" xml:space="preserve">
+    <value>Object is read-only.</value>
+  </data>
+  <data name="NotAllBindingElementsBuilt" xml:space="preserve">
+    <value>Some of the binding elements in this binding were not used when building the ChannelFactory / ChannelListener.  This may be have been caused by the binding elements being misordered.  The recommended order for binding elements is: TransactionFlow, ReliableSession, Security, CompositeDuplex, OneWay, StreamSecurity, MessageEncoding, Transport.  Note that the TransportBindingElement must be last.  The following binding elements were not built: {0}.</value>
+  </data>
+  <data name="CommunicationObjectCannotBeModifiedInState" xml:space="preserve">
+    <value>The communication object, {0}, cannot be modified while it is in the {1} state.</value>
+  </data>
+  <data name="IdentityCheckFailedForIncomingMessage" xml:space="preserve">
+    <value>The identity check failed for the incoming message. The expected identity is '{0}' for the '{1}' target endpoint.</value>
+  </data>
+  <data name="SFxServiceChannelIdleAborted" xml:space="preserve">
+    <value>The operation '{0}' could not be completed because the sessionful channel timed out waiting to receive a message.  To increase the timeout, either set the receiveTimeout property on the binding in your configuration file, or set the ReceiveTimeout property on the Binding directly.</value>
+  </data>
+  <data name="ChannelTypeNotSupported" xml:space="preserve">
+    <value>The specified channel type {0} is not supported by this channel manager.</value>
+  </data>
+  <data name="ImpersonationLevelNotSupported" xml:space="preserve">
+    <value>The authentication modes using Kerberos do not support the impersonation level '{0}'. Specify identification or impersonation.</value>
+  </data>
+  <data name="EnvelopeVersionNotSupported" xml:space="preserve">
+    <value>Envelope Version '{0}' is not supported.</value>
+  </data>
+  <data name="PreambleAckIncorrectMaybeHttp" xml:space="preserve">
+    <value>You have tried to create a channel to a service that does not support .Net Framing. It is possible that you are encountering an HTTP endpoint.</value>
+  </data>
+  <data name="SyncTaskMatchConsistency_Attributes6" xml:space="preserve">
+    <value>The synchronous OperationContract method '{0}' in type '{1}' was matched with the task-based asynchronous OperationContract method '{2}' because they have the same operation name '{3}'. When a synchronous OperationContract method is matched to a task-based asynchronous OperationContract method, any additional attributes must be declared on the synchronous OperationContract method. In this case, the task-based asynchronous OperationContract method '{2}' has one or more attributes of type '{4}'. To fix it, remove the '{4}' attribute or attributes from method '{2}'. Alternatively, changing the name of one of the methods will prevent matching. </value>
+  </data>
+  <data name="SFxErrorReflectingOnParameter4" xml:space="preserve">
+    <value>An error occurred while loading attribute '{0}' on parameter {1} of method '{2}' in type '{3}'.  Please see InnerException for more details.</value>
+  </data>
+  <data name="SFxCreateDuplexChannel1" xml:space="preserve">
+    <value>The callback contract of contract {0} either does not exist or does not define any operations.  If this is not a duplex contract, consider using ChannelFactory instead of DuplexChannelFactory.</value>
+  </data>
+  <data name="SFxInvalidMessageBodyErrorDeserializingParameterMore" xml:space="preserve">
+    <value>There was an error while trying to deserialize parameter {0}:{1}. The InnerException message was '{2}'.  Please see InnerException for more details.</value>
+  </data>
+  <data name="FramingContentTypeTooLong" xml:space="preserve">
+    <value>The framing content type size ({0}) exceeds the quota.</value>
+  </data>
+  <data name="ServerRejectedUpgradeRequest" xml:space="preserve">
+    <value>The server rejected the upgrade request.</value>
+  </data>
+  <data name="CannotFindCert" xml:space="preserve">
+    <value>Cannot find the X.509 certificate using the following search criteria: StoreName '{0}', StoreLocation '{1}', FindType '{2}', FindValue '{3}'.</value>
+  </data>
+  <data name="SFxInvalidMessageBody" xml:space="preserve">
+    <value>OperationFormatter encountered an invalid Message body. Expected to find node type 'Element' with name '{0}' and namespace '{1}'. Found node type '{2}' with name '{3}' and namespace '{4}'</value>
+  </data>
+  <data name="AtLeastOneFaultReasonMustBeSpecified" xml:space="preserve">
+    <value>At least one fault reason must be specified.</value>
+  </data>
+  <data name="FoundMultipleCertsForTarget" xml:space="preserve">
+    <value>Found multiple X.509 certificates using the following search criteria: StoreName '{0}', StoreLocation '{1}', FindType '{2}', FindValue '{3}' for target '{4}'. Provide a more specific find value.</value>
+  </data>
+  <data name="channelDoesNotHaveADuplexSession0" xml:space="preserve">
+    <value>The current channel does not support closing the output session as this channel does not implement ISessionChannel&lt;IDuplexSession&gt;.</value>
+  </data>
+  <data name="MessageBufferIsClosed" xml:space="preserve">
+    <value>MessageBuffer is closed.</value>
+  </data>
+  <data name="SpaceNeededExceedsMessageFrameOffset" xml:space="preserve">
+    <value>The space needed for encoding ({0} bytes) exceeds the message frame offset.</value>
+  </data>
+  <data name="SFxCannotCallAutoOpenWhenExplicitOpenCalled" xml:space="preserve">
+    <value>Cannot make a call on this channel because a call to Open() is in progress.</value>
+  </data>
+  <data name="NoncesCachedInfinitely" xml:space="preserve">
+    <value>The ReplayWindow and ClockSkew cannot be the maximum possible value when replay detection is enabled.</value>
+  </data>
+  <data name="HttpAuthorizationForbidden" xml:space="preserve">
+    <value>The HTTP request was forbidden with client authentication scheme '{0}'.</value>
+  </data>
+  <data name="XmlBufferInInvalidState" xml:space="preserve">
+    <value>An internal error has occurred. The XML buffer is not in the correct state to perform the operation.</value>
+  </data>
+  <data name="ClientCertificateNotProvidedOnClientCredentials" xml:space="preserve">
+    <value>The client certificate is not provided. Specify a client certificate in ClientCredentials. </value>
+  </data>
+  <data name="SFxMessageContractRequiresDefaultConstructor" xml:space="preserve">
+    <value>The message cannot be deserialized into MessageContract type {0} since it does not have a default (parameterless) constructor.</value>
+  </data>
+  <data name="SFxHeaderNamespaceMismatchInOperation" xml:space="preserve">
+    <value>Header namespace mismatch in operation {0} from contract {1}:{2}. The header namespace found in the description is {3}. The element namespace deduced by the formatter is {4}. This mismatch can happen if the Namespace specified in XmlElementAttribute or XmlArrayAttribute does not match the namespace specified in the MessageHeaderAttribute or MessageHeaderArrayAttribute or the contract namespace.</value>
+  </data>
+  <data name="MaxSentMessageSizeExceeded" xml:space="preserve">
+    <value>The maximum message size quota for outgoing messages ({0}) has been exceeded.</value>
+  </data>
+  <data name="RequestContextAborted" xml:space="preserve">
+    <value>The requestContext has been aborted.</value>
+  </data>
+  <data name="UnsupportedBindingProperty" xml:space="preserve">
+    <value>The value '{1}' is not supported in this context for the binding property '{0}'.</value>
+  </data>
+  <data name="UserNameCannotBeEmpty" xml:space="preserve">
+    <value>The username cannot be empty.</value>
+  </data>
+  <data name="SFxMetadataReferenceInvalidLocation" xml:space="preserve">
+    <value>The value '{0}' is not valid for the Location property. The Location property must be a valid absolute or relative URI.</value>
+  </data>
+  <data name="CreationTimeUtcIsAfterExpiryTime" xml:space="preserve">
+    <value>Creation time must be before expiration time.</value>
+  </data>
+  <data name="BaseAddressCannotHaveFragment" xml:space="preserve">
+    <value>A base address cannot contain a Uri fragment.</value>
+  </data>
+  <data name="SFxInvalidSoapAttribute" xml:space="preserve">
+    <value>XmlSerializer attribute {0} is not valid in {1}. Only SoapElement attribute is supported.</value>
+  </data>
+  <data name="SFxCreateDuplexChannelNoCallbackUserObject" xml:space="preserve">
+    <value>This CreateChannel overload cannot be called on this instance of DuplexChannelFactory, as the InstanceContext provided to the DuplexChannelFactory does not contain a valid UserObject.</value>
+  </data>
+  <data name="EndpointListenerRequirementsCannotBeMetBy3" xml:space="preserve">
+    <value>ChannelDispatcher requirements cannot be met by the IChannelListener for Binding '{0}' since the contract requires support for one of these channel types '{1}' but the binding only supports these channel types '{2}'.</value>
+  </data>
+  <data name="DnsIdentityCheckFailedForOutgoingMessageLackOfDnsClaim" xml:space="preserve">
+    <value>The Identity check failed for the outgoing message. The remote endpoint did not provide a domain name system (DNS) claim and therefore did not satisfied DNS identity '{0}'. This may be caused by lack of DNS or CN name in the remote endpoint X.509 certificate's distinguished name.</value>
+  </data>
+  <data name="StreamError" xml:space="preserve">
+    <value>An error occurred while transmitting data.</value>
+  </data>
+  <data name="OperationCannotBeDoneAfterProcessingIsStarted" xml:space="preserve">
+    <value>This operation cannot be done after processing is started.</value>
+  </data>
+  <data name="SFxInvalidRequestAction" xml:space="preserve">
+    <value>Outgoing request message for operation '{0}' specified Action='{1}', but contract for that operation specifies Action='{2}'.  The Action specified in the Message must match the Action in the contract, or the operation contract must specify Action='*'.</value>
+  </data>
+  <data name="WebSocketOperationTimedOut" xml:space="preserve">
+    <value>The '{0}' operation timed out after '{1}'. The time allotted to this operation may have been a portion of a longer timeout.</value>
+  </data>
+  <data name="FramingViaTooLongFault" xml:space="preserve">
+    <value>Via '{0}' is too long to be processed by the remote host. See the server logs for more details.</value>
+  </data>
+  <data name="SFxErrorDeserializingHeader" xml:space="preserve">
+    <value>There was an error in deserializing one of the headers in message {0}.  Please see InnerException for more details.</value>
+  </data>
+  <data name="SFxOperationDescriptionNameCannotBeEmpty" xml:space="preserve">
+    <value>OperationDescription's Name must be a non-empty string.</value>
+  </data>
+  <data name="SFxBadByValueParameterMetadata" xml:space="preserve">
+    <value>Method '{0}' in class '{1}' has bad parameter metadata: a pass-by-value parameter is marked with the 'out' parameter mode.</value>
+  </data>
+  <data name="SFxMismatchedOperationParent" xml:space="preserve">
+    <value>A DispatchOperation (or ClientOperation) can only be added to its parent DispatchRuntime (or ClientRuntime).</value>
+  </data>
+  <data name="SPS_SeekNotSupported" xml:space="preserve">
+    <value>Seek is not supported on this stream.</value>
+  </data>
+  <data name="OneWayOperationReturnedMessage" xml:space="preserve">
+    <value>The one-way operation returned a non-null message with Action='{0}'.</value>
+  </data>
+  <data name="SFxNoServiceObject" xml:space="preserve">
+    <value>The service implementation object was not initialized or is not available.</value>
+  </data>
+  <data name="InvalidBindingScheme" xml:space="preserve">
+    <value>The TransportBindingElement of type '{0}' in this CustomBinding returned a null or empty string for the Scheme. TransportBindingElement's Scheme must be a non-empty string.</value>
+  </data>
+  <data name="SFxXmlSerializerIsNotFound" xml:space="preserve">
+    <value>Could not find XmlSerializer for type {0}.</value>
+  </data>
+  <data name="FramingViaTooLong" xml:space="preserve">
+    <value>The framing via size ({0}) exceeds the quota.</value>
+  </data>
+  <data name="SFXEndpointBehaviorUsedOnWrongSide" xml:space="preserve">
+    <value>The IEndpointBehavior '{0}' cannot be used on the server side; this behavior can only be applied to clients.</value>
+  </data>
+  <data name="MessageBodyIsStream" xml:space="preserve">
+    <value>... stream ...</value>
+  </data>
+  <data name="SFxMultipleCallbackFromAsyncOperation" xml:space="preserve">
+    <value>The callback passed to operation '{0}' was called more than once.  This indicates an internal error in the implementation of that operation.</value>
+  </data>
+  <data name="CommunicationObjectBaseClassMethodNotCalled" xml:space="preserve">
+    <value>The communication object, {0}, has overridden the virtual function {1} but it does not call version defined in the base class.</value>
+  </data>
+  <data name="UnexpectedEndOfFile" xml:space="preserve">
+    <value>Unexpected end of file.</value>
+  </data>
+  <data name="SFxInvalidMessageBodyErrorSerializingParameter" xml:space="preserve">
+    <value>There was an error while trying to serialize parameter {0}:{1}. The InnerException message was '{2}'.  Please see InnerException for more details.</value>
+  </data>
+  <data name="SocketConnectionDisposed" xml:space="preserve">
+    <value>The socket connection has been disposed.</value>
+  </data>
+  <data name="SFxNoDefaultConstructor" xml:space="preserve">
+    <value>The service type provided could not be loaded as a service because it does not have a default (parameter-less) constructor. To fix the problem, add a default constructor to the type, or pass an instance of the type to the host.</value>
+  </data>
+  <data name="InAContractInheritanceHierarchyTheServiceContract3_2" xml:space="preserve">
+    <value>In a contract inheritance hierarchy, the ServiceContract's CallbackContract must be a subtype of the CallbackContracts of all of the CallbackContracts of the ServiceContracts inherited by the original ServiceContract, Types {0} and {1} violate this rule.</value>
+  </data>
+  <data name="InvalidEnumArgument" xml:space="preserve">
+    <value>The value of argument '{0}' ({1}) is invalid for Enum type '{2}'.</value>
+  </data>
+  <data name="SecurityTokenRequirementHasInvalidTypeForProperty" xml:space="preserve">
+    <value>The token requirement has an unexpected type '{1}' for property '{0}'. The expected property type is '{2}'.</value>
+  </data>
+  <data name="SFxRequestHasInvalidFaultToOnClient" xml:space="preserve">
+    <value>The request message has FaultTo='{0}' but IContextChannel.LocalAddress is '{1}'.  When ManualAddressing is false, these values must be the same, null, or EndpointAddress.AnonymousAddress.  Enable ManualAddressing or avoid setting FaultTo on the message.</value>
+  </data>
+  <data name="DuplicateMessageProperty" xml:space="preserve">
+    <value>A property with the name '{0}' already exists.</value>
+  </data>
+  <data name="AddressingHeadersCannotBeAddedToAddressingVersion" xml:space="preserve">
+    <value>Addressing Version '{0}' does not support adding WS-Addressing headers.</value>
+  </data>
+  <data name="SFxInternalCallbackError" xml:space="preserve">
+    <value>The client was unable to process the callback request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from CallbackBehaviorAttribute or from the &lt;clientDebug&gt; configuration behavior) on the client in order to send the exception information back to the server, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the client trace logs.</value>
+  </data>
+  <data name="SFxCollectionReadOnly" xml:space="preserve">
+    <value>This operation is not supported because the collection is read-only.</value>
+  </data>
+  <data name="FramingContentTypeTooLongFault" xml:space="preserve">
+    <value>Content type '{0}' is too long to be processed by the remote host. See the server logs for more details.</value>
+  </data>
+  <data name="StreamUpgradeUnsupportedChannelBindingKind" xml:space="preserve">
+    <value>The StreamUpgradeProvider {0} does not support the specified ChannelBindingKind ({1}). </value>
+  </data>
+  <data name="SFxMessagePartDescriptionMissingType" xml:space="preserve">
+    <value>Instance of MessagePartDescription Name='{0}' Namespace='{1}' cannot be used in this context: required 'Type' property was not set.</value>
+  </data>
+  <data name="StreamMutualAuthNotSatisfied" xml:space="preserve">
+    <value>The remote server did not satisfy the mutual authentication requirement.</value>
+  </data>
+  <data name="FramingValueNotAvailable" xml:space="preserve">
+    <value>The value cannot be accessed because it has not yet been fully decoded.</value>
+  </data>
+  <data name="SFxConfigurationNameCannotBeEmpty" xml:space="preserve">
+    <value>The ConfigurationName property must be a non-empty string.</value>
+  </data>
+  <data name="BinaryEncoderSessionTooLarge" xml:space="preserve">
+    <value>The binary encoder session information exceeded the maximum size quota ({0}). To increase this quota, use the MaxSessionSize property on the BinaryMessageEncodingBindingElement.</value>
+  </data>
+  <data name="EndMethodsCannotBeDecoratedWithOperationContractAttribute" xml:space="preserve">
+    <value>When using the IAsyncResult design pattern, the End method cannot be decorated with OperationContractAttribute. Only the corresponding Begin method can be decorated with OperationContractAttribute; that attribute will apply to the Begin-End pair of methods. Method '{0}' in type '{1}' violates this.</value>
+  </data>
+  <data name="TcpLocalConnectionAborted" xml:space="preserve">
+    <value>The socket connection was aborted by your local machine. This could be caused by a channel Abort(), or a transmission error from another thread using this socket.</value>
+  </data>
+  <data name="SFxInitializationUINotCalled" xml:space="preserve">
+    <value>The channel is configured to use interactive initializer '{0}', but the channel was Opened without calling DisplayInitializationUI.  Call DisplayInitializationUI before calling Open or other methods on this channel.</value>
+  </data>
+  <data name="DelegatingHandlerArrayFromFuncContainsNullItem" xml:space="preserve">
+    <value>The '{0}' list created by the Func '{1}' is invalid because it contains one or more null items.</value>
+  </data>
+  <data name="SFxContractDescriptionNameCannotBeEmpty" xml:space="preserve">
+    <value>ContractDescription's Name must be a non-empty string.</value>
+  </data>
+  <data name="SecurityTokenManagerCannotCreateProviderForRequirement" xml:space="preserve">
+    <value>The security token manager cannot create a token provider for requirement '{0}'.</value>
+  </data>
+  <data name="SFxNoEndpointMatchingContract" xml:space="preserve">
+    <value>The message with Action '{0}' cannot be processed at the receiver, due to a ContractFilter mismatch at the EndpointDispatcher. This may be because of either a contract mismatch (mismatched Actions between sender and receiver) or a binding/security mismatch between the sender and the receiver.  Check that sender and receiver have the same contract and the same binding (including security requirements, e.g. Message, Transport, None).</value>
+  </data>
+  <data name="TokenProviderUnableToRenewToken" xml:space="preserve">
+    <value>The token provider '{0}' was unable to renew the security token.</value>
+  </data>
+  <data name="UnrecognizedClaimTypeForIdentity" xml:space="preserve">
+    <value>The ClaimType '{0}' is not recognized. Expected ClaimType '{1}'.</value>
+  </data>
+  <data name="MessageHasBeenCopied" xml:space="preserve">
+    <value>This message cannot support the operation because it has been copied.</value>
+  </data>
+  <data name="DnsIdentityCheckFailedForIncomingMessage" xml:space="preserve">
+    <value>Identity check failed for incoming message. The expected DNS identity of the remote endpoint was '{0}' but the remote endpoint provided DNS claim '{1}'. If this is a legitimate remote endpoint, you can fix the problem by explicitly specifying DNS identity '{1}' as the Identity property of EndpointAddress when creating channel proxy. </value>
+  </data>
+</root>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+     

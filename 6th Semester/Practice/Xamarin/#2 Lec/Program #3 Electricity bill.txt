@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter meter reading  : ");
+		double meterR = double.Parse(Console.ReadLine());
+		double bill;
+		if(meterR>100){
+		bill = meterR * 6.95;
+		}
+		else {
+			bill = meterR * 5.95;
+		}
+		Console.WriteLine("Total number of coins are "+bill);
+		
+			
+	}
+}

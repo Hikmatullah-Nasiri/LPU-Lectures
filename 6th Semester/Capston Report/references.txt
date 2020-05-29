@@ -1,0 +1,11 @@
+References
+
+https://en.wikipedia.org/wiki/Home_automation
+https://en.wikipedia.org/wiki/Electric_switchboard
+https://idisrupted.com/how-do-smart-light-switches-work/
+https://www.digitronic.ir/products/smart-switch/
+https://www.ovio.ir/2803/خانه-هوشمند-برای-معلولان-و-مبتلایان-به/
+https://www.circuito.io/app
+https://medium.com/the-andela-way/system-design-in-software-development-f360ce6fcbb9
+https://thepihut.com/blogs/raspberry-pi-tutorials/how-do-i-power-my-arduino
+

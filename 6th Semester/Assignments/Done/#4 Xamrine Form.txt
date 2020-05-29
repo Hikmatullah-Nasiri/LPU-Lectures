@@ -1,0 +1,3 @@
+Create an app with Style inheritance which calculate monthly salary of an employee.
+For calculate monthly salary of an employee. Take Basic salary:20,000 Benefits:HA=2000 and Performance Bonus:1000,Tax:10%(deduction).
+and take no.of working days also

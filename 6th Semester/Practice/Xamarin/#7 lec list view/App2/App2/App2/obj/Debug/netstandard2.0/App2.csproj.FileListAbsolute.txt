@@ -1,0 +1,14 @@
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\bin\Debug\netstandard2.0\App2.deps.json
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\bin\Debug\netstandard2.0\App2.dll
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\bin\Debug\netstandard2.0\ref\App2.dll
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\bin\Debug\netstandard2.0\App2.pdb
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\App2.csprojAssemblyReference.cache
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\App2.AssemblyInfoInputs.cache
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\App2.AssemblyInfo.cs
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\XamlC.stamp
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\App2.dll
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\ref\App2.dll
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\App2.pdb
+D:\LPU\6th Semester\Practice\Xamarin\#7 lec list view\App2\App2\App2\obj\Debug\netstandard2.0\Page1.xaml.g.cs
